@@ -44,3 +44,5 @@ A special thanks to Spherii for making the Mod Launcher.  It has made running a 
 Many thanks to all the mod creators for their hard work.  All mods used were
 unmodified with the exception of Unnecessarily Beautiful But Immersive 
 by Ztensity because it wasn't working in A20
+
+Discord: https://discord.gg/CseFaRD
