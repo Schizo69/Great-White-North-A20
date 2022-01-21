@@ -1,0 +1,2076 @@
+<configs>
+<!--   Vehicle Madness Version 3 Beta 2.0 January 2022 A20 -->
+
+<append xpath="/blocks/block[@name='decoCarTireSmallFlat']" >
+<property name="CanPickup" value="true" param1="Tire"/>
+</append>
+
+<!-- Begin New Car Harvest Blocks -->
+<set xpath="//block[@name='cntCar03SedanDamage0Master']"> <!-- Full Vehicles -->
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Class" value="CarExplodeLoot"/> <!-- cars explode when destroyed by a tool without harvest settings -->
+	<property name="CustomIcon" value="cntCar03SedanDamage0Master"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="LootList" value="cars"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Model" value="#Entities/Vehicles?Car/car_black_dmg0Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="TintColor" value="B0B0B0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="cntCar03SedanDamage0Master" count="0" tool_category="Disassemble"/>
+	<!-- Salvage -->
+	<drop event="Harvest" name="carDoors" count="1,2" prob="0.042" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carHood" count="1" prob="0.031" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carTrunk" count="1" prob="0.031" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carWheelrims" count="1,2" prob="0.031" tag="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleVMWheels" count="1,2" prob="0.031" tag="salvageHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="10,200" prob="0.047" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0" />
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.032" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceOil" count="0,2" prob="0.03"  tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" prob="0.024" tag="allHarvest"/>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage1Master"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="PlacementDistance" value="6"/>
+	<property name="FilterTags" value="MC_building,SC_automotive"/>
+</set>
+<set xpath="//block[@name='cntCar03SedanDamage1Master']"> <!-- Halfs -->
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage1Master"/>
+	<property name="LootList" value="cars"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Model" value="#Entities/Vehicles?Car/car_black_dmg1Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="TintColor" value="B0B0B0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="cntCar03SedanDamage1Master" count="0" tool_category="Disassemble"/>
+	<!-- Salvage -->
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.036" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.037" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carTransmission" count="1" prob="0.03" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.03" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBumperFront" count="1" prob="0.032" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carFender" count="1" prob="0.032" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0" />
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.037" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="1,3" prob="0.032" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="allHarvest"/>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage2Master"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="PlacementDistance" value="6"/>
+	<property name="FilterTags" value="MC_building,SC_automotive"/>
+</set>
+<set xpath="//block[@name='cntCar03SedanDamage2Master']"> <!-- wrecks -->
+	<property name="CreativeMode" value="None"/>
+	<property name="Class" value="CarExplode"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Model" value="#Entities/Vehicles?Car/car_black_dmg2Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="ModelOffset" value="0,-0.25,0"/>
+	<property name="TintColor" value="B0B0B0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="cntCar03SedanDamage2Master" count="0" tool_category="Disassemble"/>
+	<!-- Salvage -->
+	<drop event="Harvest" name="damagedcarEngine" count="1" prob="0.047" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carEngine" count="1" prob="0.048" tag="salvageHarvest"/>  
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.033" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.036" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.033" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarAltenator" count="1" prob="0.032" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.031" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carAltenator" count="1" prob="0.037" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.031" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.033" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12,200" tag="allHarvest"/>
+	<drop event="Destroy" name="damagedcarChassis" count="1" prob=".038" tag="allHarvest"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="PlacementDistance" value="6"/>
+	<property name="FilterTags" value="MC_building,SC_automotive"/>
+</set>
+<!-- New Blocks -->
+<append xpath="/blocks">
+<block name="cntCar03SedanRepairMaster0"><!-- New masters for Repairing sedan wrecks 3 stage system not in use ATM -->
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="9000"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage0Master"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Model" value="#Entities/Vehicles?Car/car_black_dmg0Prefab.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<!--<property name="DisplayType" value="blockMulti"/> 
+	 <property name="MultiBlockDim" value="2,2,6"/> -->
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="resourceScrapIron" count="150" prob="0.4" stick_chance="0"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="550"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="PlacementDistance" value="6"/>
+	<property name="FilterTags" value="MC_building,SC_automotive"/>
+</block>
+<block name="cntCar03SedanRepairMaster1">
+	<property name="CreativeMode" value="None"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="9000"/>
+	<property name="ItemTypeIcon" value="explosion"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage1Master"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Entities/Vehicles?Car/car_black_dmg0Prefab.prefab"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<!--<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,6"/> -->
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="resourceScrapIron" count="150" prob="0.4" stick_chance="0"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="550"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="PlacementDistance" value="6"/>
+	<property name="FilterTags" value="MC_building,SC_automotive"/>
+</block>
+<block name="cntCar03SedanRepairMaster2"> <!-- car wreck -->
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="Class" value="Loot"/>
+	<property name="LootList" value="cars"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="MaxDamage" value="9000"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="Model" value="#Entities/Vehicles?Car/car_black_dmg0Prefab.prefab"/>
+	<property name="ModelOffset" value="0,-0.25,0"/>
+	<!--<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="2,2,6"/> -->
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="CanDecorateOnSlopes" value="false"/>
+	<property name="PlacementDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="resourceScrapIron" count="150" prob="0.4" stick_chance="0"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="550"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="PlacementDistance" value="6"/>
+	<property name="FilterTags" value="MC_building,SC_automotive"/>
+</block>
+<!-- New Wreck copies for repairing Custom wrecks -->
+<block name="RepairableSedan">
+	<property name="Extends" value="cntCar03SedanRepairMaster0"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableFastback">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?Fastback_v0Prefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.25,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableMilitaryCar">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?MilitaryCar_v0Prefab"/>
+	<property name="MultiBlockDim" value="3,2,6"/>
+	<property name="ModelOffset" value="0,0.25,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="armyTruck"/>
+</block>
+<block name="RepairableMilitaryTruck">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?MilitaryTruck_v0Prefab"/>
+	<property name="MultiBlockDim" value="3,3,10"/>
+	<property name="ModelOffset" value="0,0.25,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="armyTruck"/>
+</block>
+<block name="RepairableBeetle">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?BeetlePrefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.15,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableBigBuggy">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?BigBuggyPrefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.25,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableBigRig2">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?Bigrig2Prefab"/>
+	<property name="MultiBlockDim" value="3,2,6"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableRedBMW">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BMW_R_v0Prefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="VerticalOffset" value="0.05"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableWhiteBMW">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BMW_W_v0Prefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.25,0"/>
+	<property name="VerticalOffset" value="0.05"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableBoxTruckWhite">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?Boxtruck2Prefab"/>
+	<property name="MultiBlockDim" value="3,3,8"/>
+	<property name="ModelOffset" value="0,-.15,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableBoxTruckRed">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?BoxtruckPrefab"/>
+	<property name="MultiBlockDim" value="3,3,8"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableBrownJeep">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?Jeep_v0Prefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.25,0"/>
+	<property name="VerticalOffset" value="0.1"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableCharger">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?ChargerPrefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,-0.25,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableCobra">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?CobraPrefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableCombiVan1">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?CombiVan1Prefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableFlatBed">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?FlatBedPrefab"/>
+	<property name="MultiBlockDim" value="3,2,6"/>
+	<property name="ModelOffset" value="0,0.29,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableHotRod">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?HotrodPrefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableHunter">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?HunterPrefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.1,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableM3ATruck">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?M3APrefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.45,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="armyTruck"/>
+</block>
+<block name="RepairableMaruader">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?MarauderPrefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.25,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairablePickUp">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?PickupPrefab"/>
+	<property name="MultiBlockDim" value="3,3,8"/>
+	<property name="ModelOffset" value="0,0.25,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableRV">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?RVPrefab"/>
+	<property name="MultiBlockDim" value="3,3,10"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableSmallMilitaryTruck">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?SmallTruckMilitaryPrefab"/>
+	<property name="MultiBlockDim" value="3,3,10"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="armyTruck"/>
+</block>
+<block name="RepairableSmallAPOTruck">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?SmallTruckPrefab"/>
+	<property name="ModelOffset" value="0,.32,0"/>
+	<property name="MultiBlockDim" value="2,3,5"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableStrikerAPC">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?StrikerPrefab"/>
+	<property name="MultiBlockDim" value="3,3,8"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="armyTruck"/>
+</block>
+<block name="RepairableTacticalJeep">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?TAJeepPrefab"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="ModelOffset" value="0,0.35,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="armyTruck"/>
+</block>
+<block name="RepairableTurboMuscle">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?VMTurbo_0Prefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,.25,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableVan">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?VMVan"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0.35,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableWarthog">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?WarthogPrefab"/>
+	<property name="MultiBlockDim" value="3,2,6"/>
+	<property name="ModelOffset" value="0,0.45,0"/>
+	<property name="CreativeMode" value="None"/>
+		<property name="LootList" value="armyTruck"/>
+</block>
+<block name="RepairableMilitaryTruck2">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables.unity3d?ZilTruckPrefab"/>
+	<property name="MultiBlockDim" value="3,3,10"/>
+	<property name="ModelOffset" value="0,0.45,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="armyTruck"/>
+</block>
+<block name="RepairableInterceptor">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?VMInterceptor"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableVan2">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?VMVan2_0Prefab"/>
+	<property name="MultiBlockDim" value="3,2,6"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableMoPower">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#Entities/Vehicles?Truck/serviceTruckMoPowerPrefab.prefab"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="LootList" value="mopowerTruck"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="CreativeMode" value="None"/>
+</block>
+<block name="RepairableWorkingStiffs">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#Entities/Vehicles?Truck/serviceTruckWorkingStiffToolsPrefab.prefab"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="LootList" value="workingStiffsTruck"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="CreativeMode" value="None"/>
+</block>
+<block name="RepairableAmbulance">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#Entities/Vehicles?Truck/ambulanceTruck01Prefab.prefab"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="LootList" value="ambulance"/>
+	<property name="CreativeMode" value="None"/>
+</block>
+<block name="Repairable4x4Truck">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables2.unity3d?4x4_Repairable"/>
+	<property name="MultiBlockDim" value="3,2,5"/>
+	<property name="ModelOffset" value="0,-0.13,0"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="cars"/>
+</block>
+<block name="RepairableMotorcycle">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables2.unity3d?VMotorcyclePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ModelOffset" value="0,-0.25,0"/>
+	<property name="VerticalOffset" value="0.1"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="garbage"/>
+</block>
+<block name="RepairableGyro">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables2.unity3d?VGyroPrefab"/>
+	<property name="MultiBlockDim" value="2,2,5"/>
+	<property name="ModelOffset" value="0,-0.25,0"/>
+	<property name="VerticalOffset" value="0.15"/>
+	<property name="CreativeMode" value="None"/>
+	<property name="LootList" value="garbage"/>
+</block>
+<block name="RepairableBicycle">
+	<property name="Extends" value="cntCar03SedanRepairMaster2"/>
+	<property name="Model" value="#@modfolder:Resources/Repairables2.unity3d?VMBicyclePrefab"/>
+	<property name="MultiBlockDim" value="1,2,3"/>
+	<property name="ModelOffset" value="0,-0.25,0"/>
+	<property name="VerticalOffset" value="0.15"/>
+	<property name="CreativeMode" value="None"/>
+</block>
+<!-- The business block -->
+<block name="VMAutoWorkbench">
+	<property name="Extends" value="workbench"/>
+  	<property name="Class" value="Workstation" />
+	<property name="CreativeMode" value="Player"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/VMMobile.unity3d?VMAutoWorkbenchPrefab"/>
+	<property name="SortOrder2" value="0290"/> <!-- SortShape -->
+	<property name="MultiBlockDim" value="3,2,2"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="FilterTags" value="fdecor,fother,ffurniture"/>  
+	<property name="CustomIcon" value="autoworkbench"/>
+	<property class="Workstation">
+		<property name="Modules" value="output"/>
+		<property name="CraftingAreaRecipes" value="VMAutoWorkbench"/>
+	</property>  
+	<property name="WorkstationIcon" value="ui_game_symbol_wrench" />
+	<property name="OpenSound" value="open_workbench" />
+	<property name="CloseSound" value="close_workbench" />
+	<property name="WorkstationJournalTip" value="workbenchTip" />  
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25" />
+		<property name="resourceMechanicalParts" value="20" />
+		<property name="resourceWood" value="50" />
+	</property>  
+	<property name="TakeDelay" value="15" />  
+	<property name="DescriptionKey" value="workbenchDesc" />
+	<property name="EconomicValue" value="776" />
+	<property name="Group" value="Building,Science" />  
+</block>
+<!-- Begin Lootable Blocks and New Custom Harvestable Blocks 
+More Wreck options by bdubyah Ragsy in Wrecks1-->
+<block name="cntCar1">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car1"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntCar2">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car2"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntCar3">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car3"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntCar4">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car4"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntCar5">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car5"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntCar6">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car6"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntCar7">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car7"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="cntCar7_2"/>
+</block>
+<block name="cntCar7_2">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car7_2"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="cntCar7_3"/>
+</block>
+<block name="cntCar7_3">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car7_3"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntCar8">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car8"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="cntCar8_2"/>
+</block>
+<block name="cntCar8_2">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car8_2"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="cntCar8_3"/>
+</block>
+<block name="cntCar8_3">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?car8_3"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntHatchback1">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?hatchback"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntLada1">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?lada"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntRV1">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,4,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?rv"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntSUV1">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?suv"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="cntSUV1_2"/>
+</block>
+<block name="cntSUV1_2">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?suv_2"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="cntSUV1_3"/>
+</block>
+<block name="cntSUV1_3">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?suv_3"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntTruck1">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?truck1"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntTruck2">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?truck2"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntVan">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?van"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntVan1">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?van1"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntVan2_1">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,3,7"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?van2_1"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="cntVan2_2"/>
+</block>	
+<block name="cntVan2_2">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,3,7"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?van2_2"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="cntVan2_3"/>
+</block>
+<block name="cntVan2_3">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,3,7"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?van2_3"/><property name="ModelOffset" value="0,0,0"/>			
+</block>
+<block name="cntWagon1">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?wagon"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="cntZuk1">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks1.unity3d?zuk"/><property name="ModelOffset" value="0,0,0"/>			
+</block>
+<!--- New VM Wreck options by ActiniumTiger and Ragsy Wrecks2 and Wrecks3 and 4-->
+<block name="WhiteBMWDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BMW_W_v0Prefab"/><property name="ModelOffset" value="0,0.75,0"/>
+			<property name="DowngradeBlock" value="WhiteBMWHalfWreck"/>
+</block>
+<block name="WhiteBMWHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BMW_Wv01Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="WhiteBMWShell"/>
+</block>
+<block name="WhiteBMWShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BMW_Wv02Prefab"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="FastbackDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?Fastback_v0Prefab"/><property name="ModelOffset" value="0,-.25,0"/>
+			<property name="DowngradeBlock" value="FastbackHalfWreck"/>
+</block>
+<block name="FastbackHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?Fastback_v01Prefab"/><property name="ModelOffset" value="0,-.25,0"/>
+			<property name="DowngradeBlock" value="FastbackShell"/>
+</block>
+<block name="FastbackShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?Fastback_v02Prefab"/><property name="ModelOffset" value="0,-.25,0"/>
+			
+</block>
+<block name="FiretruckDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?Firetruck0Prefab"/>
+	<property name="MultiBlockDim" value="3,3,11"/>
+	<property name="VerticalOffset" value="0"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="ambulance"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="FiretruckDamaged" count="0" tool_category="Disassemble"/>
+	<!-- Salvage -->
+	<drop event="Harvest" name="carWheelrims" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleVMWheels" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.27" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.26" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceOil" count="0,2" tag="allHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="10,100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="DowngradeBlock" value="FiretruckDamagedWreck"/>  
+	<property name="SortOrder1" value="70a0" />  
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+<block name="FiretruckDamagedWreck">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,3,11"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?FireTruckDamaged"/>
+			<property name="VerticalOffset" value="0"/>
+</block>			
+<block name="RedBMWDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?BMW_RP_v0Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="RedBMWHalfWreck"/>
+</block>
+<block name="RedBMWHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BMW_R_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="RedBMWShell"/>
+</block>
+<block name="RedBMWShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BMW_R_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="SpikerDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?VMSpiker_0Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="SpikerHalfWreck"/>
+</block>
+<block name="SpikerHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?VMSpiker_1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="SpikerShell"/>
+</block>
+<block name="SpikerShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?VMSpiker_1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="VMVan2Damaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?VMVan2_0Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="VMVan2HalfWreck"/>
+</block>
+<block name="VMVan2HalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?VMVan2_1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="VMVan2Shell"/>
+</block>
+<block name="VMVan2Shell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?VMVan2_2Prefab"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="BlueEvoDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?EvoBlue_v0Prefab"/>
+			<property name="VerticalOffset" value="0.5"/>
+			<property name="DowngradeBlock" value="BlueEvoHalfWreck"/>
+</block>
+<block name="BlueEvoHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?EvoBlue_v1Prefab"/>
+			<property name="VerticalOffset" value="0.5"/>
+			<property name="DowngradeBlock" value="BlueEvoShell"/>
+</block>
+<block name="BlueEvoShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?EvoBlue_v2Prefab"/><property name="VerticalOffset" value="0.5"/>
+</block>
+<block name="GreyEvoDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?EvoGrey_v0Prefab"/><property name="ModelOffset" value="0,-0.25,0"/>
+			<property name="DowngradeBlock" value="GreyEvoHalfWreck"/>
+</block>
+<block name="GreyEvoHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?EvoGrey_v1Prefab"/><property name="ModelOffset" value="0,-0.25,0"/>
+			<property name="DowngradeBlock" value="GreyEvoShell"/>
+</block>
+<block name="GreyEvoShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?EvoGrey_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="OrangeEvoDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?EvoOrange_v0Prefab"/><property name="VerticalOffset" value="0.5"/>
+			<property name="DowngradeBlock" value="OrangeEvoHalfWreck"/>
+</block>
+<block name="OrangeEvoHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?EvoOrange_v1Prefab"/><property name="VerticalOffset" value="0.5"/>
+			<property name="DowngradeBlock" value="OrangeEvoEvoShell"/>
+</block>
+<block name="OrangeEvoEvoShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?EvoOrange_v2Prefab"/><property name="VerticalOffset" value="0.5"/>
+</block>
+<block name="TurboDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?VMTurbo_0Prefab"/><property name="ModelOffset" value="0,1.7,0"/>
+			<property name="DowngradeBlock" value="TurboHalfWreck"/>
+</block>
+<block name="TurboHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?VMTurbo_1Prefab"/><property name="ModelOffset" value="0,0.75,0"/>
+			<property name="DowngradeBlock" value="TurboShell"/>
+</block>
+<block name="TurboShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?VMTurbo_2Prefab"/><property name="ModelOffset" value="0,0.75,0"/>
+</block>
+<block name="AmbulanceDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,3,8"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?Ambulance_v0Prefab"/><property name="ModelOffset" value="0,0.95,0"/>
+			<property name="LootList" value="ambulance"/>
+			<property name="DowngradeBlock" value="AmbulanceHalfWreck"/>
+</block>
+<block name="AmbulanceHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,3,8"/>
+			<property name="LootList" value="ambulance"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?Ambulance_v1Prefab"/><property name="ModelOffset" value="0,0.5,0"/>
+			<property name="DowngradeBlock" value="AmbulanceShell"/>
+</block>
+<block name="AmbulanceShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,3,8"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?Ambulance_v2Prefab"/><property name="ModelOffset" value="0,0.5,0"/>
+</block>
+<block name="MilitaryTruckDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?MilitaryTruck_v0Prefab"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="VerticalOffset" value="-.2"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="armyTruck"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="MilitaryTruckDamaged" count="0" tool_category="Disassemble"/>
+<!-- Salvage -->
+	<drop event="Harvest" name="carWheelrims" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleVMWheels" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.21" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarAltenator" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carAltenator" count="1" prob="0.12" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.15" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceOil" count="0,2" tag="allHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="10,100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="DowngradeBlock" value="MilitaryTruckShell"/> 
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="MilitaryTruckShell">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?MilitaryTruck_v0Prefab"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="VerticalOffset" value="0"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="LootList" value="cars"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="MilitaryTruckShell" count="0" tool_category="Disassemble"/>
+	<!-- Salvage -->
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.12" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.15" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.12" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12,50" prob="0.23" tag="allHarvest"/>
+	<drop event="Destroy" name="damagedcarChassis" count="1" prob=".14" tag="allHarvest"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="MilitaryCarDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?MilitaryCar_v0Prefab"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="VerticalOffset" value=".25"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="armyTruck"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="MilitaryCarDamaged" count="0" tool_category="Disassemble"/>
+	<!-- Salvage -->
+	<drop event="Harvest" name="carWheelrims" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleWheels" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.27" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.26" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceOil" count="0,2" tag="allHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="10,100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="DowngradeBlock" value="MilitaryCarShell"/> 
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="MilitaryCarShell">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?MilitaryCar_v2Prefab"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="VerticalOffset" value=".25"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="cars"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="MilitaryCarShell" count="0" tool_category="Disassemble"/>
+	<!-- Salvage -->
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/> 
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.12" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.15" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.12" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12,50" prob="0.23" tag="allHarvest"/>
+	<drop event="Destroy" name="damagedcarChassis" count="1" prob=".14" tag="allHarvest"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="BigRigDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BigRig_v0Prefab"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="VerticalOffset" value="0"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="cars"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="BigRigDamaged" count="0" tool_category="Disassemble"/>
+<!-- Salvage -->
+	<drop event="Harvest" name="carWheelrims" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleVMWheels" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.21" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarAltenator" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carAltenator" count="1" prob="0.12" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.15" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceOil" count="0,2" tag="allHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="10,100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="DowngradeBlock" value="BigRigShell"/> 
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="BigRigShell">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BigRig_v2Prefab"/>
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="VerticalOffset" value="0"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="cars"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="BigRigShell" count="0" tool_category="Disassemble"/>
+	<!-- Salvage -->
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarCarburetor" count="1" prob="0.12" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carCarburetor" count="1" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarTransmission" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.15" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.12" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12,50" prob="0.23" tag="allHarvest"/>
+	<drop event="Destroy" name="damagedcarChassis" count="1" prob=".14" tag="allHarvest"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="OldsmobileDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?Oldsmobile_v0Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="OldsmobileHalfWreck"/>
+</block>
+<block name="OldsmobileHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?Oldsmobile_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="OldsmobileShell"/>
+</block>
+<block name="OldsmobileShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?Oldsmobile_v2Prefab"/><property name="ModelOffset" value="0,-0.25,0"/>
+</block>
+<block name="CrusaderDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?Crusader_v0Prefab"/><property name="ModelOffset" value="0,0.3,0"/>
+			<property name="DowngradeBlock" value="CrusaderHalfWreck"/>
+</block>
+<block name="CrusaderHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?Crusader_v1Prefab"/><property name="ModelOffset" value="0,0.25,0"/>
+			<property name="DowngradeBlock" value="CrusaderShell"/>
+</block>
+<block name="CrusaderShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?Crusader_v2Prefab"/><property name="ModelOffset" value="0,0.25,0"/>
+</block>
+<block name="JeepDamaged">
+			<property name="Extends" value="cntCar03SedanDamage0Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value=""/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?Jeep_v0Prefab"/><property name="ModelOffset" value="0,0.78,0"/>
+			<property name="DowngradeBlock" value="JeepHalfWreck"/>
+</block>
+<block name="JeepHalfWreck">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?Jeep_v1Prefab"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="JeepShell"/>
+</block>
+<block name="JeepShell">
+			<property name="Extends" value="cntCar03SedanDamage2Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?Jeep_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="BusDamaged">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,4,14"/>
+			<property name="LootList" value="cars"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks2.unity3d?BusWreck1_v2Prefab"/><property name="ModelOffset" value="0,0.25,0"/>
+</block>
+<block name="BusDamaged2">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,4,13"/>
+			<property name="LootList" value="cars"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?DamagedBusPrefab"/><property name="ModelOffset" value="0,0.25,0"/>
+</block>
+<block name="GTODamaged">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="LootList" value="cars"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/VMCars.unity3d?GTO_v2"/><property name="ModelOffset" value="0,0,0"/>
+			<property name="DowngradeBlock" value="cntCar03SedanDamage2Master"/> 
+</block>
+<block name="MustangDamaged">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,5"/>
+			<property name="LootList" value="cars"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?RustyMustang"/><property name="ModelOffset" value="0,0.5,0"/>
+			<property name="DowngradeBlock" value="cntCar03SedanDamage2Master"/> 
+</block>
+<block name="OldChevyTruckDamaged">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,6"/>
+			<property name="LootList" value="cars"/>
+			<property name="ParticleOnDeath" value="car_destruction_dmg1"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?OldChevyWreck_2"/><property name="ModelOffset" value="0,0.5,0"/>
+			<property name="DowngradeBlock" value="cntCar03SedanDamage2Master"/> 
+</block>
+<block name="FuelTankerDamaged">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="3,3,11"/>
+			<property name="LootList" value="gasPump"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks3.unity3d?FuelTruckDamaged"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="AbandonedMilitary">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="LootList" value="armyTruck"/>
+			<property name="MultiBlockDim" value="3,3,5"/>
+			<property name="Model" value="#@modfolder:Resources/VMTrucksandCustom.unity3d?MilitaryTrailerAbandoned"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<block name="GasTank">
+	<property name="Model" value="#@modfolder:Resources/VMCustoms2.unity3d?TankerPrefab"/>
+	<property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="3,3,7"/>
+	<property name="VerticalOffset" value="0.5"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="gasPump"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="GasTank" count="0" tool_category="Disassemble"/>
+<!-- Salvage -->
+	<drop event="Harvest" name="ammoGasCan" count="10,400" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.12" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12,50" prob="0.23" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceOil" count="0,2" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="GasTankerTruck">
+	<property name="Model" value="#@modfolder:Resources/VMCustoms3.unity3d?TankerTruckPrefab"/>  
+	<property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="3,3,8"/>
+	<property name="VerticalOffset" value="0.25"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="gasPump"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="GasTankerTruck" count="0" tool_category="Disassemble"/>
+<!-- Salvage -->
+	<drop event="Harvest" name="carWheelrims" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleWheels" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.27" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.26" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceOil" count="0,2" tag="allHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="10,400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="OldPickupTruck">
+	<property name="Model" value="#@modfolder:Resources/VMCustoms1.unity3d?OldTruckPrefab"/>  
+	<property name="Shape" value="ModelEntity" />
+	<property name="MultiBlockDim" value="3,3,8"/>
+	<property name="VerticalOffset" value="0.5"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="cars"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="OldPickupTruck" count="0" tool_category="Disassemble"/>
+<!-- Salvage -->
+	<drop event="Harvest" name="carWheelrims" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleVMWheels" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.27" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.26" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceOil" count="0,2" tag="allHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="10,100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="PoliceCarDamaged">
+	<property name="Shape" value="ModelEntity" />
+	<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?PoliceCar_v0Prefab"/>
+	<property name="MultiBlockDim" value="2,2,6"/>
+	<property name="VerticalOffset" value=".27"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="CarExplodeLoot"/>
+	<property name="CustomIcon" value="cntCar03SedanDamage2Master"/>
+	<property name="LootList" value="armyTruck"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="DisplayType" value="blockMulti" />
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="ShowModelOnFall" value="false"/>
+	<property name="PassThroughDamage" value="true"/>
+	<!-- Harvest Bonus -->
+	<drop event="Harvest" name="PoliceCarDamaged" count="0" tool_category="Disassemble"/>
+	<!-- Salvage -->
+	<drop event="Harvest" name="carWheelrims" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleVMWheels" count="1,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarSeats" count="1,2" prob="0.27" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carSeats" count="1,2" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.26" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.15" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carAltenator" count="1" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.15" tag="salvageHarvest"/>
+	<!-- Any Harvest -->
+	<drop event="Harvest" name="resourceOil" count="0,2" tag="allHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="10,100" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceHeadlight" count="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property class="Explosion">
+		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
+		<property name="RadiusBlocks" value="3.5"/> <!-- damage radius for blocks -->
+		<property name="BlockDamage" value="70"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="RadiusEntities" value="5"/> <!-- damage radius for entities -->
+		<property name="EntityDamage" value="250"/> <!-- damage for entities in the center of the explosion -->
+	</property>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage2Master"/> 
+	<property name="SortOrder1" value="70a0" />
+	<property name="BigDecorationRadius" value="5"/>
+	<property name="ActivationDistance" value="6"/>
+	<property name="FilterTags" value="floot"/>  
+</block>
+<block name="Helicopter_Crashed">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,3,7"/>
+			<property name="LootList" value="armyTruck"/>
+			<property name="Model" value="#@modfolder:Resources/Wrecks4.unity3d?Helicopter_crashed"/><property name="ModelOffset" value="0,0,0"/>
+</block>
+<!--<block name="4x4TruckDamaged">
+	<property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIconTint" value="b0b050"/>
+	<property name="MultiBlockDim" value="3,2,5"/>
+	<property name="LootList" value="cars"/>
+	<property name="Model" value="#Entities/Vehicles?jeep_Prefab.prefab"/><property name="ModelOffset" value="0,0,0"/>
+	 Harvest Bonus 
+	<drop event="Harvest" name="4x4TruckDamaged" count="0" tool_category="Disassemble"/>
+	 Any Harvest 
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.013" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12,200" tag="allHarvest"/>
+	<drop event="Destroy" name="vehicle4x4TruckChassis" count="1" prob=".048" tag="allHarvest"/>
+	<property name="DowngradeBlock" value="cntCar03SedanDamage2Master"/>
+</block>
+<block name="4x4TruckHalfWreck">
+	<property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIconTint" value="b0b050"/>
+	<property name="MultiBlockDim" value="3,2,5"/>
+	<property name="LootList" value="cars"/>
+	<property name="Model" value="#Entities/Vehicles?jeep_Prefab.prefab"/><property name="ModelOffset" value="0,0,0"/>
+	<property name="DowngradeBlock" value="4x4TruckShell"/> 
+</block>
+<block name="4x4TruckShell">
+	<property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIconTint" value="b0b050"/>
+	<property name="MultiBlockDim" value="3,2,5"/>
+	<property name="LootList" value="cars"/>
+<property name="Model" value="#Entities/Vehicles?jeep_Prefab.prefab"/><property name="ModelOffset" value="0,0,0"/>
+<drop event="Harvest" name="4x4TruckShell" count="0" tool_category="Disassemble"/>
+	 Any Harvest 
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.013" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12,200" tag="allHarvest"/>
+	<drop event="Destroy" name="vehicle4x4TruckChassis" count="1" prob=".048" tag="allHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>	
+</block> 
+<block name="RoadHogDamaged">
+	<property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIconTint" value="b0b050"/>
+	<property name="MultiBlockDim" value="2,2,3"/>
+	<property name="LootList" value="cars"/>
+	<property name="Model" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/><property name="ModelOffset" value="0,0,0"/>
+	 Harvest Bonus
+	<drop event="Harvest" name="RoadHogDamaged" count="0" tool_category="Disassemble"/>
+	 Salvage 
+	<drop event="Harvest" name="damagedcarEngine" count="1" prob="0.037" tag="salvageHarvest"/>
+	<drop event="Harvest" name="smallengine" count="1" prob="0.038" tag="salvageHarvest"/>  
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.04" tag="salvageHarvest"/>
+	<drop event="Harvest" name="damagedcarBattery" count="1" prob="0.011" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.021" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12,200" tag="allHarvest"/>
+	 Any Harvest 
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.013" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+<property name="DowngradeBlock" value="RoadHogShell"/> 
+</block>
+<block name="RoadHogShell">
+			<property name="Extends" value="cntCar03SedanDamage1Master"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIconTint" value="b0b050"/>
+			<property name="MultiBlockDim" value="2,2,3"/>
+			<property name="LootList" value="cars"/>
+			<property name="Model" value="#Entities/Vehicles?motorcycle_Prefab.prefab"/><property name="ModelOffset" value="0,0,0"/>
+</block> 
+<block name="BicycleDamaged">
+	<property name="Extends" value="cntCar03SedanDamage1Master"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIconTint" value="b0b050"/>
+	<property name="MultiBlockDim" value="2,2,3"/>
+	<property name="LootList" value="cars"/>
+	<property name="Model" value="#Entities/Vehicles?bicycle_Prefab.prefab"/><property name="ModelOffset" value="0,0,0"/>
+	<drop event="Harvest" name="BicycleDamaged" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="vehicleBicycleHandlebars" count="1" prob="0.010" tag="salvageHarvest"/>
+	<drop event="Harvest" name="vehicleBicycleChassis" count="1" prob="0.010" tag="salvageHarvest"/>
+	 Any Harvest 
+	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.017" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="1,3" prob="0.012" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12,80" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="1,15"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="DowngradeBlock" value="RoadHogShell"/> 
+</block>
+
+ Full credits to HaidrGna for the custom spawn code and permission to use *** You Must ask permission from HaidrGna to use this Custom Code ^^^
+Begin Spawn Blocks-->
+<block name="fakeAir">
+<property name="CreativeMode" value="Dev"/>
+<property name="Extends" value="air"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Material" value="Mfakeair"/>
+</block>
+<block name="masterPlantholders">
+<property name="CreativeMode" value="None"/>
+<property name="CustomIcon" value="cntWastelandRandomLootHelper"/>
+<property name="DescriptionKey" value="randomLootSpawnerDesc"/>
+<property name="Material" value="Mstone"/>
+<property name="Texture" value="277"/>
+<property name="Mesh" value="opaque2"/>
+<property name="ImposterExclude" value="true"/>
+<property name="DisplayInfo" value="Name"/>
+<property name="FilterTags" value="fdesign"/>
+<property name="AllowAllRotations" value="true"/>
+<property name="Class" value="PlantGrowing"/>
+<property name="PlantGrowing.Next" value="masterPlantholders"/>
+<property name="PlantGrowing.GrowthRate" value="0.0005"/>
+<property name="PlantGrowing.FertileLevel" value="0"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.LightLevelGrow" value="0"/>
+<property name="PlantGrowing.LightLevelStay" value="0"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+<block name="placeholderVehiclespawn">
+<property name="CreativeMode" value="Dev"/>
+<property name="Extends" value="masterPlantholders"/>
+<property name="Shape" value="Invisible"/>
+<property name="Texture" value="250"/>
+<property name="StabilitySupport" value="false"/>
+<property name="Material" value="Mfakeair"/>
+<property name="PlantGrowing.Next" value="placeholderVehiclespawn"/>
+</block>
+<block name="masterSpawners">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="air"/>
+<property name="Material" value="Mfakeair"/>
+<property name="Class" value="SpawnEntity"/>
+<property name="SpawnClass" value="ZMaster"/>
+</block>
+<block name="spawnVehicleBlock">
+<property name="CreativeMode" value="Dev"/>
+<property name="Extends" value="air"/>
+<property name="Class" value="PlantGrowing"/>
+<property name="PlantGrowing.Next" value="spawnVehicleNext"/>
+<property name="PlantGrowing.GrowOnTop" value="placeholderVehiclespawn"/>
+<property name="PlantGrowing.GrowthRate" value="0.0001"/>
+<property name="PlantGrowing.FertileLevel" value="0"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.LightLevelGrow" value="0"/>
+<property name="PlantGrowing.LightLevelStay" value="0"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+<drop event="Destroy" count="0"/>
+</block>
+<block name="spawnVehicleNext">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="spawnVehicleBlock"/>
+<property name="PlantGrowing.Next" value="spawnVehicleEnd"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.GrowthRate" value="0.25"/>
+</block>
+<block name="spawnVehicleEnd">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="spawnVehicleBlock"/>
+<property name="MultiBlockDim" value="1,3,1"/>
+<property name="PlantGrowing.Next" value="terrAsphalt"/>
+<property name="PlantGrowing.GrowthRate" value="0.0001"/>
+<property name="PlantGrowing.IsRandom" value="false"/>
+<property name="PlantGrowing.IsGrowOnTopEnabled" value="false"/>
+</block>
+<!-- vanilla Spawns Tests -->
+<block name="spawnvehicleBicycle">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleBicycle"/>
+</block>
+<!-- Custom Spawns -->
+<block name="spawnvehicleVMVespa">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMVespa"/>
+</block>
+<block name="spawnvehicleVMMotoGuppy">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMMotoGuppy"/>
+</block>
+<block name="spawnvehicleVMQuad2">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMQuad2"/>
+</block>
+<block name="spawnvehicleVMQuad">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMQuad"/>
+</block>
+<block name="spawnvehicleVMTaxiRusted">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMTaxiRusted"/>
+</block>
+<block name="spawnvehicleVMTaxiGreenRusted">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMTaxiGreenRusted"/>
+</block>
+<block name="spawnvehicleVMWhiteSedanRusted">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMWhiteSedanRusted"/>
+</block>
+<block name="spawnvehicleVMFireTruckRust">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMFireTruckRust"/>
+</block>
+<block name="spawnvehicleVMAmbulanceDamaged">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMAmbulanceDamaged"/>
+</block>
+<block name="spawnvehicleVMPoliceCar">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMPoliceCar"/>
+</block>
+<block name="spawnvehicleVMFlatbed">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMFlatbed"/>
+</block>
+<!--Remove As Repairables become available or broken versions -->
+<block name="spawnvehicleVMBigRig">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMBigRig"/>
+</block>
+<block name="spawnvehicleVMCrusader">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMCrusader"/>
+</block>
+<block name="spawnvehicleVMVan2">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMVan2"/>
+</block>
+<block name="spawnvehicleVMOldsMobile">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMOldsMobile"/>
+</block>
+<block name="spawnvehicleVMBuggy2">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMBuggy2"/>
+</block>
+<block name="spawnvehicleVMCombi2">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMCombi2"/>
+</block>
+<block name="spawnvehicleVMTruckMoPower">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMTruckMoPower"/>
+</block>
+<block name="spawnvehicleVMTruckAmbulance">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMTruckAmbulance"/>
+</block>
+<block name="spawnvehicleVMWorkingStiffs">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMWorkingStiffs"/>
+</block>
+<block name="spawnvehicleVMTractor">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMTractor"/>
+</block>
+<block name="spawnvehicleVMForklift">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMForklift"/>
+</block>
+<block name="spawnvehicleVMEvo">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMEvo"/>
+</block>
+<block name="spawnvehicleVMSedan">
+<property name="CreativeMode" value="None"/>
+<property name="Extends" value="masterSpawners"/>
+<property name="SpawnClass" value="vehicleVMSedan"/>
+</block> 
+<!--Novelty Items -->
+<block name="bvBillboard">
+	<property name="Material" value="Mmetal"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/BVB.unity3d?bvBillboard"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Stabilitysupport" value="false"/>
+	<property name="MaxDamage" value="1500"/>
+	<property name="MultiBlockDim" value="10,9,2"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="10"/>
+	<property name="resourceWood" value="5"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceWood" count="15,25" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="3,8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="3,5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="5,25" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="15,25" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10,35"/>
+	<property name="FilterTags" value="fdecor"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+<block name="bvBillboard3">
+	<property name="Material" value="Mmetal"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/BVB.unity3d?wlBillboard"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Stabilitysupport" value="false"/>
+	<property name="MaxDamage" value="1500"/>
+	<property name="MultiBlockDim" value="10,9,2"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="10"/>
+	<property name="resourceWood" value="5"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceWood" count="15,25" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="3,8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="3,5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="5,25" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="15,25" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10,35"/>
+	<property name="FilterTags" value="fdecor"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+<!--<block name="bvBillboard2">
+	<property name="Material" value="Mmetal"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="#@modfolder:Resources/BVB2.unity3d?AC_RNT_Sign2"/>
+	<property name="ModelOffset" value="0,0,0"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property name="Stabilitysupport" value="false"/>
+	<property name="MaxDamage" value="1500"/>
+	<property name="MultiBlockDim" value="10,9,2"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Stacknumber" value="5"/>
+	<property name="EconomicValue" value="1000"/>
+	<property name="BigDecorationRadius" value="10"/>
+	<property name="CanDecorateOnSlopes" value="true"/>
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="10"/>
+	<property name="resourceWood" value="5"/>
+	</property>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceWood" count="15,25" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceForgedIron" count="3,8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="3,5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="5,25" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="15,25" tag="allHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="10,35"/>
+	<property name="FilterTags" value="fdecor"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+  Add damage deco blocks to pick up in world -->
+<block name="damagedTireSmallFlat">
+	<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+	<property name="Weight" value="16"/>
+	<property name="Model" value="Entities/OutdoorDecor/tire02Prefab"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="1,3" tag="oreWoodHarvest"/>
+	<property name="FilterTags" value="fdecor,fother,foutdoor"/>
+	<property name="CanPickup" value="true" param1="damagedTire"/>
+</block>
+<block name="damagedWheelSmallFlat">
+	<property name="Extends" value="decoEntityPolymerMaster" param1="RepairItems"/>
+	<property name="Weight" value="16"/>
+	<property name="Model" value="#Entities/Vehicles?Car/car_wheel_uprightPrefab.prefab"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<drop event="Destroy" name="resourceScrapPolymers" count="1,3" tag="oreWoodHarvest"/>
+	<property name="FilterTags" value="fdecor,fother,foutdoor"/>
+	<property name="CanPickup" value="true" param1="damagedWheel"/>
+</block>
+</append>
+
+<set xpath="//block[@name='cntShoppingCartEmpty']/property[@name='VehicleHitScale']/@value">40</set>
+<set xpath="//block[@name='signRoadArrowheadApache']/property[@name='VehicleHitScale']/@value">40</set>
+<append xpath="//block[@name='cntShoppingCart']"><property name="VehicleHitScale" value="40"/></append>
+<append xpath="//block[@name='treeDeadTree01']"><property name="VehicleHitScale" value="14"/></append>
+<append xpath="//block[@name='treeDeadTree02']"><property name="VehicleHitScale" value="14"/></append>
+<append xpath="//block[@name='scrapMetalPile']"><property name="VehicleHitScale" value="18"/></append>
+<append xpath="//block[contains(@name, 'cntMailBox0') and not(contains(@name, 'Helper'))]"><property name="VehicleHitScale" value="18"/></append>
+
+</configs>

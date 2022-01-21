@@ -1,0 +1,106 @@
+<configs>
+<!--   Vehicle Madness Version 3 Beta 2.0 January 2022 A20 -->
+<set xpath="/worldgeneration/pois">
+<poi name="City Asphalt" poimapcolor="#1" blockname="terrAsphalt">
+<decal texture="0" face="0" prob="0.001"/>
+<decal texture="1" face="0" prob="0.001"/>
+<decal texture="2" face="0" prob="0.001"/>
+<decal texture="3" face="0" prob="0.001"/>
+<decal texture="4" face="0" prob="0.001"/>
+<decal texture="5" face="0" prob="0.001"/>
+<decal texture="6" face="0" prob="0.001"/>
+<decal texture="7" face="0" prob="0.001"/>
+<decal texture="8" face="0" prob="0.001"/>
+<decal texture="9" face="0" prob="0"/>
+<decal texture="10" face="0" prob="0"/>
+<decal texture="11" face="0" prob="0.001"/>
+<decal texture="12" face="0" prob="0.001"/>
+<decal texture="13" face="0" prob="0.001"/>
+<decal texture="14" face="0" prob="0.001"/>
+<decal texture="15" face="0" prob="0.001"/>
+<blockontop blockname="spawnVehicleBlock" prob="0.000022" offset="-1"/> 
+<blockontop blockname="cntStreetRandomLootHelper" prob="0.001" rotatemax="3"/>
+<blockontop blockname="carsRandomHelper" prob="0.01" rotatemax="3"/>
+<blockontop blockname="decoCarTireSmallFlat" prob="0.00012" rotatemax="3" />
+<blockontop blockname="damagedTireSmallFlat" prob="0.00038" rotatemax="3"/>
+<blockontop blockname="damagedWheelSmallFlat" prob="0.00022" rotatemax="3"/>
+<blockontop blockname="cinderBlocks03" rotatemax="3" prob="0.0007"/>
+<blockontop blockname="goreBlockAnimal" prob="0.0004"/>
+</poi>
+<poi name="Country Road Asphalt" poimapcolor="#2" blockname="terrAsphalt">
+<decal texture="0" face="0" prob="0.005"/>
+<decal texture="1" face="0" prob="0.005"/>
+<decal texture="2" face="0" prob="0.005"/>
+<decal texture="4" face="0" prob="0.005"/>
+<decal texture="5" face="0" prob="0.005"/>
+<decal texture="6" face="0" prob="0.005"/>
+<decal texture="7" face="0" prob="0.005"/>
+<decal texture="8" face="0" prob="0.005"/>
+<decal texture="9" face="0" prob="0"/>
+<decal texture="10" face="0" prob="0"/>
+<decal texture="11" face="0" prob="0.005"/>
+<decal texture="12" face="0" prob="0.005"/>
+<decal texture="13" face="0" prob="0.005"/>
+<decal texture="14" face="0" prob="0.005"/>
+<decal texture="15" face="0" prob="0.005"/>
+<blockontop blockname="spawnVehicleBlock" prob="0.000019" offset="-1"/>
+<blockontop blockname="cntStreetRandomLootHelper" prob="0.001" rotatemax="3"/>
+<blockontop blockname="carsRandomHelper" prob="0.0070" rotatemax="3"/>
+<blockontop blockname="decoCarTireSmallFlat"  prob="0.00001" rotatemax="3"/>
+<blockontop blockname="damagedTireSmallFlat" prob="0.000038" rotatemax="3"/>
+<blockontop blockname="damagedWheelSmallFlat" prob="0.000022" rotatemax="3"/>
+<blockontop blockname="rock01" prob="0.0007"/>
+<blockontop blockname="rock02" prob="0.0007"/>
+<blockontop blockname="rock04" prob="0.0007"/>
+<blockontop blockname="goreBlockAnimal" prob="0.0004"/>
+</poi>
+<poi name="Road Gravel" poimapcolor="#3" blockname="terrGravel">
+<decal texture="0" face="0" prob="0.005"/>
+<decal texture="1" face="0" prob="0.005"/>
+<decal texture="2" face="0" prob="0.005"/>
+<decal texture="3" face="0" prob="0.005"/>
+<decal texture="4" face="0" prob="0.005"/>
+<decal texture="5" face="0" prob="0.005"/>
+<decal texture="6" face="0" prob="0.005"/>
+<decal texture="7" face="0" prob="0.005"/>
+<decal texture="8" face="0" prob="0.005"/>
+<decal texture="9" face="0" prob="0"/>
+<decal texture="10" face="0" prob="0"/>
+<decal texture="11" face="0" prob="0.005"/>
+<decal texture="12" face="0" prob="0.005"/>
+<decal texture="13" face="0" prob="0.005"/>
+<decal texture="14" face="0" prob="0.005"/>
+<decal texture="15" face="0" prob="0.005"/>
+<blockontop blockname="spawnVehicleBlock" prob="0.000017" offset="-1"/>
+<blockontop blockname="goreBlockAnimal" prob="0.0004"/>
+<blockontop blockname="cntStreetRandomLootHelper" prob="0.0012" rotatemax="3"/>
+<blockontop blockname="carsRandomHelper" prob="0.0051" rotatemax="3"/>
+<blockontop blockname="decoCarTireSmallFlat" prob="0.00001" rotatemax="3"/>
+<blockontop blockname="damagedTireSmallFlat" prob="0.00033" rotatemax="3"/>
+<blockontop blockname="damagedWheelSmallFlat" prob="0.00022" rotatemax="3"/>
+</poi>
+</set>
+<append xpath="/worldgeneration/biomes/biome[@name='wasteland']/decorations">
+		<decoration type="block" blockname="bvBillboard" prob=".000092" rotatemax="3"/>
+		<decoration type="block" blockname="bvBillboard3" prob=".000092" rotatemax="3"/>
+		<decoration type="block" blockname="Helicopter_Crashed" prob=".000081" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableGyro" prob=".000081" rotatemax="3"/>
+ </append>
+ <append xpath="/worldgeneration/biomes/biome[@name='desert']/decorations">
+		<decoration type="block" blockname="bvBillboard" prob=".000092" rotatemax="3"/>
+		<decoration type="block" blockname="bvBillboard3" prob=".000092" rotatemax="3"/>
+		<decoration type="block" blockname="Helicopter_Crashed" prob=".000081" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableGyro" prob=".000081" rotatemax="3"/>
+ </append>
+ <append xpath="/worldgeneration/biomes/biome[@name='snow']/decorations">
+		<decoration type="block" blockname="bvBillboard3" prob=".000092" rotatemax="3"/>
+		<decoration type="block" blockname="bvBillboard" prob=".000092" rotatemax="3"/>
+		<decoration type="block" blockname="Helicopter_Crashed" prob=".000081" rotatemax="3"/>
+		<decoration type="block" blockname="RepairableGyro" prob=".000081" rotatemax="3"/>
+</append>
+  <append xpath="/worldgeneration/biomes/biome[@name='pine_forest']/decorations">
+		<decoration type="block" blockname="bvBillboard3" prob=".000092" rotatemax="3"/>
+		<decoration type="block" blockname="bvBillboard" prob=".000092" rotatemax="3"/>
+		<decoration type="block" blockname="Helicopter_Crashed" prob=".000081" rotatemax="3"/>
+ </append>
+</configs>

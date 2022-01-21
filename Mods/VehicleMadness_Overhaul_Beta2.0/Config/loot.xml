@@ -1,0 +1,55 @@
+<configs>
+<!--   Vehicle Madness Version 3 Beta 2.0 January 2022 A20-->
+
+<set xpath="//lootgroup[@name='groupCars01']">
+	<item group="groupJunkNoBMats" loot_prob_template="med"/>
+	<item group="groupAutomotive" loot_prob_template="low"/>
+</set>
+<append xpath="//lootcontainer[@name='airDrop']">
+	<item name="VMToolRachetSet" count="1,2" prob="0.42" force_prob="true"/>
+	<item name="VMToolCompressor" count="1" prob="0.23" force_prob="true"/>
+	<item name="CarFootpump" count="1" prob="0.23" force_prob="true"/>
+</append>
+<append xpath="//lootcontainer[@name='workingStiffsCrate']">
+	<item name="resourceOil" count="1,3" prob="0.06" force_prob="true"/>
+	<item name="WireCutters" count="1,2" prob="0.04" force_prob="true"/>
+	<item name="ElectricalWire" count="1,4" prob="0.05" force_prob="true"/>
+</append>
+<append xpath="//lootgroup[@name='groupAutomotive']">
+	<item name="WireCutters" count="1,2" prob="0.04" force_prob="true"/>
+	<item name="ElectricalWire" count="1,4" prob="0.05" force_prob="true"/>
+	<item name="VMToolRachetSet" count="1,2" prob="0.42" force_prob="true"/>
+	<item name="VMToolCompressor" count="1" prob="0.33" force_prob="true"/>
+	<item name="CarFootpump" count="1" prob="0.26" force_prob="true"/>
+</append>
+<append xpath="//lootcontainer[@name='garage']">
+	<item name="VMToolRachetSet" count="1,2" prob="0.5" force_prob="true"/>
+	<item name="VMToolCompressor" count="1" prob="0.3" force_prob="true"/>
+</append>
+<append xpath="//lootgroup[@name='groupRareAutomotive']">
+	<item name="CarFootpump" count="1" prob="0.3" force_prob="true"/>
+	<item name="CarBatteryChargerUnit" count="1" prob="0.29" force_prob="true"/>
+	<item name="VMToolCompressor" count="1" prob="0.3" force_prob="true"/>
+</append>
+<append xpath="//lootgroup[@name='toolParts']">
+	<item name="CarFootpump" count="1" prob="0.23" force_prob="true"/>
+	<item name="CarBatteryChargerUnit" count="1" prob="0.19" force_prob="true"/>
+	<item name="VMToolCompressor" count="1" prob="0.25" force_prob="true"/>
+</append>
+<append xpath="//lootgroup[@name='groupJunk']">
+	<item name="WireCutters" count="1,2" prob="0.022" force_prob="true"/>
+	<item name="ElectricalWire" count="1,4" prob="0.021" force_prob="true"/>
+</append>
+
+<append xpath="/lootcontainers">
+<!-- vehicle storage-->
+<lootcontainer id="174" name="VMVan" count="0" size="10,10" sound_open="UseActions/open_vehicle" open_time="0" sound_close="UseActions/close_vehicle" loot_quality_template="qualBaseTemplate">
+</lootcontainer>
+<lootcontainer id="175" name="VMTrucks" count="0" size="12,10" sound_open="UseActions/open_vehicle" open_time="0" sound_close="UseActions/close_vehicle" loot_quality_template="qualBaseTemplate">
+</lootcontainer>
+<lootcontainer id="176" name="VMMilitaryTrucks" count="0" size="14,10" sound_open="UseActions/open_vehicle" open_time="0" sound_close="UseActions/close_vehicle" loot_quality_template="qualBaseTemplate">
+</lootcontainer>
+<lootcontainer id="177" name="VMRV" count="0" size="12,10" sound_open="UseActions/open_vehicle" open_time="0" sound_close="UseActions/close_vehicle" loot_quality_template="qualBaseTemplate">
+</lootcontainer>
+</append>
+</configs>
