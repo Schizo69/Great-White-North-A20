@@ -32,7 +32,7 @@ Auto Miner - Snufkin
 Working Stuff - Saminal
 A19 Farming For A20 - Syco54645
 Decorations Pack For A20 - Telric
-Diable Falling Trees - Valmar
+Disable Falling Trees - Valmar
 Vehicle Overhaul Madness - Ragsy/ActiniumTiger
 30K Item Stack - Elucidus
 Unnecessarily Beautiful But Immersive - Ztensity
