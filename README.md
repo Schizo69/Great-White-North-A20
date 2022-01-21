@@ -39,6 +39,8 @@ Unnecessarily Beautiful But Immersive - Ztensity
 	- I fixed the A19 version to work in A20
 	
 
+A special thanks to Spherii for making the Mod Launcher.  It has made running a server so much easier.
+
 Many thanks to all the mod creators for their hard work.  All mods used were
 unmodified with the exception of Unnecessarily Beautiful But Immersive 
 by Ztensity because it wasn't working in A20
