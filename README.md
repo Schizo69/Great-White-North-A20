@@ -32,13 +32,17 @@ Auto Miner - Snufkin
 Working Stuff - Saminal
 A19 Farming For A20 - Syco54645
 Decorations Pack For A20 - Telric
-Diable Falling Trees - Valmar
+Disable Falling Trees - Valmar
 Vehicle Overhaul Madness - Ragsy/ActiniumTiger
 30K Item Stack - Elucidus
 Unnecessarily Beautiful But Immersive - Ztensity
 	- I fixed the A19 version to work in A20
 	
 
+A special thanks to Spherii for making the Mod Launcher.  It has made running a server so much easier.
+
 Many thanks to all the mod creators for their hard work.  All mods used were
 unmodified with the exception of Unnecessarily Beautiful But Immersive 
 by Ztensity because it wasn't working in A20
+
+Discord: https://discord.gg/CseFaRD
