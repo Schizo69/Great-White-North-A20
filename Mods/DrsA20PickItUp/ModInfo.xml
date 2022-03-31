@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="DrsA20PickItUp" />
+		<Description value="Pick up those things once unable to." />
+		<Author value="Drconfused" />
+		<Version value="A20-02" />
+		<Website value="" />
+	</ModInfo>
+</xml>
