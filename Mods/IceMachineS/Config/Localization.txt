@@ -1,4 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
-
-foodIcePack,items,Food,,,Pack of Ice
-foodIcePackDesc,items,Food,,,Just sack full of good preserved ice. Can be eaten but be prepared for some brain freezing. Can be melted into Boiled water.

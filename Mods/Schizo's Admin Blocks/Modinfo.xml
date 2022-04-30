@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Schizo's Admin Blocks" />
+		<Description value="Adds Admin blocks of all types that have very high HP and low damage taken.  They also regenerate if destroyed." />
+		<Author value="Schizo (Great White North Server" />
+		<Version value=".1a" />
+	</ModInfo>
+</xml>

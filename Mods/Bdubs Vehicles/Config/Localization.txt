@@ -1,6 +1,5 @@
-Key,English
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
 TraderMechanic_b,The Mechanic
-
 vehicleBoxTruckbody,Box Truck Body
 vehicleBoxTruckbodyDesc,Parts needed to craft the Box Truck.
 vehicleBoxTruckchassis,Box Truck Chassis
@@ -11,7 +10,6 @@ vehicleBoxTruckPlainplaceableDesc,An old Box Truck.
 vehicleBoxTruckHostess,Hostess Box Truck
 vehicleBoxTruckHostessplaceable,Hostess Box Truck
 vehicleBoxTruckHostessplaceableDesc,Tallahassee's favorite!
-
 vehicleGNXchassis,GNX Chassis
 vehicleGNXchassisDesc,Parts needed to craft the GNX. Grease Monkey level 4 required.
 vehicleGNXaccessories,GNX Accessories
@@ -22,7 +20,6 @@ vehicleGNXBlackplaceableDesc,Cruise the wasteland in style!
 vehicleGNXRed,GNX
 vehicleGNXRedplaceable,GNX Red
 vehicleGNXRedplaceableDesc,Cruise the wasteland in style!
-
 vehicleGolfCart,Golf Cart
 vehicleGolfCartchassis,Golf Cart Chassis
 vehicleGolfCartchassisDesc,Parts needed to craft the Golf Cart. Grease Monkey level 2 required.
@@ -32,56 +29,48 @@ vehicleGolfCartplaceable,Golf Cart
 vehicleGolfCartplaceableDesc,It might not be much but it's better than walking!
 meleeGolfClub,Golf Club
 meleeGolfClubDesc,No golf balls? There's always plenty of zombies to practice that swing on!
-
 vehicleWillyJeep,Willy Jeep
 vehicleWillyJeepplaceable,Willy Jeep
 vehicleWillyJeepplaceableDesc,If it survived WW2 surely it can handle this!
 vehicleWillyJeepTopless,Willy Jeep (Topless)
 vehicleWillyJeepToplessplaceable,Willy Jeep (Topless)
 vehicleWillyJeepToplessplaceableDesc,Now with even more wind-in-hair action!
-
 vehicleWillyJeepBlack,Willy Jeep
 vehicleWillyJeepBlackplaceable,Willy Jeep
 vehicleWillyJeepBlackplaceableDesc,If it survived WW2 surely it can handle this!
 vehicleWillyJeepToplessBlack,Willy Jeep (Topless)
 vehicleWillyJeepToplessBlackplaceable,Willy Jeep (Topless)
 vehicleWillyJeepToplessBlackplaceableDesc,Now with even more wind-in-hair action!
-
 vehicleWillyJeepBlue,Willy Jeep
 vehicleWillyJeepBlueplaceable,Willy Jeep
 vehicleWillyJeepBlueplaceableDesc,If it survived WW2 surely it can handle this!
 vehicleWillyJeepToplessBlue,Willy Jeep (Topless)
 vehicleWillyJeepToplessBlueplaceable,Willy Jeep (Topless)
 vehicleWillyJeepToplessBlueplaceableDesc,Now with even more wind-in-hair action!
-
 vehicleWillyJeepGreen,Willy Jeep
 vehicleWillyJeepGreenplaceable,Willy Jeep
 vehicleWillyJeepGreenplaceableDesc,If it survived WW2 surely it can handle this!
 vehicleWillyJeepToplessGreen,Willy Jeep (Topless)
 vehicleWillyJeepToplessGreenplaceable,Willy Jeep (Topless)
 vehicleWillyJeepToplessGreenplaceableDesc,Now with even more wind-in-hair action!
-
 vehicleWillyJeepOrange,Willy Jeep
 vehicleWillyJeepOrangeplaceable,Willy Jeep
 vehicleWillyJeepOrangeplaceableDesc,If it survived WW2 surely it can handle this!
 vehicleWillyJeepToplessOrange,Willy Jeep (Topless)
 vehicleWillyJeepToplessOrangeplaceable,Willy Jeep (Topless)
 vehicleWillyJeepToplessOrangeplaceableDesc,Now with even more wind-in-hair action!
-
 vehicleWillyJeepPurple,Willy Jeep
 vehicleWillyJeepPurpleplaceable,Willy Jeep
 vehicleWillyJeepPurpleplaceableDesc,If it survived WW2 surely it can handle this!
 vehicleWillyJeepToplessPurple,Willy Jeep (Topless)
 vehicleWillyJeepToplessPurpleplaceable,Willy Jeep (Topless)
 vehicleWillyJeepToplessPurpleplaceableDesc,Now with even more wind-in-hair action!
-
 vehicleWillyJeepRed,Willy Jeep
 vehicleWillyJeepRedplaceable,Willy Jeep
 vehicleWillyJeepRedplaceableDesc,If it survived WW2 surely it can handle this!
 vehicleWillyJeepToplessRed,Willy Jeep (Topless)
 vehicleWillyJeepToplessRedplaceable,Willy Jeep (Topless)
 vehicleWillyJeepToplessRedplaceableDesc,Now with even more wind-in-hair action!
-
 vehicleMRAP,MRAP
 vehicleMRAP2,MRAP
 vehicleMRAPplaceable,MRAP
@@ -92,7 +81,6 @@ vehicleMRAPaccessories,MRAP Accessories
 vehicleMRAPaccessoriesDesc,Accessories needed to craft the MRAP.
 vehicleMRAPparts,MRAP Parts
 vehicleMRAPpartsDesc,Parts needed to craft the MRAP.
-
 vehicleMarauder,Marauder
 vehicleMarauderplaceable,Marauder
 vehicleMarauderplaceableDesc,Those zombies will be jealous of this ride!
@@ -103,13 +91,11 @@ vehicleMarauderchassis,Marauder Chassis
 vehicleMarauderchassisDesc,Parts needed to craft the Marauder. Grease Monkey level 5 required.
 vehicleMarauderaccessories,Marauder Accessories
 vehicleMarauderaccessoriesDesc,Parts needed to craft the Marauder.
-
 vehicleUAZ452chassis,UAZ 452 Chassis
 vehicleUAZ452chassisDesc,Parts needed to craft the UAZ 452. Grease Monkey level 4 required.
 vehicleUAZ452,UAZ 452
 vehicleUAZ452placeable,UAZ 452
 vehicleUAZ452placeableDesc,Blend right in with the apocalypse!
-
 vehicleNovachassis,Nova Chassis
 vehicleNovachassisDesc,Parts needed to craft the Nova. Grease Monkey level 4 required.
 vehicleNovaaccessories,Nova Accessories
@@ -123,7 +109,6 @@ vehicleNovaredplaceableDesc,Classic...
 vehicleNovablack,Nova Black
 vehicleNovablackplaceable,Nova Black
 vehicleNovablackplaceableDesc,Classic...
-
 vehicleWorkTruckchassis,Work Truck Chassis
 vehicleWorkTruckchassisDesc,Parts needed to craft the Work Truck. Grease Monkey level 4 required.
 vehicleWorkTruckaccessories,Work Truck Accessories
@@ -131,7 +116,6 @@ vehicleWorkTruckaccessoriesDesc,Parts needed to craft the Work Truck.
 vehicleWorkTruck,Work Truck
 vehicleWorkTruckplaceable,Work Truck
 vehicleWorkTruckplaceableDesc,Looks like it's been through more than just an apocalypse...
-
 vehicleBRDM2chassis,BRDM-2 Chassis
 vehicleBRDM2chassisDesc,Parts needed to craft the BRDM-2. Grease Monkey level 5 required.
 vehicleBRDM2accessories,BRDM-2 Accessories
@@ -142,7 +126,6 @@ vehicleBRDM2placeableDesc,A surprisingly intact military vehicle.
 vehicleBRDM2desert,BRDM-2 Desert
 vehicleBRDM2desertplaceable,BRDM-2 Desert
 vehicleBRDM2desertplaceableDesc,A surprisingly intact military vehicle.
-
 vehiclePickupchassis,Pickup Chassis
 vehiclePickupchassisDesc,Parts needed to craft the Pickup. Grease Monkey level 4 required.
 vehiclePickupaccessories,Pickup Accessories
@@ -150,7 +133,6 @@ vehiclePickupaccessoriesDesc,Parts needed to craft the Pickup.
 vehiclePickup,Pickup
 vehiclePickupplaceable,Pickup
 vehiclePickupplaceableDesc,Make those zeds jealous with this stylish truck!
-
 vehicleMD500chassis,MD-500 Chassis
 vehicleMD500chassisDesc,Parts needed to craft the MD-500. Grease Monkey level 5 required.
 vehicleMD500accessories,MD-500 Accessories
@@ -158,7 +140,6 @@ vehicleMD500accessoriesDesc,Parts needed to craft the MD-500.
 vehicleMD500,MD-500
 vehicleMD500placeable,MD-500
 vehicleMD500placeableDesc,They can't kill you if they can't hit you!
-
 vehicleDusterchassis,Duster Chassis
 vehicleDusterchassisDesc,Parts needed to craft the Duster. Grease Monkey level 5 required.
 vehicleDusteraccessories,Duster Accessories
@@ -166,7 +147,6 @@ vehicleDusteraccessoriesDesc,Parts needed to craft the Duster.
 vehicleDuster,Duster
 vehicleDusterplaceable,Duster
 vehicleDusterplaceableDesc,It looks like it should fly...
-
 vehicleStallionchassis,Stallion Chassis
 vehicleStallionchassisDesc,Parts needed to craft the Stallion. Grease Monkey level 4 required.
 vehicleStallionaccessories,Stallion Accessories
@@ -183,7 +163,6 @@ vehicleStallionblueplaceableDesc,Classic...
 vehicleStallionwhite,Stallion
 vehicleStallionwhiteplaceable,Stallion White
 vehicleStallionwhiteplaceableDesc,Classic...
-
 vehicleDirtBike,Dirt Bike
 vehicleDirtBikeplaceable,Dirt Bike
 vehicleDirtBikeplaceableDesc,A dirt bike. And no neighbors to complain about it. Sweet!
@@ -191,7 +170,6 @@ vehicleDirtBikeChassis,Dirt Bike Chassis
 vehicleDirtBikeChassisDesc,The beginning of something...awesome!
 vehicleDirtBikeParts,Dirt Bike Parts
 vehicleDirtBikePartsDesc,You might need these.
-
 vehicleChargerchassis,Charger Chassis
 vehicleChargerchassisDesc,Parts needed to craft the Charger. Grease Monkey level 4 required.
 vehicleChargeraccessories,Charger Accessories
@@ -232,7 +210,6 @@ vehicleChargerrustplaceableDesc,Classic...
 vehicleChargerrust2,Charger
 vehicleChargerrust2placeable,Charger
 vehicleChargerrust2placeableDesc,Classic...
-
 vehicleJunker,Junker
 vehicleJunkerplaceable,Junker
 vehicleJunkerplaceableDesc,An old custom bike.
@@ -243,7 +220,6 @@ vehicleJunkerChassis,Junker Chassis
 vehicleJunkerChassisDesc,The beginning of something...awesome!
 vehicleJunkerbars,Junker Handlebars
 vehicleJunkerbarsDesc,You might need these.
-
 vehicleCruiser,Cruiser
 vehicleCruiserplaceable,Cruiser
 vehicleCruiserplaceableDesc,A custom Cruiser. Sweet!
@@ -254,7 +230,6 @@ vehicleCruiserChassis,Cruiser Chassis
 vehicleCruiserChassisDesc,The beginning of something...awesome!
 vehicleCruiserbars,Cruiser Handlebars
 vehicleCruiserbarsDesc,You might need these.
-
 vehicleRat,Rat
 vehicleRatplaceable,Rat
 vehicleRatplaceableDesc,A custom Rat bike.
@@ -265,7 +240,6 @@ vehicleRatChassis,Rat Chassis
 vehicleRatChassisDesc,The beginning of something...awesome!
 vehicleRatbars,Rat Handlebars
 vehicleRatbarsDesc,You might need these.
-
 vehicleSHERPchassis,SHERP Chassis
 vehicleSHERPchassisDesc,Parts needed to craft the SHERP. Grease Monkey level 4 required.
 vehicleSHERPaccessories,SHERP Accessories
@@ -273,7 +247,6 @@ vehicleSHERPaccessoriesDesc,Parts needed to craft the SHERP.
 vehicleSHERP,SHERP
 vehicleSHERPplaceable,SHERP
 vehicleSHERPplaceableDesc,A custom offroad vehicle.
-
 vehicleUH60chassis,UH-60 Chassis
 vehicleUH60chassisDesc,Parts needed to craft the UH-60. Grease Monkey level 5 required.
 vehicleUH60accessories,UH-60 Accessories
@@ -281,7 +254,6 @@ vehicleUH60accessoriesDesc,Parts needed to craft the UH-60.
 vehicleUH60,UH-60
 vehicleUH60placeable,UH-60
 vehicleUH60placeableDesc,They can't kill you if they can't hit you!
-
 vehicleHotRodchassis,Hot Rod Chassis
 vehicleHotRodchassisDesc,Parts needed to craft the Hot Rod. Grease Monkey level 4 required.
 vehicleHotRodaccessories,Hot Rod Accessories
@@ -304,7 +276,6 @@ vehicleHotRod5placeable,Hot Rod
 vehicleHotRod5placeableDesc,A custom hot rod.
 vehicleHotRod6placeable,Hot Rod
 vehicleHotRod6placeableDesc,A custom hot rod.
-
 vehicleHumveechassis,Humvee Chassis
 vehicleHumveechassisDesc,Parts needed to craft the Humvee. Grease Monkey level 4 required.
 vehicleHumveebody,Humvee Body
@@ -315,7 +286,6 @@ vehicleHumveeplaceableDesc,Military surplus at its finest!
 vehicleHumveeTopless,Humvee
 vehicleHumveeToplessplaceable,Humvee (Topless)
 vehicleHumveeToplessplaceableDesc,Military surplus at its finest!
-
 vehicleBuggychassis,Buggy Chassis
 vehicleBuggychassisDesc,Parts needed to craft the Buggy. Grease Monkey level 4 required.
 vehicleBuggyaccessories,Buggy Accessories
@@ -323,7 +293,6 @@ vehicleBuggyaccessoriesDesc,Parts needed to craft the Buggy.
 vehicleBuggy,Buggy
 vehicleBuggyplaceable,Buggy
 vehicleBuggyplaceableDesc,An old offroad buggy.
-
 vehicleOldSemichassis,Old Semi Chassis
 vehicleOldSemichassisDesc,Parts needed to craft the Old Semi. Grease Monkey level 4 required.
 vehicleOldSemibody,Old Semi Body
@@ -331,7 +300,6 @@ vehicleOldSemibodyDesc,Parts needed to craft the Old Semi.
 vehicleOldSemi,Old Semi
 vehicleOldSemiplaceable,Old Semi
 vehicleOldSemiplaceableDesc,"You better watch your step, Arlene!"
-
 vehicleLMTVchassis,LMTV Chassis
 vehicleLMTVchassisDesc,Parts needed to craft the LMTV. Grease Monkey level 5 required.
 vehicleLMTVbody,LMTV Body
@@ -339,7 +307,6 @@ vehicleLMTVbodyDesc,Parts needed to craft the LMTV.
 vehicleLMTV,LMTV
 vehicleLMTVplaceable,LMTV
 vehicleLMTVplaceableDesc,Military transport vehicle. Holds 6 people.
-
 vehicleBoxTruckchassisSchematic,Box Truck Chassis Schematic
 vehicleBoxTruckbodySchematic,Box Truck Body Schematic
 vehicleBRDM2chassisSchematic,BRDM-2 Chassis Schematic

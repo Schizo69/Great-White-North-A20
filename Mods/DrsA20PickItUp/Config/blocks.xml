@@ -284,10 +284,10 @@ other spike
 
 
 	<!-- ~~~~~~~~~~~~~~INTERIORS~~~~~~~~~~~~~~ -->
-	<append xpath="/blocks/block[@name='metalFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,cntFileCabinetShortOpen,cntFileCabinetShortClosed,cntFileCabinetTallOpen,cntFileCabinetTallClosed,cntToolBoxOpen,cntToolBoxClosed,cntRollingToolBoxOpen,cntRollingToolBoxClosed,cntRetroFridgeVer2Open,cntRetroFridgeVer1Closed,cntFridgeStainlessSteelVer2Open,cntFridgeStainlessSteel</append>
+	<append xpath="/blocks/block[@name='metalFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,cntFileCabinetShortOpen,cntFileCabinetShortClosed,cntFileCabinetTallOpen,cntFileCabinetTallClosed,cntToolBoxOpen,cntRollingToolBoxOpen,cntRetroFridgeVer2Open,cntFridgeStainlessSteelVer2Open</append>
 	<!-- APPLIANCES -->
 	<append xpath="/blocks/block[@name='cntMicrowaveOvenVer1Open']" >
-		<property name="CanPickup" value="true" param1="cntMicrowaveOvenVer1Closed"/>
+		<property name="CanPickup" value="false" param1="cntMicrowaveOvenVer1Closed"/>
 		<property name="Weight" value="60"/>
 	</append>
 	<append xpath="/blocks/block[@name='cntToaster']" >
@@ -295,7 +295,7 @@ other spike
 		<property name="Weight" value="40"/>
 	</append>
 	<append xpath="/blocks/block[@name='cntRetroFridgeVer2Open']" >
-		<property name="CanPickup" value="true" param1="cntRetroFridgeVer1Closed"/>
+		<property name="CanPickup" value="false" param1="cntRetroFridgeVer1Closed"/>
 		<property name="Weight" value="100"/>
 	</append>
 	<append xpath="/blocks/block[@name='cntFridgeStainlessSteelVer2Open']" >
@@ -327,7 +327,7 @@ other spike
 
 	<!-- 	COOLER -->
 	<append xpath="/blocks/block[@name='cntCoolerOpen']" >
-		<property name="CanPickup" value="true" param1="cntCoolerClosed"/>
+		<property name="CanPickup" value="false" param1="cntCoolerClosed"/>
 		<property name="Weight" value="60"/> 
 	</append>
 
@@ -463,7 +463,7 @@ other spike
 
 	<!-- 	LUGGAGE -->
 	<append xpath="/blocks/block[@name='cntLuggageMediumOpen']" >
-		<property name="CanPickup" value="true" param1="cntLuggageMediumClosed"/>
+		<property name="CanPickup" value="false" param1="cntLuggageMediumClosed"/>
 		<property name="Weight" value="60"/>
 	</append>
 	<append xpath="/blocks/block[@name='cntLuggageBigOpen']" >
@@ -509,16 +509,6 @@ other spike
 	<append xpath="/blocks/block[starts-with(@name,'sign')]">
 		<property name="CanPickup" value="true"/>
 		<property name="Weight" value="60"/>
-	</append>
-
-	<!-- 	TOOL BOXES -->
-	<append xpath="/blocks/block[@name='cntToolBoxOpen']" >
-		<property name="CanPickup" value="true" param1="cntToolBoxClosed"/>
-		<property name="Weight" value="60"/>
-	</append>
-	<append xpath="/blocks/block[@name='cntRollingToolBoxOpen']" >
-		<property name="CanPickup" value="true" param1="cntRollingToolBoxClosed"/>
-		<property name="Weight" value="120"/>
 	</append>
 
 	<!-- 	TRASH CAN-->

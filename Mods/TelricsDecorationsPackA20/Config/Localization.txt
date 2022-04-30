@@ -1,4 +1,4 @@
-Key,english,japanese
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
 ------------------Colors Orange  Blue [2b87eb]----------------
 ------------------Vanilla Changes---------------------
 tooltipLocked,{0} Use,{0} で使用

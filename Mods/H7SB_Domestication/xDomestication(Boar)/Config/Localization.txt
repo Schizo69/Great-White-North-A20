@@ -1,4 +1,4 @@
-Key,Context,English,German
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
 h7sb_boarCage,newItem,Boar Cage,Schweinekäfig
 h7sb_boarCageDesc,newItemDesc,"Use this item (RMB) to capture a fully stunned wild boar.","Verwende diesen Gegenstand (RMB) um ein vollständig betäubtes wildes Schwein einzufangen."
 

@@ -1,0 +1,52 @@
+<configs>
+	<append xpath="/items">
+
+<item name="PaintFreePaintbrush">
+	<property name="CustomIcon" value="meleeToolPaintTool"/> 
+	<property name="CustomIconTint" value="FF0000"/>
+	<property name="Tags" value="tool,noMods"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="51"/>
+	<property name="Meshfile" value="#Other/Items?Tools/PaintbrushPrefab.prefab"/>
+	<property name="Material" value="Mwood"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="CrosshairUpAfterShot" value="false"/>
+	<property name="FuelValue" value="50"/>
+	<property name="Stacknumber" value="1"/>
+	<property class="Action0">
+		<property name="Class" value="TextureBlock"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Sound_start" value="erase"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="resourcePaint"/>
+		<property name="Range" value="15"/>
+		<property name="Delay" value=".83"/> <!-- obsolete if rounds per minute exists -->
+		<property name="RemoveTexture" value="true"/>
+		<property name="DefaultTextureID" value="156"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="TextureBlock"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="Sound_start" value="resourcePaint"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="resourcePaint"/>
+		<property name="Range" value="15"/>
+		<property name="Delay" value=".83"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Particles_muzzle_fire" value="paint_splash2"/>
+	</property>
+	<effect_group name="meleeToolPaintTool" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="0"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="0"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="0"/>
+	</effect_group>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="PickupJournalEntry" value="paintingTip"/>
+</item>
+	
+</append>
+</configs>

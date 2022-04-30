@@ -1,0 +1,75 @@
+<configs>
+	<append xpath="/materials">
+
+<!-- New material for admin blocks to make them tougher and take less damage -->
+	
+<material id="AdminSteel">
+	<property name="damage_category" value="metal" />
+	<property name="surface_category" value="metal" />
+	<property name="forge_category" value="iron" />
+	<property name="Hardness" type="float" value="9000" />
+	<property name="stepsound" value="metal" />
+	<property name="stability_glue" value="500" />
+	<property name="Mass" type="int" value="5" />
+	<property name="explosionresistance" value="50" />
+	<property name="MaxDamage" value="80000" />
+	<property name="Experience" value="7"/>
+</material>
+
+<material id="adminMmetal_hard">
+	<property name="damage_category" value="metal"/>
+	<property name="surface_category" value="metal"/>
+	<property name="forge_category" value="iron"/>
+	<property name="Hardness" type="float" value="9000"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="explosionresistance" value="1.4"/>
+	<property name="MaxDamage" value="80000"/>
+	<property name="Experience" value="1"/>
+</material>
+
+<material id="adminMwood_regular">
+	<property name="damage_category" value="wood"/>
+	<property name="surface_category" value="wood"/>
+	<property name="forge_category" value="wood"/>
+	<property name="Hardness" type="float" value="8000"/>
+	<property name="stepsound" value="wood"/>
+	<property name="stability_glue" value="40"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="MaxDamage" value="80000"/>
+	<property name="Experience" value="1"/>
+</material>
+
+<material id="AdminMglassBulletproof">
+	<property name="damage_category" value="glass"/>
+	<property name="surface_category" value="glass"/>
+	<property name="forge_category" value="glass"/>
+	<property name="Hardness" type="float" value="9000"/>
+	<property name="lightopacity" value="2"/>
+	<property name="stepsound" value="metal"/>
+	<property name="stability_glue" value="300"/>
+	<property name="Mass" type="int" value="10"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="MaxDamage" value="80000"/>
+	<property name="Experience" value="1"/>
+</material>
+
+<!--<material id="AdminMcactus">
+	<property name="damage_category" value="wood"/>
+	<property name="surface_category" value="plant"/>
+	<property name="particle_category" value="wood"/>
+	<property name="Hardness" type="float" value="500"/>
+	<property name="stepsound" value="leaves"/>
+	<property name="lightopacity" value="1"/>
+	<property name="plant" value="true"/>
+	<property name="stability_glue" value="5"/>
+	<property name="Mass" type="int" value="5"/>
+	<property name="StabilitySupport" value="true"/>
+	<property name="MaxDamage" value="5000"/>
+	<property name="Experience" value="2"/>
+</material>
+-->
+
+</append>
+</configs>

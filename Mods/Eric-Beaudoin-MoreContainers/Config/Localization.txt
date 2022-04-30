@@ -1,4 +1,4 @@
-Key,Source,Context,Changes,English
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
 mcCubeContainer,blocks,Block,New,"Generic Storage Box"
 mcCubeContainerInsecure,blocks,Block,New,"Generic Storage Box"
 mcCubeContainerAmmo,blocks,Block,New,"Ammo Storage Box"

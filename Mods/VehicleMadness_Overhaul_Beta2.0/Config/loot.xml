@@ -13,7 +13,7 @@
 <append xpath="//lootcontainer[@name='workingStiffsCrate']">
 	<item name="resourceOil" count="1,3" prob="0.06" force_prob="true"/>
 	<item name="WireCutters" count="1,2" prob="0.04" force_prob="true"/>
-	<item name="ElectricalWire" count="1,4" prob="0.05" force_prob="true"/>
+	<item name="ElectricalWire" count="1,4" prob="0.25" force_prob="true"/>
 </append>
 <append xpath="//lootgroup[@name='groupAutomotive']">
 	<item name="WireCutters" count="1,2" prob="0.04" force_prob="true"/>
@@ -38,7 +38,7 @@
 </append>
 <append xpath="//lootgroup[@name='groupJunk']">
 	<item name="WireCutters" count="1,2" prob="0.022" force_prob="true"/>
-	<item name="ElectricalWire" count="1,4" prob="0.021" force_prob="true"/>
+	<item name="ElectricalWire" count="1,4" prob="0.25" force_prob="true"/>
 </append>
 
 <append xpath="/lootcontainers">

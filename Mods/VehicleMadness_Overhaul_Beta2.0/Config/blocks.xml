@@ -84,6 +84,12 @@
 	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.037" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceMetalPipe" count="1,3" prob="0.032" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="allHarvest"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="50,500" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceAcid" prob=".08" count="1" tag="WasteTreasuresAcidHarvest"/>
 	<property name="DowngradeBlock" value="cntCar03SedanDamage2Master"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
@@ -129,6 +135,13 @@
 	<drop event="Harvest" name="resourceSpring" count="1,3" prob="0.033" tag="allHarvest"/>
 	<drop event="Harvest" name="resourceScrapIron" count="12,200" tag="allHarvest"/>
 	<drop event="Destroy" name="damagedcarChassis" count="1" prob=".038" tag="allHarvest"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="50,500" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceAcid" prob=".08" count="1" tag="WasteTreasuresAcidHarvest"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property class="Explosion">
@@ -162,6 +175,13 @@
 	<property name="CanDecorateOnSlopes" value="false"/>
 	<property name="PlacementDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="50,500" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceAcid" prob=".08" count="1" tag="WasteTreasuresAcidHarvest"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="resourceScrapIron" count="150" prob="0.4" stick_chance="0"/>
 	<property class="Explosion">
@@ -196,6 +216,13 @@
 	<property name="PlacementDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>
 	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="50,500" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceAcid" prob=".08" count="1" tag="WasteTreasuresAcidHarvest"/>
 	<drop event="Fall" name="resourceScrapIron" count="150" prob="0.4" stick_chance="0"/>
 	<property class="Explosion">
 		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->
@@ -227,6 +254,13 @@
 	<property name="PlacementDistance" value="6"/>
 	<property name="FilterTags" value="floot"/>
 	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.25" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceRadiator" count="1" prob="0.5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="50,500" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceAcid" prob=".08" count="1" tag="WasteTreasuresAcidHarvest"/>
 	<drop event="Fall" name="resourceScrapIron" count="150" prob="0.4" stick_chance="0"/>
 	<property class="Explosion">
 		<property name="ParticleIndex" value="4"/> <!-- which prefab/particle is used -->

@@ -1,4 +1,4 @@
-Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
 modDyeHotPink,,item_modifiers,mod,newKey,Dye: Hot Pink,,,,,
 modDyeFireEngineRed,,item_modifiers,mod,newKey,Dye: Fire Engine Red,,,,,
 modDyeOrange,,item_modifiers,mod,newKey,Dye: Orange,,,,,

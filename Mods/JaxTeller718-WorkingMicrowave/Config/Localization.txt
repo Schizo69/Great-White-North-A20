@@ -1,4 +1,4 @@
-﻿Key,Source,Context,English
+﻿Key,File,Type,UsedInMainMenu,NoTranslate,english,Context
 workingMicrowaveJT,blocks,Block,Microwave (Powered)
 workingMicrowaveJTDesc,blocks,Block,"This microwave is powered already and can be used to heat up bowls of canned food to gain the maximum benefits from them."
 drinkBowlEmptyJT,items,Item,Bowl (Empty)

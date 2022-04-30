@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Schizo's Donor Tools" />
+		<Description value="Adds donor tools as a perk for donors." />
+		<Author value="Schizo (Great White North Server" />
+		<Version value=".1a" />
+	</ModInfo>
+</xml>

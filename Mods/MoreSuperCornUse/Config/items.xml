@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TangoDown>
+<append xpath="/items">
+
+<item name="SupercornBread">
+	<property name="CreativeMode" value="Player"/>
+	<property name="CustomIcon" value="foodCornBread"/>
+	<property name="CustomIconTint" value="255,128,0"/>
+	<property name="DescriptionKey" value="foodTngDwnScBDesc"/>
+	<property name="Tags" value="food	"/>
+	<property name="HoldType" value="31"/>
+	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Weight" value="1"/>
+	<property name="DisplayType" value="foodWater"/>
+	<property name="Group" value="Food/Cooking,CFFood/Cooking,Medical"/>
+	<property name="Stacknumber" value="30000"/>
+	<property name="SellableToTrader" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_eating"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="UseOther"/>
+		<property name="Delay" value="1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_drinking"/>
+	</property>
+	<effect_group tiered="false">
+		<display_value name="dMaxHealthBonus" value="200"/>
+		<display_value name="dNaturalCritHealing" value="2"/>
+		<display_value name="dDuration" value="420"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="40"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="100"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="50"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="40"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffSpecialStewDuration" operation="add" value="423"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables,buffSpecialStew"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="$waterAmountAdd" operation="add" value="40"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="$foodAmountAdd" operation="add" value="100"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="foodHealthAmount" operation="add" value="50"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar=".foodStaminaBonusAdd" operation="add" value="40"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="ModifyCVar" target="other" cvar="$buffSpecialStewDuration" operation="add" value="423"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="AddBuff" target="other" buff="buffProcessConsumables,buffSpecialStew"/>
+	</effect_group>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="RemoveAllNegativeBuffs"/>
+		<triggered_effect trigger="onSelfSecondaryActionEnd" action="RemoveAllNegativeBuffs" target="other"/>
+	</effect_group>
+</item>
+
+
+</append>
+</TangoDown>

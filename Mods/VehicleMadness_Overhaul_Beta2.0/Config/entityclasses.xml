@@ -1,5 +1,5 @@
 <configs>
-<!--   Vehicle Madness Version 3 Beta 2.0 January 2022 A20 -->
+  <!--  Vehicle Madness Version 3 Beta 2.0 January 2022 A20  -->
 
 <append xpath="/entity_classes"> 
 <entity_class name="vehicleVMFastback">
@@ -22,7 +22,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Fastback_UI"/>
-<!--	<property name="NavObject" value="Fastback_UI" /> -->
 </entity_class>	
 <entity_class name="vehicleVMMilitaryTruck">
 	<property name="Tags" value="vehicle,MilitaryTruck"/>
@@ -44,7 +43,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
  	<property name="MapIcon" value="guppyVehicleMilitaryTruck_UI"/>
-<!--<property name="NavObject" value="guppyVehicleMilitaryTruck_UI" />-->
 </entity_class>	
 <entity_class name="vehicleVMBoxTruck">
 	<property name="Tags" value="vehicle,Boxtruck"/>
@@ -66,7 +64,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="guppyVehicleBoxTruck_UI_1"/> 
-<!-- 	<property name="NavObject" value="guppyVehicleBoxTruck_UI_1" />-->
 </entity_class>
 <entity_class name="vehicleVMBigRig">
 	<property name="Tags" value="vehicle,BigRig"/>
@@ -88,7 +85,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="guppyVehicleCarBigRig_UI_1"/>
-<!--	<property name="NavObject" value="guppyVehicleCarBigRig_UI_1" />-->
 </entity_class>
 <entity_class name="vehicleVMBigRig2">
 	<property name="Tags" value="vehicle,BigRig2"/>
@@ -110,7 +106,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="guppyVehicleCarBigRig2_UI_1"/> 
-	<!-- <property name="NavObject" value="guppyVehicleCarBigRig2_UI_1" />-->
 </entity_class>
 <entity_class name="vehicleVMMilitaryCar">
 	<property name="Tags" value="vehicle,MilitaryCar"/>
@@ -132,7 +127,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="guppyVehicleMilitaryCar_UI_1"/>
-<!--	<property name="NavObject" value="guppyVehicleMilitaryCar_UI_1" />-->
 </entity_class>
 <entity_class name="vehicleVMPickup">
 	<property name="Tags" value="vehicle,Pickup"/>
@@ -154,7 +148,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Pickup_UI"/> 
-	<!--<property name="NavObject" value="Pickup_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMTractor">
 	<property name="Tags" value="vehicle,Tractor"/>
@@ -177,7 +170,6 @@
 	<property name="PlaceEverywhere" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Tractor_UI"/> 
-<!--<<property name="NavObject" value="Tractor_UI" /> -->
 </entity_class>
 <entity_class name="vehicleVMBuggy">
 	<property name="Tags" value="vehicle,Buggy"/>
@@ -199,7 +191,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Buggy_UI"/> 
-	<!--<property name="NavObject" value="Buggy_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMHotRod">
 	<property name="Tags" value="vehicle,HotRod"/>
@@ -221,7 +212,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="HotRod_UI"/>
-	<!--<property name="NavObject" value="HotRod_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMQuad">
 	<property name="Tags" value="vehicle,Quad"/>
@@ -243,7 +233,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Quad_UI"/> 
-	<!--<property name="NavObject" value="Quad_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMSedan">
 	<property name="Tags" value="vehicle,Sedan"/>
@@ -265,7 +254,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Sedan_UI"/> 
-	<!--<property name="NavObject" value="Sedan_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMWhiteSedanRusted">
 	<property name="Tags" value="vehicle,SedanRusted"/>
@@ -287,7 +275,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="WhiteSedanRusted_UI"/> 
-	<!--<property name="NavObject" value="WhiteSedanRusted_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMTaxiGreenRusted">
 	<property name="Tags" value="vehicle,TaxiGreen"/>
@@ -309,7 +296,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Taxi_UI"/>
-	<!--<property name="NavObject" value="Taxi_UI" /> -->
 </entity_class>
 <entity_class name="vehicleVMTaxiRusted">
 	<property name="Tags" value="vehicle,Taxi"/>
@@ -331,7 +317,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="TaxiRusted_UI"/>
-	<!--<property name="NavObject" value="TaxiRusted_UI" /> -->
 </entity_class>
 <entity_class name="vehicleVMBMWred">
 	<property name="Tags" value="vehicle,BMWred"/>
@@ -353,7 +338,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="BMWred"/> 
-	<!--<property name="NavObject" value="BMWred" />-->
 </entity_class> 
 <entity_class name="vehicleVMBMWwhite">
 	<property name="Tags" value="vehicle,BMWwhite"/>
@@ -375,7 +359,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="BMWwhite_UI"/>
-	<!--<property name="NavObject" value="BMWwhite_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMEvo">
 	<property name="Tags" value="vehicle,Evo"/>
@@ -397,7 +380,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Evo_UI"/>
-	<!--<property name="NavObject" value="Evo_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMForklift">
 	<property name="Tags" value="vehicle,Forklift"/>
@@ -419,7 +401,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	 <property name="MapIcon" value="ForkLift_UI"/> 
-	<!--<property name="NavObject" value="ForkLift_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMVan">
 	<property name="Tags" value="vehicle,Van"/>
@@ -441,7 +422,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Van_UI"/>
-	<!--<property name="NavObject" value="Van_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMAmbulanceDamaged">
 	<property name="Tags" value="vehicle,AmbulanceDamaged"/>
@@ -463,7 +443,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="EMSAmbulance_UI"/> 
-	<!--<property name="NavObject" value="EMSAmbulance_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMPoliceCar">
 	<property name="Tags" value="vehicle,PoliceCar"/>
@@ -485,7 +464,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="EMSPoliceCar_UI"/>
-	<!--<property name="NavObject" value="EMSPoliceCar_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMArmoredCobra">
 	<property name="Tags" value="vehicle,ArmouredCobra"/>
@@ -507,9 +485,8 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ArmoredCobra_UI"/>
-	<!-- <property name="NavObject" value="ArmoredCobra_UI" /> -->
 </entity_class>
-<!--New Additions-->
+ New Additions 
 <entity_class name="vehicleVMHunter"> 
 	<property name="Tags" value="vehicle,Hunter"/>
 	<property name="Class" value="EntityVJeep"/>
@@ -530,7 +507,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMVan2">
 	<property name="Tags" value="vehicle,Van2"/>
@@ -552,7 +528,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMCrusader">
 	<property name="Tags" value="vehicle,Crusader"/> 
@@ -574,7 +549,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMInterceptor">
 	<property name="Tags" value="vehicle,Interceptor"/>
@@ -594,7 +568,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMMarauder">
 	<property name="Tags" value="vehicle,Marauder"/>
@@ -616,7 +589,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMSpiker">
 	<property name="Tags" value="vehicle,Spiker"/>
@@ -638,7 +610,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMTurbo">
 	<property name="Tags" value="vehicle,Turbo"/>
@@ -660,7 +631,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMMotoGuppy">
 	<property name="Tags" value="vehicle,MotoGuppy"/>
@@ -680,7 +650,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_motorcycle"/>
-	<!--<property name="NavObject" value="" /> -->
 </entity_class>
 <entity_class name="vehicleVMVespa">
 	<property name="Tags" value="vehicle,Vespa"/>
@@ -700,7 +669,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_motorcycle"/>
-	<!--<property name="NavObject" value="Chaos" /> -->
 </entity_class>
 <entity_class name="vehicleVMRV">
 	<property name="Tags" value="vehicle,RV"/>
@@ -722,7 +690,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMApoTruck">
 	<property name="Tags" value="vehicle,ApoTruck"/>
@@ -744,7 +711,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMFireTruckRust">
 	<property name="Tags" value="vehicle,FireTruck"/>
@@ -766,7 +732,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="EMSFiretruck_UI"/> 
-	<!--<property name="NavObject" value="EMSFiretruck_UI" />-->
 </entity_class>
 <entity_class name="vehicleVMFlatbed">
 	<property name="Tags" value="vehicle,Flatbed"/>
@@ -788,7 +753,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMM3ATruck">
 	<property name="Tags" value="vehicle,MM3Atruck"/>
@@ -809,7 +773,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMMonsterPickup">
 	<property name="Tags" value="vehicle.MonsterPickup"/>
@@ -830,7 +793,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMMonsterVan">
 	<property name="Tags" value="vehicle"/>
@@ -852,7 +814,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMBoxTruck2">
 	<property name="Tags" value="vehicle,BoxTruck2"/>
@@ -874,9 +835,7 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="guppyVehicleBoxTruck_UI_1"/> 
-<!-- 	<property name="NavObject" value="guppyVehicleBoxTruck_UI_1" />-->
 </entity_class>
-<!--New New Additions-->
 <entity_class name="vehicleVMCharger">
 	<property name="Tags" value="vehicle,Charger"/>
 	<property name="Class" value="EntityVJeep"/>
@@ -897,7 +856,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMWarthog">
 	<property name="Tags" value="vehicle,Warthog"/>
@@ -919,7 +877,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleMilitaryTruck2">
 	<property name="Tags" value="vehicle,Military2"/>
@@ -941,7 +898,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMTacticalJeep">
 	<property name="Tags" value="vehicle,TacticalJeep"/>
@@ -963,7 +919,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMVeneno">
 	<property name="Tags" value="vehicle,Veneno"/>
@@ -985,7 +940,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMJeepC">
 	<property name="Tags" value="vehicle"/>
@@ -1007,7 +961,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMOldsMobile">
 	<property name="Tags" value="vehicle,OldsMobile"/>
@@ -1029,7 +982,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMBuggy2">
 	<property name="Tags" value="vehicle,Buggy2"/>
@@ -1051,7 +1003,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMStriker">
 	<property name="Tags" value="vehicle,Striker"/>
@@ -1073,7 +1024,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class> 
 <entity_class name="vehicleVMQuad2">
 	<property name="Tags" value="vehicle,Quad2"/>
@@ -1095,7 +1045,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Quad_UI"/> 
-	<!--<property name="NavObject" value="Quad_UI" />-->
 </entity_class> 
 <entity_class name="vehicleVMBeetle">
 	<property name="Tags" value="vehicle,Beetle"/>
@@ -1117,7 +1066,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMCombi">
 	<property name="Tags" value="vehicle,Combi"/>
@@ -1139,7 +1087,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMTruckOpen">
 	<property name="Tags" value="vehicle,TruckOpen"/>
@@ -1161,7 +1108,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMCombi2">
 	<property name="Tags" value="vehicle,Combi2"/>
@@ -1183,7 +1129,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMTruckAmbulance">
 	<property name="Tags" value="vehicle,PjAmbulance"/>
@@ -1205,7 +1150,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMTruckMoPower">
 	<property name="Tags" value="vehicle,Mopower"/>
@@ -1227,7 +1171,6 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
 <entity_class name="vehicleVMWorkingStiffs">
 	<property name="Tags" value="vehicle,WorkingStiff"/>
@@ -1249,9 +1192,8 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="ui_game_symbol_4x4"/>
-	<!-- <property name="NavObject" value="4x4" /> -->
 </entity_class>
-<entity_class name="vehicleVMMuscle2">  <!--IconUI -->
+<entity_class name="vehicleVMMuscle2">     
 	<property name="Tags" value="vehicle,Muscle2"/>
 	<property name="Class" value="EntityVJeep"/>
 	<property name="Parent" value="Cars"/>
@@ -1271,21 +1213,10 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="Faction" value="none"/>
 	<property name="MapIcon" value="Fastback_UI"/>
-<!--	<property name="NavObject" value="Fastback_UI" /> -->
+ 	<property name="NavObject" value="Fastback_UI" />  
 </entity_class>	
 
 
 </append>
-<!-- Remove Nav icon on vanilla vehicles-->
-<remove xpath="//entity_class[@name='vehicleBicycle']/property[@name='NavObject']"/>
-<remove xpath="//entity_class[@name='vehicleMinibike']/property[@name='NavObject']"/>
-<remove xpath="//entity_class[@name='vehicleMotorcycle']/property[@name='NavObject']"/>
-<remove xpath="//entity_class[@name='vehicle4x4Truck']/property[@name='NavObject']"/>
-<remove xpath="//entity_class[@name='vehicleGyrocopter']/property[@name='NavObject']"/>
-<!-- Add tags to vanilla vehicles for buffs xml-->
-<append xpath="/entity_classes/entity_class[@name='vehicleMotorcycle']/property[@name='Tags']/@value">,motorcycle</append>
-<append xpath="/entity_classes/entity_class[@name='vehicle4x4Truck']/property[@name='Tags']/@value">,jeep</append>
-<append xpath="/entity_classes/entity_class[@name='vehicleMinibike']/property[@name='Tags']/@value">,minibike</append>
-<append xpath="/entity_classes/entity_class[@name='vehicleGyrocopter']/property[@name='Tags']/@value">,gyro</append>
-<append xpath="/entity_classes/entity_class[@name='vehicleBicycle']/property[@name='Tags']/@value">,bicycle</append>
+
 </configs>
