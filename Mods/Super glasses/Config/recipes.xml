@@ -1,0 +1,14 @@
+<MyPrecious>
+	<append xpath="/recipes">
+	
+		<recipe name="OneGlassesToRuleThemAll" count="1" material_base="true" craft_area="workbench" craft_time="5">
+			<ingredient name="apparelNerdGlasses" count="1"/>
+			<ingredient name="apparelSkiGoggles" count="1"/>
+			<ingredient name="apparelAviatorGoggles" count="1"/>
+			<ingredient name="apparelToughGuySunglasses" count="1"/>
+			<ingredient name="apparelShades" count="1"/>
+		</recipe>
+		
+	</append>
+
+</MyPrecious>
