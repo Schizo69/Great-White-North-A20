@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Working IceMachines" />
+		<Description value="This adds ice as loot to IceMachines." />
+		<Author value="CronosusCZ" />
+		<Version value="1.1" />
+		<Website value="https://cronos.4fan.cz/" />
+	</ModInfo>
+</xml>
