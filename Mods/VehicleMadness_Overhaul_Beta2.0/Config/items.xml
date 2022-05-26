@@ -2169,7 +2169,6 @@
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy"/>
 	<property name="EconomicValue" value="350"/>
-	<property name="UnlockedBy" value="perkSalvageOperations,meleeToolSalvageT1WrenchSchematic"/>
 	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 			<property name="Class" value="ExchangeItem"/>

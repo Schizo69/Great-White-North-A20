@@ -443,9 +443,9 @@
 	<ingredient name="HotwireKit" count="1"/>
 	<ingredient name="meleeToolSalvageT1Wrench" count="1"/>
 </recipe>
-<recipe name="TFPMotorcycleRepairTool" count="1" craft_time="40" craft_area="Workbench" tags="workbenchCrafting">
+<recipe name="TFPMotorcycleRepairTool" count="1" craft_time="40" craft_area="VMAutoWorkbench" tags="workbenchCrafting">
 	<ingredient name="HotwireKit" count="1"/>
-	<ingredient name="Tire" count="2"/>
+	<ingredient name="vehicleWheels" count="2"/>
 </recipe>
 <recipe name="TFPBicycleRepairTool" count="1" craft_time="40">
 	<ingredient name="vehicleBicycleHandlebars" count="1"/>
