@@ -64,12 +64,6 @@ Add recipe to craft a working oven at the workbench
 			<ingredient name="resourceMechanicalParts" count="1"/>
 		</recipe>
 		
-		<recipe name="cntWallOvenWorking" count="1" craft_area="workbench" tags="perkMasterChef,learnable">
-			<ingredient name="resourceForgedIron" count="40"/>
-			<ingredient name="resourceMetalPipe" count="2"/>
-			<ingredient name="resourceMechanicalParts" count="5"/>
-		</recipe>
-
 		<recipe name="cntGasGrillWorking" count="1" craft_area="workbench" tags="perkMasterChef,learnable">
 			<ingredient name="resourceForgedIron" count="40"/>
 			<ingredient name="toolCookingGrill" count="2"/>
