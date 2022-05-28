@@ -7,10 +7,9 @@
 	<property name="Tags" value="food"/>
 	<property name="HoldType" value="31"/>
 	<property name="DisplayType" value="foodIcePack"/>
-	<property name="CustomIcon" value="resourceSnowBall"/>
-		<property name="CustomIconTint" value="0,255,255"/>
-	<Property name="TintColor" value="00ffff"/>
-	<property name="DescriptionKey" value="foodIcePackDesc"/>
+	<property name="TintColor" value="123,164,40"/>
+		<property name="CustomIcon" value="icepack"/>
+		<property name="DescriptionKey" value="foodIcePackDesc"/>
 	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Morganic"/>
