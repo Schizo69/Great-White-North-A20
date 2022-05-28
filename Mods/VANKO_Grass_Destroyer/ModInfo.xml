@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="VANKO's Grass Destroyer" />
+		<Description value="Adds a grenade that destoys grass (AOE)"/>
+		<Author value="VANKO" />
+		<Version value="1.0" />
+		<Website value="https://vanko.pl" />
+	</ModInfo>
+</xml>

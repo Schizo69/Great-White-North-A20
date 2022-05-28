@@ -1,0 +1,13 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+OakravenStorageVariantHelper,blocks,Block,,,Oakraven Storage Types,,,,,,,,,,,,,
+WoodChestSign1,blocks,Block,,,Wooden Chest 1,,,,,,,,,,,,,
+WoodChestSign2,blocks,Block,,,Wooden Chest 2,,,,,,,,,,,,,
+MetalBox3,blocks,Block,,,Metal Box,,,,,,,,,,,,,
+WoodBoxSign1,blocks,Block,,,Wooden Box,,,,,,,,,,,,,
+DisplayCaseSign1,blocks,Block,,,Display Case 1,,,,,,,,,,,,,
+BookCabinetSign,blocks,Block,,,Book Cabinet,,,,,,,,,,,,,
+WallBookCase,blocks,Block,,,Wall Book Case,,,,,,,,,,,,,
+DisplayCase2,blocks,Block,,,Display Case 2,,,,,,,,,,,,,
+MetalChestSign1,blocks,Block,,,Metal Chest,,,,,,,,,,,,,
+WoodCrateSign2,blocks,Block,,,Wooden Crate,,,,,,,,,,,,,

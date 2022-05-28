@@ -1,0 +1,36 @@
+<configs>
+
+	<append xpath="//items">
+		<item name="apparelUnderwaterBreathingDivingMaskITAV">
+			<property name="Extends" value="apparelHazmatMaster"/>
+			<property name="DescriptionKey" value="apparelUnderwaterBreathingDivingMaskITAVDesc"/>
+			<property name="CustomIcon" value="apparelGasMask" />
+			<property name="Tags" value="head,clothing,canHaveCosmetic,noMods"/>
+			<property name="EquipSlot" value="Head"/>
+			<property class="UMA">
+				<property name="Mesh" value="armor_hazmat_head"/>
+				<property name="Overlay0" value="armor_hazmat_hood"/>
+				<property name="Layer" value="middle"/>
+				<property name="UISlot" value="Headgear"/>
+				<property name="Mask1" value="Head" param1="inner"/>
+				<property name="Mask3" value="Face" param1="inner"/>
+				<property name="Mask4" value="Face" param1="middle"/>
+				<property name="Mask5" value="Face" param1="outer"/>
+				<property name="ShowAltHair" value="true"/>
+			</property>
+			<effect_group tiered="false">
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="HypothermalResist" operation="base_add" value="20"/>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="1"/>
+				<passive_effect name="ModSlots" operation="base_set" value="0"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="9999" />
+				<passive_effect name="DegradationPerUse" operation="base_set" value="0" />
+				<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="buffUnderWaterBreathingITAV"/>
+				<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="buffUnderWaterBreathingITAV"/>
+			</effect_group>
+			<property name="EconomicValue" value="100" />
+			<property name="EconomicBundleSize" value="1" />
+		</item>
+	</append>
+
+</configs>

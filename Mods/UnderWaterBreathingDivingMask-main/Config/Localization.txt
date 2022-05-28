@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+apparelUnderwaterBreathingDivingMaskITAV,Items,,,,"Diving Mask"
+

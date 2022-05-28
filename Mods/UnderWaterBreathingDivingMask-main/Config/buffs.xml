@@ -1,0 +1,17 @@
+<configs>
+
+	<append xpath="/buffs">
+		<buff name="buffUnderWaterBreathingITAV" hidden="false" icon="ui_game_symbol_oxygen" remove_on_death="false">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDrowning01" />
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDrowning02" />
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="buffDrowning03" />
+			</effect_group>
+		</buff>
+	</append>
+
+	<append xpath="//buff[@name='buffStatusCheck01']/effect_group/triggered_effect[@buff='buffDrowning01']">
+		<requirement name="!HasBuff" buff="buffUnderWaterBreathingITAV"/>
+	</append>
+
+</configs>

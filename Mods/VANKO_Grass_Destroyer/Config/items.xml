@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+	<append xpath="/items">
+		<item name="grassDestroyer">
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="thrownGrenadeContact"/>
+			<property name="CustomIconTint" value="210,0,210"/>
+			<property name="TintColor" value="210,0,210"/>
+			<property name="Tags" value="ammo,weapon,attPerception,perkDemolitionsExpert,admin,dev"/>
+			<property name="ItemTypeIcon" value="explosion"/>
+			<property name="DisplayType" value="ammoGrenadeContact"/>
+			<property name="Class" value="ItemClassTimeBomb"/>
+			<property name="HoldType" value="57"/>
+			<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Grenade/GrenadePrefab.prefab"/>
+			<property name="DropScale" value="2.5"/>
+			<property name="Material" value="Mmetal"/>
+			<property name="Stacknumber" value="999"/>
+			<property name="EconomicValue" value="0"/>
+			<property name="Weight" value="0"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Explosion.ParticleIndex" value="0"/>
+			<property name="Explosion.RadiusBlocks" value="20"/>
+			<property name="Explosion.RadiusEntities" value="0"/>
+			<property name="Explosion.DamageBonus.boulder" value="0"/>
+			<property name="Explosion.DamageBonus.cloth" value="0"/>
+			<property name="Explosion.DamageBonus.concrete" value="0"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<property name="Explosion.DamageBonus.glass" value="0"/>
+			<property name="Explosion.DamageBonus.leaves" value="100"/>
+			<property name="Explosion.DamageBonus.metal" value="0"/>
+			<property name="Explosion.DamageBonus.organic" value="0"/>
+			<property name="Explosion.DamageBonus.plants" value="0"/>
+			<property name="Explosion.DamageBonus.snow" value="0"/>
+			<property name="Explosion.DamageBonus.stone" value="0"/>
+			<property name="Explosion.DamageBonus.water" value="0"/>
+			<property name="Explosion.DamageBonus.wood" value="0"/>
+			<property name="Explosion.BlastPower" value="0"/>
+			<property name="FuseStartOnDrop" value="true"/>
+			<property name="ExplodeOnHit" value="true"/>
+			<property name="Group" value="Ammo/Weapons"/>
+			<property name="SoundUnholster" value="grenade_unholster"/>
+			<property class="Action0">
+				<property name="Class" value="ThrowAway"/>
+				<property name="Delay" value=".01"/>
+				<property name="Throw_strength_default" value="50"/>
+				<property name="Throw_strength_max" value="75"/>
+				<property name="Max_strain_time" value="0"/>
+				<property name="Sound_start" value="grenade_throw"/>
+				<property name="Gravity" value="-5"/>
+				<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+			</property>
+			<property name="ThrowableDecoy" value="true"/>
+			<effect_group tiered="false">
+				<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+				<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+			</effect_group>
+		</item>
+	</append>
+
+</configs>

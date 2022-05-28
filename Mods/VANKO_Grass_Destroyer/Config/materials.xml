@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+	<!--<set xpath="/materials/material[@id='Mplants']/property[@name='damage_category']/@value">plants</set>-->
+	<set xpath="/materials/material[@id='Mleaves']/property[@name='damage_category']/@value">leaves</set>
+	<set xpath="/materials/material[@id='Mtallgrass']/property[@name='damage_category']/@value">leaves</set>
+</configs>

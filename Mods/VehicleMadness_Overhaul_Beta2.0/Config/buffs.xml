@@ -1,0 +1,201 @@
+<configs>
+
+<!--   Vehicle Madness Version 3 Beta 2.0 January 2022 A20 -->
+<append xpath="/buffs/buff[@name='buffStatusCheck01']/effect_group">
+<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" buff="buffVMPlayerMaster"/>
+</append>  <!-- Starts VMplayerMaster -->
+
+<append xpath="/buffs">
+<!-- player buffs -->
+<buff name="buffVMPlayerMaster" hidden="true">
+<stack_type value="ignore"/>
+<duration value="0"/>
+<update_rate value=".1"/>
+<effect_group name="Send Master to All Vehicles">  <!-- Target the vehicles -->
+<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="50" buff="buffVMVehicleMaster" target_tags="vehicle"/>
+</effect_group>
+<effect_group name="Send PlayerIsNear to a Vehicle"> <!-- Set Player near vehicle range for individual Buffs--> 
+<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range=".25" buff="buffVMPlayerIsNear" target_tags="vehicle"/>
+</effect_group>
+<effect_group name="Sets CVar if Bicycle in Inventory">  <!-- The First Cvar for Item held in player inventory --> 
+<requirement name="PlayerItemCount" item_name="vehicleBicyclePlaceable" operation="GTE" value="1"/>  
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="IsHoldingBicycle" operation="set" value="1" target="selfAOE" range=".25" target_tags="vehicle"/>
+</effect_group>
+<effect_group name="Sets CVar if Motorcycle in Inventory">  <!-- The Second Cvar for Item held in player inventory --> 
+<requirement name="PlayerItemCount" item_name="vehicleMotorcyclePlaceable" operation="GTE" value="1"/>  
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="IsHoldingMotorcycle" operation="set" value="1" target="selfAOE" range=".25" target_tags="vehicle"/>
+</effect_group>
+<effect_group name="Sets CVar if MotoGuppy in Inventory">  <!-- The Third Cvar for Item held in player inventory --> 
+<requirement name="PlayerItemCount" item_name="vehicleVMMotoGuppyPlaceable" operation="GTE" value="1"/>  
+<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="IsHoldingVMMotoGuppy" operation="set" value="1" target="selfAOE" range=".25" target_tags="vehicle"/>
+</effect_group>
+<effect_group name="Sets CVar if Sedan Chassis in Inventory">  <!-- The Fourth Cvar for Item held in player inventory --> 
+<!--<requirements compare_type="or">  </requirements>  any Item in this list held by player   -->
+	<requirement name="PlayerItemCount" item_name="cntCar03SedanDamage2v09" operation="GTE" value="1"/>
+	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="IsHoldingChassisS" operation="set" value="1" target="selfAOE" range=".25" target_tags="vehicle"/>
+	<requirement name="PlayerItemCount" item_name="repairableMilitaryCar" operation="GTE" value="1"/>
+	<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="IsHoldingChassisM" operation="set" value="1" target="selfAOE" range=".25" target_tags="vehicle"/>
+</effect_group>
+</buff>
+<!-- Specific vehicle buffs -->
+<buff name="buffVMPlayerIsNear" hidden="true">
+<stack_type value="replace"/>
+<duration value=".5"/>
+<effect_group name="RV Temporary Attachments">
+<requirement name="EntityTagCompare" tags="RV"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?bicycle_Prefab.prefab" local_offset="1.35, 0.8,-0.6" local_rotation="0,0,-9" parent_transform="GameObject">
+<requirement name="CVarCompare" cvar="IsHoldingBicycle" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="bicycle_Prefab"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="bicycle_Prefab"/>	
+<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="IsHoldingBicycle" operation="set" value="0"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="IsHoldingBicycle" operation="set" value="0"/>	
+</effect_group>
+
+<effect_group name="Flatbed truck Temporary Attachments">
+<requirement name="EntityTagCompare" tags="Flatbed"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/car_black_dmg2Prefab" local_offset="0, .4, -.8" local_rotation="0,0,0" parent_transform="GameObject">
+<requirement name="CVarCompare" cvar="IsHoldingChassisS" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="car_black_dmg2Prefab"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="car_black_dmg2Prefab"/>	
+<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="IsHoldingChassisS" operation="set" value="0"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="IsHoldingChassisS" operation="set" value="0"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Wrecks3.unity3d?MilitaryCar_v0Prefab" local_offset="0, .4, -.8" local_rotation="0,0,0" parent_transform="GameObject">
+<requirement name="CVarCompare" cvar="IsHoldingChassisM" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="MilitaryCar_v0Prefab"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="MilitaryCar_v0Prefab"/>	
+<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="IsHoldingChassisM" operation="set" value="0"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="IsHoldingChassisM" operation="set" value="0"/>
+</effect_group>
+
+<effect_group name="Van2 Temporary Attachments">
+<requirement name="EntityTagCompare" tags="van2"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?bicycle_Prefab.prefab" local_offset="1.35, 0.8,-0.6" local_rotation="0,0,-9" parent_transform="GameObject">
+<requirement name="CVarCompare" cvar="IsHoldingBicycle" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="bicycle_Prefab"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="bicycle_Prefab"/>	
+<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="IsHoldingBicycle" operation="set" value="0"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="IsHoldingBicycle" operation="set" value="0"/>
+</effect_group>
+
+<effect_group name="MilitaryTruck2 Temporary Attachments">
+<requirement name="EntityTagCompare" tags="Military2"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?bicycle_Prefab.prefab" local_offset=".8, 1.0,-2.4" local_rotation="0,0,-9" parent_transform="GameObject">
+<requirement name="CVarCompare" cvar="IsHoldingBicycle" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/Repairables2.unity3d?VMotorcyclePrefab.prefab" local_offset="-.7, 1.0, -1" local_rotation="0,0,12" parent_transform="GameObject">
+<requirement name="CVarCompare" cvar="IsHoldingMotorcycle" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/VMCustoms3.unity3d?VMminibike.Prefab" local_offset="-.5, 0, -2.3" local_rotation="0,0,12" parent_transform="GameObject">
+<requirement name="CVarCompare" cvar="IsHoldingVMMotoGuppy" operation="Equals" value="1"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="bicycle_Prefab"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="bicycle_Prefab"/>	
+<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="IsHoldingBicycle" operation="set" value="0"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="IsHoldingBicycle" operation="set" value="0"/>
+<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="VMotorcyclePrefab.prefab"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="VMotorcyclePrefab.prefab"/>	
+<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="IsHoldingMotorcycle" operation="set" value="0"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="IsHoldingMotorcycle" operation="set" value="0"/>
+<triggered_effect trigger="onSelfBuffFinish" action="RemovePrefabFromEntity" prefab="VMminibikePrefab"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="RemovePrefabFromEntity" prefab="VMminibikePrefab"/>	
+<triggered_effect trigger="onSelfBuffFinish" action="ModifyCVar" cvar="IsHoldingVMMotoGuppy" operation="set" value="0"/>	
+<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="IsHoldingVMMotoGuppy" operation="set" value="0"/>
+</effect_group>
+</buff>
+
+<buff name="buffVMVehicleMaster" hidden="true"><!-- Permanent Attachments when in range -->
+<stack_type value="ignore"/>
+<duration value="0"/>
+<effect_group name="Van2 Attachments and Effects">
+<requirement name="EntityTagCompare" tags="Van2"/>
+<!-- attachments -->
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,1.53,2.62" local_rotation="35,0,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Zombies?Zombies/corpse2Prefab.prefab" local_offset="0,.7,2.7" local_rotation="0,90,-25" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Bandits/Barbedwire/barbedwire_spindle_1mPrefab" local_offset="0,.19,2.99" local_rotation="0,0,0" parent_transform="GameObject"/>
+<!-- effects -->
+<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="2" buff="buffInjuryKnockdown02,buffInjuryCrippled01">
+<requirement name="EntityTagCompare" target="other" tags="zombie,enemy,walker"/>
+</triggered_effect>
+</effect_group>
+
+<effect_group name="RV Attachments and Effects">
+<requirement name="EntityTagCompare" tags="RV"/>
+<!-- attachments -->
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,3.4,2.8" local_rotation="15,0,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Bandits/Barbedwire/barbedwire_spindle_1mPrefab" local_offset="0,1,3.3" local_rotation="45,0,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Zombies?Zombies/corpse2Prefab.prefab" local_offset="0,3.65,-1.2" local_rotation="0,45,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Industrial/barrelGasPrefab" local_offset="0.7,1.2,-3.1" local_rotation="0,0,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Commercial/posterMovieMammasJusticePrefab" local_offset="1.7, 2.2, 0" local_rotation="0,90,0" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Commercial/posterMovieLoneWolfPrefab" local_offset="-1.8,2.0,-.7" local_rotation="0,-90,0" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Appliances/vent_fan_doublePrefab" local_offset="-1.85, 2.25 ,-2.36" local_rotation="90,90,180" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Appliances/vent_fan_doublePrefab" local_offset="1.85, 2.25 ,-2.36" local_rotation="90,90,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Appliances/vent_fanPrefab" local_offset="0,3.65,-.3" local_rotation="0,0,0" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Appliances/vent_fanPrefab" local_offset="0,3.65,1.2" local_rotation="0,0,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/trunk_lid_flippedPrefab.prefab" local_offset="-.85, 2.21 ,1.34" local_rotation="-90,0,-90" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/car_wheel_uprightPrefab.prefab" local_offset="0,1.1,-2.11" local_rotation="0,-90,0" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?munitionsBox_01Prefab.prefab" local_offset="0, 1.3, -1.1" local_rotation="0,0,0" parent_transform="GameObject"/>
+
+<!-- effects -->
+<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="buffInjuryKnockdown02,buffInjuryCrippled01">
+<requirement name="EntityTagCompare" target="other" tags="zombie,enemy,walker"/>
+</triggered_effect>
+</effect_group>
+	
+<effect_group name="Pickup Attachments and Effects">
+<requirement name="EntityTagCompare" tags="Pickup"/>
+<!-- attachments -->
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Industrial/barrelGasPrefab" local_offset=".565,1.95,-2.5" local_rotation="0,0,0" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?shopping_cartPrefab.prefab" local_offset="-.42,1.91,-2.65" local_rotation="180,0,180" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?weapon_bags_smallPrefab.prefab" local_offset="-.45,1.45,-1.9" local_rotation="0,90,0" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Furniture/officeChairPrefab" local_offset="-.48,1.9,-1.22" local_rotation="0,22,0" parent_transform="GameObject"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/motorPrefab.prefab" local_offset="0.35,1.93,-1.4" local_rotation="0,180,0" parent_transform="GameObject"/>
+<!-- effects -->
+<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="buffInjuryKnockdown02,buffInjuryCrippled01">
+<requirement name="EntityTagCompare" target="other" tags="zombie,enemy,walker"/>
+</triggered_effect>
+</effect_group>
+<effect_group name="Flatbed Truck Attachments and Effects">
+<requirement name="EntityTagCompare" tags="Flatbed"/>
+<!-- attachments -->	
+<!-- effects -->
+<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="buffInjuryKnockdown02,buffInjuryCrippled01">
+<requirement name="EntityTagCompare" target="other" tags="zombie,enemy,walker"/>
+</triggered_effect>
+</effect_group>
+<effect_group name="Military Truck2 Attachments and Effects">
+<requirement name="EntityTagCompare" tags="Military2"/>
+<!-- attachments -->
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Industrial/barrelGasPrefab" local_offset="1,1.5,0.7" local_rotation="0,0,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?weapon_bags_smallPrefab.prefab" local_offset="-.85,1,-1.9" local_rotation="0,0,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/motorPrefab.prefab" local_offset="0,1.5,0" local_rotation="0,0,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Vehicles?Car/car_wheel_uprightPrefab.prefab" local_offset="-.7,1.5,-2.8" local_rotation="0,-90,0" parent_transform="Mesh"/>
+<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?munitionsBox_01Prefab.prefab" local_offset="0, 1.4, -1.3" local_rotation="0,0,0" parent_transform="Mesh"/>
+
+ <!-- effects -->
+<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="3" buff="buffInjuryKnockdown02,buffInjuryCrippled01">
+<requirement name="EntityTagCompare" target="other" tags="zombie,enemy,walker"/>
+</triggered_effect>
+</effect_group>
+</buff>
+</append>
+</configs>
+
+<!-- How to Use:
+
+VehicleEntityDamage
+VehicleBlockDamage
+VehicleReflectedDamage
+
+Place any base attachments or vehicle buffs that you want active at all times inside the 'buffVMVehicleMaster' using the same layout. Be sure the tag is correct to an entitytag in entities.xml.
+
+For any items you want to attach on the vehicle as the player is inside / driving, use the 'buffVMPlayerIsNear' with the same layout. This one checks the players inventory for said item, then attaches said prefab. Be sure each item is a separate cvar so there is no overlap. It's a short buff so it will remove the prefabs once the buff is removed.
+
+Attaching not so straight forward as you can not use the same parent twice  ..so some have origin and some have gameobject or mesh specified .
+
+Local offset parameters attach the prefab onto the model - 0,0,0 - First expresses left to right from central origin. / Second expresses up and down from central origin. / Third expresses front to back from central origin.  for Customs use GameObject or Mesh to reference  0,0,0 as custom meshes can be at different rotations ...sometimes it is a suck it and see with customs.
+
+ Local rotation parameters direct the angle of the prefab onto the model - 0,0,0 - First expresses forwards/backwards angle. / Second expresses left/right twist angle. / Third expresses left/right lean angle. -->

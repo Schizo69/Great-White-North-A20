@@ -1,0 +1,13 @@
+<configs>
+	
+	<append xpath="//recipes">
+		<!-- Diving Mask  -->
+		<recipe name="apparelUnderwaterBreathingDivingMaskITAV" count="1" craft_time="15">
+			<ingredient name="resourceCloth" count="60"/>
+			<ingredient name="resourceScrapPolymers" count="60"/>
+			<ingredient name="resourceDuctTape" count="20"/>
+			<ingredient name="resourceSewingKit" count="5"/>
+		</recipe>
+	</append>	
+			
+</configs>
