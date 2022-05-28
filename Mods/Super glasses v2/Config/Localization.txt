@@ -1,3 +1,0 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,context
-OneGlassesToRuleThemAll,items,Clothes,,,"One Glasses To Rule Them All"
-OneGlassesToRuleThemAllDesc,items,Clothes,,,"The one pair of glasses that will rule over them all. The only pair of glasses you will ever need."

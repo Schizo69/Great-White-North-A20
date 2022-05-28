@@ -775,7 +775,35 @@
 
 	<!-- Set Player Lantern to pick up as Player Lantern -->
 	<setattribute xpath="/blocks/block[@name='lanternLight_player']/property[@name='CanPickup']" name="param1">lanternLight_player</setattribute>
-		
+
+	<!-- Add pickup option to lights that convert to Player Lights-->
+	<append xpath="/blocks/block[@name='porchLight01']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='industrialLight01']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+		<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	</append>
+	<append xpath="/blocks/block[@name='chandelierLight']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='streetLight01']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+	<append xpath="/blocks/block[@name='spotlightNailedDownPOI']">
+		<property name="Class" value=""/>
+		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
+		<property name="TakeDelay" value="2"/>
+	</append>
+	
 	<!-- Add pickup option to flashlights and lanterns that convert to Player Lanterns-->
 	<append xpath="/blocks/block[@name='lanternDecorLight']">
 		<property name="Class" value=""/>
@@ -787,6 +815,20 @@
 		<property name="CanPickup" value="true" param1="lanternLight_player"/>
 		<property name="TakeDelay" value="2"/>
 	</append>
+
+	<!-- = = = = = = = = = = = = = = Add Blocks to Helpers = = = = = = = = = = = = = = = = -->
+	<!-- Add Trader Joel signs to Wood Sign Helper -->
+	<append xpath="/blocks/block[@name='woodSignBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,signShopTraderJoel2x5Wall,signShopTraderJoel1x3Wall</append>
+	<!-- Add to Wooden Storage / Furnature Helper -->
+	<append xpath="/blocks/block[@name='cntWoodFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,decoCntShoesPileBusinessShoes,decoCntShoesPileCommercial01,decoCntShoesPileCommercial02,decoCntShoesPileLeatherBoots,decoCntShoesPileSandals,decoCntShoesPileSneakers,decoCntShoesPileWomensHeels,decoCntClothesPileFloor01,cntModularClosetEnd,cntModularClosetOpen,decoCntModularClosetClosed,cntClothesShelfHalfJeans01,cntClothesShelfHalfJeans02,cntClothesShelfHalfShirts01,cntClothesShelfHalfShirts02,cntClothesShelfHalfSweaters01,cntClothesShelfStackJeans01,cntClothesShelfStackJeans02,cntClothesShelfStackShirts01,cntClothesShelfStackShirts02,decoCntAmmoPileSmall,decoCntAmmoPileMedium,decoCntAmmoPileLarge,decoCntFoodPileSmall,decoCntFoodPileMedium,decoCntFoodPileLarge,decoCntChemPileSmall,decoCntChemPileMedium,decoCntChemPileLarge,decoCntMedicLootPileA,decoCntMedicLootPileB,cntPillCaseClosed,cntMedicineCabinetClosed,cntMedicineCabinetFaucetClosed,decoCntBookPile01,decoCntBookPile02,decoCntBookPile03,decoCntBookPile04,cntBookShelfDoubleBottomFull01,cntBookShelfDoubleBottomFull02,cntBookShelfDoubleTopFull01,cntBookShelfDoubleTopFull02,cntBookShelfSingleBottomFull01,cntBookShelfSingleBottomFull02,cntBookShelfSingleTopFull01,cntBookShelfSingleTopFull02,cntBookShelfSingleCapBottomFull01,cntBookShelfSingleCapBottomFull02,cntBookShelfSingleCapTopFull01,cntBookShelfSingleCapTopFull02,paintingBen,paintingDerek,paintingDuke,paintingKen,paintingLorien,paintingNoah,houseFrontDoor1_v1,houseFrontDoor2_v1,decoBasketBallHoop,decoPoolTable,decoReptileTerrarium,driftwood,driftwood2,decoWildWestWagon,modularFireWoodStackA,modularFireWoodStackB,modularFireWoodStackC,palletEmptyStack,shootingRangeTarget,emberPileDeco1,emberPileDeco2,emberPileDeco3,emberPileDeco4,cntBookcaseFull,decoWineBottle,decoWineBottleCorner,decoWineBottleShelfRow,decoWineBottlePile01,decoWineBottlePile02,fastFoodBooth,fastFoodBoothEndClosed,fastFoodBoothEndOpen,fastFoodBoothMiddle,fastFoodBoothBrown,fastFoodBoothEndClosedBrown,fastFoodBoothEndOpenBrown,fastFoodBoothMiddleBrown,fastFoodBoothRed,fastFoodBoothEndClosedRed,fastFoodBoothEndOpenRed,fastFoodBoothMiddleRed,fastFoodBoothOrange,fastFoodBoothEndClosedOrange,fastFoodBoothEndOpenOrange,fastFoodBoothMiddleOrange,fastFoodBoothYellow,fastFoodBoothEndClosedYellow,fastFoodBoothEndOpenYellow,fastFoodBoothMiddleYellow,fastFoodBoothGreen,fastFoodBoothEndClosedGreen,fastFoodBoothEndOpenGreen,fastFoodBoothMiddleGreen,fastFoodBoothPurple,fastFoodBoothEndClosedPurple,fastFoodBoothEndOpenPurple,fastFoodBoothMiddlePurple,fastFoodBoothGrey,fastFoodBoothEndClosedGrey,fastFoodBoothEndOpenGrey,fastFoodBoothMiddleGrey,fastFoodBoothWhite,fastFoodBoothEndClosedWhite,fastFoodBoothEndOpenWhite,fastFoodBoothMiddleWhite,fastFoodBoothBlack,fastFoodBoothEndClosedBlack,fastFoodBoothEndOpenBlack,fastFoodBoothMiddleBlack,restaurantTableEnd,restaurantTableMiddle,restaurantBooth,restaurantBoothCorner,keyRackWood01,signNationalPark,mirror,wallMirror,woodPlanksStack</append>
+	<!-- Add Deco Items to Metal Furnature Helper -->
+	<append xpath="/blocks/block[@name='metalFurnitureBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,faucetBrass02,faucetBrass04,signBathroomSignUnisexWallMount,signBathroomSignUnisexCeilingMount,signBathroomSignWomenWallMount,signBathroomSignWomenCeilingMount,signBathroomSignMenWallMount,signBathroomSignMenCeilingMount,cntShoppingCart,cntStoreShelfDoubleBottomFood01,cntStoreShelfDoubleBottomFood02,cntStoreShelfDoubleTopFood01,cntStoreShelfSingleBottomFood01,cntStoreShelfSingleBottomFood02,cntStoreShelfSingleTopFood01,cntRollingToolBoxClosed,cntToolBoxClosed,cntStoreShelfDoubleBottomHardware01,cntStoreShelfDoubleBottomHardware02,cntStoreShelfDoubleBottomHardware03Rags,cntStoreShelfDoubleTopHardware01,cntStoreShelfDoubleTopHardware02Rags,cntStoreShelfSingleBottomHardware01,cntStoreShelfSingleBottomHardware02,cntStoreShelfSingleTopHardware01,cntStoreShelfSingleTopHardware02,cntGunRackLargeGuns01,cntGunRackLargeGuns02,cntGunRackSmallArmor,cntGunRackSmallMagazines,cntDisplayCaseAmmoLeftBroken,cntDisplayCaseAmmoMiddleBroken01,cntDisplayCaseAmmoMiddleBroken02,cntDisplayCaseAmmoRightBroken,cntClothesRackRectanglePants,cntClothesRackRectangleShirts,cntClothesRackRoundPants,cntClothesRackRoundShirts,cntStoreShelfDoubleBottomShoesFull,cntStoreShelfDoubleTopShoesFull,cntStoreShelfSingleBottomShoesFull,cntStoreShelfSingleTopShoesFull,cntClothesRackWallLongSleeve,cntClothesRackWallPants,cntClothesRackWallSweater,cntClothesRackWallTShirts,cntStoreShelfElectronicsDoubleBottomGoods01,cntStoreShelfElectronicsDoubleBottomGoods02,cntStoreShelfElectronicsDoubleBottomGoods03,cntStoreShelfElectronicsDoubleBottomGoods04,cntStoreShelfElectronicsSingleBottomElectronicsMonitor,cntStoreShelfElectronicsSingleBottomGoodsMisc,cntStoreShelfElectronicsSingleBottomHeadphones,cntStoreShelfElectronicsSingleBottomKeyboard,cntStoreShelfElectronicsSingleBottomLaptopClosed,cntStoreShelfElectronicsSingleBottomLaptopOpen,cntStoreShelfElectronicsSingleBottomPC,cntStoreShelfElectronicsSingleBottomSpeaker,signPillsLogoSmall,signPillsLogo,cntStoreShelfDoubleBottomPharmaGoods01,cntStoreShelfDoubleBottomPharmaGoods02,cntStoreShelfSingleBottomPharmaGoods01,cntStoreShelfSingleBottomPharmaGoods02,cntCharcoalGrillClosed,cntCharcoalGrillOpen,cntGasGrillClosed,cntGasGrillOpen,cntDumpster,cntDumpsterFlies,cntFancyGarbageCan,cntFileCabinetShortClosed,cntFileCabinetTallClosed,cntHardenedChestSecure,cntHardenedChestSecureT5,cntMunitionsBoxArmy,cntMunitionsBoxRed,cntMunitionsBoxGreen,cntMunitionsBoxBlue,cntMunitionsBoxOrange,cntUtilityCartFull,furnaceDrawer,morticianDrawer,decoTableRound,decoBenchPress,decoWeightBar,decoStationaryBike,decoTreadmill,decoMetalSlide,decoSwingSet,flagPoleAmerican,flagPoleWhiteRiver,cntPostMailbox,cntNewsDispenseFreeGreen,cntNewsDispenseFreeOrange,cntNewspaperDispenserStandBlue,cntNewspaperDispenserStandYellow,fireHydrant,fireHydrantYellow,jailBars,jailDoorStatic,commercialDoor1_v1,commercialDoor2_v1,commercialDoor4_v1,decoMetalBollard,decoMetalBollardDestroyed01,decoHandTruck,decoHoistChain,decoHoistHook,decoHoistMagnet,decoHoistSpreader,decoHoistTopMount,heatVentIndustrial,cntWoodBurningStove,crushedCars,decoCarBackDoorFlat,decoCarBackDoorFlipped,decoCarFrontDoorFlat,decoCarFrontDoorFlipped,decoCarPartsRamp,decoCarRadiatorFlat,decoCarRadiatorFlipped,gurneyBed,hospitalBed,barracksChair,churchBell,churchBellHanging,churchBell1x2x1,churchBellHanging1x2x1,keyRackBoxMetal01,palletCans,apartmentMailboxClosedRed,apartmentMailboxClosedYellow,apartmentMailboxClosedGreen,apartmentMailboxClosedBlue,apartmentMailboxClosedGrey,apartmentMailboxClosedWhite,apartmentMailboxOpenRed,apartmentMailboxOpenYellow,apartmentMailboxOpenGreen,apartmentMailboxOpenBlue,apartmentMailboxOpenGrey,apartmentMailboxOpenWhite,barStool,barStoolBrown,barStoolGreen,barStoolBlue,barStoolGrey,barStoolWhite,barStoolBlack,barStoolPink,schoolDesk,bathroomStallWall,bathroomStallSupport,bathroomStallSupportRight,bathroomStallSupportLeft,bathroomStallDoor,bathroomStallSCTRBeam,bathroomStallCTRBeam,bleachersTopMiddle,bleachersTopSupport,bleachersUnderneathMiddle,bleachersUnderneathSupport,bleachersBottomMiddle,bleachersBottomSupport,bleachersSupport</append>
+	<!-- Add Store Windows to Glass Helper -->
+	<append xpath="/blocks/block[@name='glassBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,windowStoreFourSidedFull,windowStoreThreeSidedFull,windowStoreTwoSidedFull,windowStoreOneSidedFull,windowStoreCornerFull,mirror,window02,stainedGlassPlate,stainedGlassCTRPlate</append>
+	<!-- Add Bulletproof Store Windows to Bulletproof Glass Helper -->
+	<append xpath="/blocks/block[@name='glassBulletproofBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,windowStoreCornerBulletproof,windowStoreFourSidedBulletproof,windowStoreThreeSidedBulletproof,windowStoreTwoSidedBulletproof,windowStoreOneSidedBulletproof</append>
+	<!-- Add Tubs to Sink and Toilet Helper -->
+	<append xpath="/blocks/block[@name='sinksToiletsBlockVariantHelper']/property[@name='PlaceAltBlockValue']/@value">,counterSinkCommercialTile,decoClawFootBathTub,cntBathTubEmpty,cntBathTubGore</append>
 	
 <!-- bhwInteriorDesign Edits End -->
 

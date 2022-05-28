@@ -1,0 +1,1262 @@
+<configs>
+
+<!-- Lowest Vanilla ZombiesAll is zombieJanitor prob=0.2 -->	
+	  <append xpath="/entitygroups/entitygroup[@name='ZombiesAll']">
+		<entity name="RaiderJayneClub" prob="0.1" />
+		<entity name="RaiderGinaClub" prob="0.1" />
+		<entity name="RaiderBettyClub" prob="0.1" />
+		<entity name="RaiderHedyClub" prob="0.1" />
+		<entity name="RaiderGypsyClub" prob="0.1" />
+		<entity name="RaiderJayneMachete" prob="0.1" />
+		<entity name="RaiderGinaMachete" prob="0.1" />
+		<entity name="RaiderBettyMachete" prob="0.1" />
+		<entity name="RaiderHedyMachete" prob="0.1" />
+		<entity name="RaiderGypsyMachete" prob="0.1" />
+		<entity name="RaiderJayneKnife" prob="0.1" />
+		<entity name="RaiderGinaKnife" prob="0.1" />
+		<entity name="RaiderBettyKnife" prob="0.1" />
+		<entity name="RaiderHedyKnife" prob="0.1" />
+		<entity name="RaiderGypsyKnife" prob="0.1" />
+		<entity name="RaiderJayneBat" prob="0.1" />
+		<entity name="RaiderGinaBat" prob="0.1" />
+		<entity name="RaiderBettyBat" prob="0.1" />
+		<entity name="RaiderHedyBat" prob="0.1" />
+		<entity name="RaiderGypsyBat" prob="0.1" />
+		<entity name="RaiderHedyAxe" prob="0.1" />
+		<entity name="RaiderGinaAxe" prob="0.1" />
+		<entity name="RaiderBettyAxe" prob="0.1" />
+		<entity name="RaiderJayneAxe" prob="0.1" />
+		<entity name="RaiderGypsyAxe" prob="0.1" />	
+		<entity name="RaiderJayneSMG" prob=".05" />
+		<entity name="RaiderJayneDPistol" prob="0.1" />
+		<entity name="RaiderJayneTRifle" prob="0.1" />
+		<entity name="RaiderBettySMG" prob="0.1" />
+		<entity name="RaiderBettyDPistol" prob="0.1" />
+		<entity name="RaiderBettyTRifle" prob="0.1" />
+		<entity name="RaiderGinaSMG" prob="0.1" />
+		<entity name="RaiderGinaDPistol" prob="0.1" />
+		<entity name="RaiderGinaTRifle" prob="0.1" />
+		<entity name="RaiderHedySMG" prob="0.1" />
+		<entity name="RaiderHedyDPistol" prob="0.1" />
+		<entity name="RaiderHedyTRifle" prob="0.1" />
+		<entity name="RaiderGypsySMG" prob="0.1" />
+		<entity name="RaiderGypsyDPistol" prob="0.1" />
+		<entity name="RaiderGypsyTRifle" prob="0.1" />     	
+	</append>
+
+<!-- Lowest Vanilla ZombiesNight is animalZombieDog prob=0.05 -->	
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesNight']">
+		<entity name="RaiderJayneClub" prob="0.025" />
+		<entity name="RaiderGinaClub" prob="0.025" />
+		<entity name="RaiderBettyClub" prob="0.025" />
+		<entity name="RaiderHedyClub" prob="0.025" />
+		<entity name="RaiderGypsyClub" prob="0.025" />
+		<entity name="RaiderJayneMachete" prob="0.025" />
+		<entity name="RaiderGinaMachete" prob="0.025" />
+		<entity name="RaiderBettyMachete" prob="0.025" />
+		<entity name="RaiderHedyMachete" prob="0.025" />
+		<entity name="RaiderGypsyMachete" prob="0.025" />
+		<entity name="RaiderJayneKnife" prob="0.025" />
+		<entity name="RaiderGinaKnife" prob="0.025" />
+		<entity name="RaiderBettyKnife" prob="0.025" />
+		<entity name="RaiderHedyKnife" prob="0.025" />
+		<entity name="RaiderGypsyKnife" prob="0.025" />
+		<entity name="RaiderJayneBat" prob="0.025" />
+		<entity name="RaiderGinaBat" prob="0.025" />
+		<entity name="RaiderBettyBat" prob="0.025" />
+		<entity name="RaiderHedyBat" prob="0.025" />
+		<entity name="RaiderGypsyBat" prob="0.025" />
+		<entity name="RaiderHedyAxe" prob="0.025" />
+		<entity name="RaiderGinaAxe" prob="0.025" />
+		<entity name="RaiderBettyAxe" prob="0.025" />
+		<entity name="RaiderJayneAxe" prob="0.025" />
+		<entity name="RaiderGypsyAxe" prob="0.025" />	
+		<entity name="RaiderJayneSMG" prob="0.025" />
+		<entity name="RaiderJayneDPistol" prob="0.025" />
+		<entity name="RaiderJayneTRifle" prob="0.025" />
+		<entity name="RaiderBettySMG" prob="0.025" />
+		<entity name="RaiderBettyDPistol" prob="0.025" />
+		<entity name="RaiderBettyTRifle" prob="0.025" />
+		<entity name="RaiderGinaSMG" prob="0.025" />
+		<entity name="RaiderGinaDPistol" prob="0.025" />
+		<entity name="RaiderGinaTRifle" prob="0.025" />
+		<entity name="RaiderHedySMG" prob="0.025" />
+		<entity name="RaiderHedyDPistol" prob="0.025" />
+		<entity name="RaiderHedyTRifle" prob="0.025" />
+		<entity name="RaiderGypsySMG" prob="0.025" />
+		<entity name="RaiderGypsyDPistol" prob="0.025" />
+		<entity name="RaiderGypsyTRifle" prob="0.025" />	
+	</append>
+
+<!-- Lowest Vanilla SnowZombies is zombieLumberjack prob=1.0 -->	
+	<append xpath="/entitygroups/entitygroup[@name='SnowZombies']">
+		<entity name="RaiderJayneClub" prob="0.1" />
+		<entity name="RaiderGinaClub" prob="0.1" />
+		<entity name="RaiderBettyClub" prob="0.1" />
+		<entity name="RaiderHedyClub" prob="0.1" />
+		<entity name="RaiderGypsyClub" prob="0.1" />
+		<entity name="RaiderJayneMachete" prob="0.1" />
+		<entity name="RaiderGinaMachete" prob="0.1" />
+		<entity name="RaiderBettyMachete" prob="0.1" />
+		<entity name="RaiderHedyMachete" prob="0.1" />
+		<entity name="RaiderGypsyMachete" prob="0.1" />
+		<entity name="RaiderJayneKnife" prob="0.1" />
+		<entity name="RaiderGinaKnife" prob="0.1" />
+		<entity name="RaiderBettyKnife" prob="0.1" />
+		<entity name="RaiderHedyKnife" prob="0.1" />
+		<entity name="RaiderGypsyKnife" prob="0.1" />
+		<entity name="RaiderJayneBat" prob="0.1" />
+		<entity name="RaiderGinaBat" prob="0.1" />
+		<entity name="RaiderBettyBat" prob="0.1" />
+		<entity name="RaiderHedyBat" prob="0.1" />
+		<entity name="RaiderGypsyBat" prob="0.1" />
+		<entity name="RaiderHedyAxe" prob="0.1" />
+		<entity name="RaiderGinaAxe" prob="0.1" />
+		<entity name="RaiderBettyAxe" prob="0.1" />
+		<entity name="RaiderJayneAxe" prob="0.1" />
+		<entity name="RaiderGypsyAxe" prob="0.1" />	
+		<entity name="RaiderJayneSMG" prob="0.1" />
+		<entity name="RaiderJayneDPistol" prob="0.1" />
+		<entity name="RaiderJayneTRifle" prob="0.1" />
+		<entity name="RaiderBettySMG" prob="0.1" />
+		<entity name="RaiderBettyDPistol" prob="0.1" />
+		<entity name="RaiderBettyTRifle" prob="0.1" />
+		<entity name="RaiderGinaSMG" prob="0.1" />
+		<entity name="RaiderGinaDPistol" prob="0.1" />
+		<entity name="RaiderGinaTRifle" prob="0.1" />
+		<entity name="RaiderHedySMG" prob="0.1" />
+		<entity name="RaiderHedyDPistol" prob="0.1" />
+		<entity name="RaiderHedyTRifle" prob="0.1" />
+		<entity name="RaiderGypsySMG" prob="0.1" />
+		<entity name="RaiderGypsyDPistol" prob="0.1" />
+		<entity name="RaiderGypsyTRifle" prob="0.1" />		
+	</append>	
+
+<!-- Lowest Vanilla ZombiesWasteland is mixed prob=1.0 -->
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWasteland']">
+		<entity name="RaiderJayneClub" prob="0.1" />
+		<entity name="RaiderGinaClub" prob="0.1" />
+		<entity name="RaiderBettyClub" prob="0.1" />
+		<entity name="RaiderHedyClub" prob="0.1" />
+		<entity name="RaiderGypsyClub" prob="0.1" />
+		<entity name="RaiderJayneMachete" prob="0.1" />
+		<entity name="RaiderGinaMachete" prob="0.1" />
+		<entity name="RaiderBettyMachete" prob="0.1" />
+		<entity name="RaiderHedyMachete" prob="0.1" />
+		<entity name="RaiderGypsyMachete" prob="0.1" />
+		<entity name="RaiderJayneKnife" prob="0.1" />
+		<entity name="RaiderGinaKnife" prob="0.1" />
+		<entity name="RaiderBettyKnife" prob="0.1" />
+		<entity name="RaiderHedyKnife" prob="0.1" />
+		<entity name="RaiderGypsyKnife" prob="0.1" />
+		<entity name="RaiderJayneBat" prob="0.1" />
+		<entity name="RaiderGinaBat" prob="0.1" />
+		<entity name="RaiderBettyBat" prob="0.1" />
+		<entity name="RaiderHedyBat" prob="0.1" />
+		<entity name="RaiderGypsyBat" prob="0.1" />
+		<entity name="RaiderHedyAxe" prob="0.1" />
+		<entity name="RaiderGinaAxe" prob="0.1" />
+		<entity name="RaiderBettyAxe" prob="0.1" />
+		<entity name="RaiderJayneAxe" prob="0.1" />
+		<entity name="RaiderGypsyAxe" prob="0.1" />	
+		<entity name="RaiderJayneSMG" prob="0.1" />
+		<entity name="RaiderJayneDPistol" prob="0.1" />
+		<entity name="RaiderJayneTRifle" prob="0.1" />
+		<entity name="RaiderBettySMG" prob="0.1" />
+		<entity name="RaiderBettyDPistol" prob="0.1" />
+		<entity name="RaiderBettyTRifle" prob="0.1" />
+		<entity name="RaiderGinaSMG" prob="0.1" />
+		<entity name="RaiderGinaDPistol" prob="0.1" />
+		<entity name="RaiderGinaTRifle" prob="0.1" />
+		<entity name="RaiderHedySMG" prob="0.1" />
+		<entity name="RaiderHedyDPistol" prob="0.1" />
+		<entity name="RaiderHedyTRifle" prob="0.1" />
+		<entity name="RaiderGypsySMG" prob="0.1" />
+		<entity name="RaiderGypsyDPistol" prob="0.1" />
+		<entity name="RaiderGypsyTRifle" prob="0.1" />	
+	</append>
+
+<!-- Lowest Vanilla ZombiesWastelandNight is mixed prob=1.0 -->
+	<append xpath="/entitygroups/entitygroup[@name='ZombiesWastelandNight']">
+		<entity name="RaiderJayneClub" prob="0.1" />
+		<entity name="RaiderGinaClub" prob="0.1" />
+		<entity name="RaiderBettyClub" prob="0.1" />
+		<entity name="RaiderHedyClub" prob="0.1" />
+		<entity name="RaiderGypsyClub" prob="0.1" />
+		<entity name="RaiderJayneMachete" prob="0.1" />
+		<entity name="RaiderGinaMachete" prob="0.1" />
+		<entity name="RaiderBettyMachete" prob="0.1" />
+		<entity name="RaiderHedyMachete" prob="0.1" />
+		<entity name="RaiderGypsyMachete" prob="0.1" />
+		<entity name="RaiderJayneKnife" prob="0.1" />
+		<entity name="RaiderGinaKnife" prob="0.1" />
+		<entity name="RaiderBettyKnife" prob="0.1" />
+		<entity name="RaiderHedyKnife" prob="0.1" />
+		<entity name="RaiderGypsyKnife" prob="0.1" />
+		<entity name="RaiderJayneBat" prob="0.1" />
+		<entity name="RaiderGinaBat" prob="0.1" />
+		<entity name="RaiderBettyBat" prob="0.1" />
+		<entity name="RaiderHedyBat" prob="0.1" />
+		<entity name="RaiderGypsyBat" prob="0.1" />
+		<entity name="RaiderHedyAxe" prob="0.1" />
+		<entity name="RaiderGinaAxe" prob="0.1" />
+		<entity name="RaiderBettyAxe" prob="0.1" />
+		<entity name="RaiderJayneAxe" prob="0.1" />
+		<entity name="RaiderGypsyAxe" prob="0.1" />	
+		<entity name="RaiderJayneSMG" prob="0.1" />
+		<entity name="RaiderJayneDPistol" prob="0.1" />
+		<entity name="RaiderJayneTRifle" prob="0.1" />
+		<entity name="RaiderBettySMG" prob="0.1" />
+		<entity name="RaiderBettyDPistol" prob="0.1" />
+		<entity name="RaiderBettyTRifle" prob="0.1" />
+		<entity name="RaiderGinaSMG" prob="0.1" />
+		<entity name="RaiderGinaDPistol" prob="0.1" />
+		<entity name="RaiderGinaTRifle" prob="0.1" />
+		<entity name="RaiderHedySMG" prob="0.1" />
+		<entity name="RaiderHedyDPistol" prob="0.1" />
+		<entity name="RaiderHedyTRifle" prob="0.1" />
+		<entity name="RaiderGypsySMG" prob="0.1" />
+		<entity name="RaiderGypsyDPistol" prob="0.1" />
+		<entity name="RaiderGypsyTRifle" prob="0.1" />
+	</append>
+
+	<!--
+		Entity groups used by spawners for sleeper volumes
+	-->
+	<!-- Bandits NPC entity groups -->
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsAllGroupGS01']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsAllGroupGS50']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsAllGroupGS100']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsAllGroupGS200']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsAllGroupGS400']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsAllGroupGS800']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsMeleeGroupGS01']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsMeleeGroupGS50']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsMeleeGroupGS100']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsMeleeGroupGS200']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsMeleeGroupGS400']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsMeleeGroupGS800']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsRangedGroupGS01']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsRangedGroupGS50']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsRangedGroupGS100']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsRangedGroupGS200']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsRangedGroupGS400']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcBanditsRangedGroupGS800']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+
+	<!-- Enemy NPC entity groups -->
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAllGroupGS01']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAllGroupGS50']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAllGroupGS100']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAllGroupGS200']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAllGroupGS400']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyAllGroupGS800']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyMeleeGroupGS01']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyMeleeGroupGS50']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyMeleeGroupGS100']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyMeleeGroupGS200']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyMeleeGroupGS400']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyMeleeGroupGS800']">
+		<entity name="RaiderJayneClub"/>
+		<entity name="RaiderGinaClub"/>
+		<entity name="RaiderBettyClub"/>
+		<entity name="RaiderHedyClub"/>
+		<entity name="RaiderGypsyClub"/>
+		<entity name="RaiderJayneMachete"/>
+		<entity name="RaiderGinaMachete"/>
+		<entity name="RaiderBettyMachete"/>
+		<entity name="RaiderHedyMachete"/>
+		<entity name="RaiderGypsyMachete"/>
+		<entity name="RaiderJayneKnife"/>
+		<entity name="RaiderGinaKnife"/>
+		<entity name="RaiderBettyKnife"/>
+		<entity name="RaiderHedyKnife"/>
+		<entity name="RaiderGypsyKnife"/>
+		<entity name="RaiderJayneBat"/>
+		<entity name="RaiderGinaBat"/>
+		<entity name="RaiderBettyBat"/>
+		<entity name="RaiderHedyBat"/>
+		<entity name="RaiderGypsyBat"/>
+		<entity name="RaiderHedyAxe"/>
+		<entity name="RaiderGinaAxe"/>
+		<entity name="RaiderBettyAxe"/>
+		<entity name="RaiderJayneAxe"/>
+		<entity name="RaiderGypsyAxe"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyRangedGroupGS01']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyRangedGroupGS50']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyRangedGroupGS100']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyRangedGroupGS200']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyRangedGroupGS400']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	<append xpath="/entitygroups/entitygroup[@name='npcEnemyRangedGroupGS800']">
+		<entity name="RaiderJayneSMG"/>
+		<entity name="RaiderJayneDPistol"/>
+		<entity name="RaiderJayneTRifle"/>
+		<entity name="RaiderBettySMG"/>
+		<entity name="RaiderBettyDPistol"/>
+		<entity name="RaiderBettyTRifle"/>
+		<entity name="RaiderGinaSMG"/>
+		<entity name="RaiderGinaDPistol"/>
+		<entity name="RaiderGinaTRifle"/>
+		<entity name="RaiderHedySMG"/>
+		<entity name="RaiderHedyDPistol"/>
+		<entity name="RaiderHedyTRifle"/>
+		<entity name="RaiderGypsySMG"/>
+		<entity name="RaiderGypsyDPistol"/>
+		<entity name="RaiderGypsyTRifle"/>
+	</append>
+	
+</configs>

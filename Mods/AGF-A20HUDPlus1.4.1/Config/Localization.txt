@@ -1,5 +1,4 @@
-Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate 
-Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
 xuiFoodAmount,,,,,Food Amount,,Lebensmittelmenge,Cantidad de alimentos,Quantité alimentaire,Importo del cibo,食糧量,음식 금액,Kwota żywności,Quantidade de comida,Сумма еды,Gıda miktarı,粮食金额,糧食金額,Cantidad de alimentos
 xuiFoodPercentage,,,,,Food Percentage,,Lebensmittelanteil,Porcentaje de alimentos,Pourcentage alimentaire,Percentuale di cibo,食品の割合,음식 비율,Procent żywności,Porcentagem de alimentos,Процент еды,Yiyecek yüzdesi,食物百分比,食物百分比,Porcentaje de alimentos
 xuiWaterAmount,,,,,Water Amount,,Wassermenge,Cantidad de agua,Quantité d'eau,Importo dell'acqua,水量,물 금액,Ilość wody,Quantidade de água.,Сумма воды,Su miktarı,水量,水量,Cantidad de agua

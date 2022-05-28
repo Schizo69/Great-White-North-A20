@@ -1,0 +1,106 @@
+<configs>
+
+	<append xpath="/recipes">
+	
+
+	<recipe name="WalkWay1x4" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceWood" count="100"/>
+	<ingredient name="resourceSpring" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+</recipe>
+
+	<recipe name="WalkWay1x4Mesh" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceWood" count="100"/>
+	<ingredient name="resourceSpring" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+</recipe>
+
+<recipe name="NoRailWalkWay1x4B" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceWood" count="100"/>
+	<ingredient name="resourceSpring" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+</recipe>
+
+<recipe name="NoRailWalkWay1x4A" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceWood" count="100"/>
+	<ingredient name="resourceSpring" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+</recipe>
+
+	<recipe name="WalkWay1x4Block" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceWood" count="100"/>
+	<ingredient name="resourceSpring" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+</recipe>
+
+	<recipe name="WalkWay1x4Block2" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="50"/>
+	<ingredient name="resourceWood" count="100"/>
+	<ingredient name="resourceSpring" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="30"/>
+</recipe>
+
+<recipe name="NoRailWalkWay3x4" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceWood" count="200"/>
+	<ingredient name="resourceSpring" count="30"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+</recipe>
+
+<recipe name="NoRailWalkWay3x4Block" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceWood" count="200"/>
+	<ingredient name="resourceSpring" count="30"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+</recipe>
+
+<recipe name="WalkWay3x4" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceWood" count="200"/>
+	<ingredient name="resourceSpring" count="30"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+</recipe>
+
+<recipe name="WalkWay3x4Mesh" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceWood" count="200"/>
+	<ingredient name="resourceSpring" count="30"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+</recipe>
+
+<recipe name="WalkWay3x4Block" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceWood" count="200"/>
+	<ingredient name="resourceSpring" count="30"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+</recipe>
+
+<recipe name="WalkWay3x4Block2" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="150"/>
+	<ingredient name="resourceWood" count="200"/>
+	<ingredient name="resourceSpring" count="30"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+</recipe>
+
+<recipe name="VonerichWalkWay3X8" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="350"/>
+	<ingredient name="resourceWood" count="400"/>
+	<ingredient name="resourceSpring" count="40"/>
+	<ingredient name="resourceMechanicalParts" count="60"/>
+</recipe>
+
+<recipe name="VonerichWalkWay1x8" count="1" craft_area="workbench" >
+	<ingredient name="resourceForgedIron" count="100"/>
+	<ingredient name="resourceWood" count="200"/>
+	<ingredient name="resourceSpring" count="30"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+</recipe>
+
+	</append>
+	
+</configs>

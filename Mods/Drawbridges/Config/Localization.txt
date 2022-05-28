@@ -1,0 +1,16 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english,Context / Alternate Text,german,latam,french,italian,japanese,koreana,polish,brazilian,russian,turkish,schinese,tchinese,spanish
+
+NoRailWalkWay1x4A,blocks,Block,,,Walkway (No Rail Marble Block Mesh Type) - 1 x 4 ,,,,,,,,,,,,,
+NoRailWalkWay1x4B,blocks,Block,,,Walkway (No Rail Brick Block Type) - 1 x 4 ,,,,,,,,,,,,,
+WalkWay1x4,blocks,Block,,,Walkway (Metal Stand Type) - 1 x 4 ,,,,,,,,,,,,,
+WalkWay1x4Mesh,blocks,Block,,,Walkway (Metal Stand Mesh Type) - 1 x 4,,,,,,,,,,,,,
+WalkWay1x4Block,blocks,Block,,,Walkway (Brick Block Type) - 1 x 4,,,,,,,,,,,,,
+WalkWay1x4Block2,blocks,Block,,,Walkway (Steel Block Type) - 1 x 4,,,,,,,,,,,,,
+NoRailWalkWay3x4,blocks,Block,,,Walkway (No Rail Stand Mesh Type) - 3 x 4 ,,,,,,,,,,,,,
+NoRailWalkWay3x4Block,blocks,Block,,,Walkway (No Rail Marble Mesh Type) - 3 x 4 ,,,,,,,,,,,,,
+WalkWay3x4,blocks,Block,,,Walkway (Metal Stand Type) - 3 x 4 ,,,,,,,,,,,,,
+WalkWay3x4Mesh,blocks,Block,,,Walkway (Metal Stand Mesh Type) - 3 x 4,,,,,,,,,,,,,
+WalkWay3x4Block,blocks,Block,,,Walkway (Brick Block Type) - 3 x 4,,,,,,,,,,,,,
+WalkWay3x4Block2,blocks,Block,,,Walkway (Steel Block Type) - 3 x 4,,,,,,,,,,,,,
+VonerichWalkWay3X8,blocks,Block,,,Walkway (Vonerich Type) - 3 x 8,,,,,,,,,,,,,
+VonerichWalkWay1x8,blocks,Block,,,Walkway (Vonerich Type) - 1 x 8,,,,,,,,,,,,,

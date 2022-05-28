@@ -1,0 +1,531 @@
+<configs>
+	<append xpath="/blocks">
+
+                 <!-- 1X4 WALKWAYS -->
+				 
+
+<block name="NoRailWalkWay1x4A">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="NoRailsWalkWay1"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?NoRailsWalkWay1"/>
+	<property name="ModelOffset" value="-2,0.5,0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/> 
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/> 
+</block>
+
+<block name="NoRailWalkWay1x4B">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="NoRailsWalkWay2"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?NoRailsWalkWay2"/>
+	<property name="ModelOffset" value="-2,0.5,0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/> 
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/> 
+</block>
+
+<block name="WalkWay1x4">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="WalkWay1t"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?WalkWay1t"/>
+	<property name="ModelOffset" value="-2,0.85,0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/> 
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/> 
+</block>
+
+<block name="WalkWay1x4Mesh">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="WalkWay1X4Mesh"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/> 
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?WalkWay1X4Mesh"/>
+	<property name="ModelOffset" value="-2,0.85,0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/>
+</block>
+
+<block name="WalkWay1x4Block">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="WalkWay1X4Block"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?WalkWay1X4Block"/>
+	<property name="ModelOffset" value="-2,0.5,0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/>
+</block>
+
+<block name="WalkWay1x4Block2">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="WalkWay1X4Block2"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/> 
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?WalkWay1X4Block2"/>
+	<property name="ModelOffset" value="-2,0.5,0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/>
+</block>
+
+                  <!-- 3X4 WALKWAYS -->
+
+<block name="NoRailWalkWay3x4">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="NoRailsWalkWay3X4"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?NoRailsWalkWay3X4"/>
+	<property name="ModelOffset" value="-1.5,1,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/> 
+</block>
+
+<block name="NoRailWalkWay3x4Block">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="NoRailWalkWay3X4"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?NoRailWalkWay3X4"/>
+	<property name="ModelOffset" value="-1.5,1,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/> 
+</block>
+
+<block name="WalkWay3x4">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="WalkWay3X4"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?WalkWay3X4"/>
+	<property name="ModelOffset" value="-1.5,1,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/>
+</block>
+
+<block name="WalkWay3x4Mesh">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="WalkWay3X4t"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?WalkWay3X4t"/>
+	<property name="ModelOffset" value="-1.5,1,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/>
+</block>
+
+<block name="WalkWay3x4Block">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="WalkWay3X4Block"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?WalkWay3X4Block"/>
+	<property name="ModelOffset" value="-1.5,1,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/> 
+</block>
+
+<block name="WalkWay3x4Block2">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="WalkWay3X4Block2"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/OpenWalkway.unity3d?WalkWay3X4Block2"/>
+	<property name="ModelOffset" value="-1.5,1,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="5,1,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/>
+</block>
+
+                   <!-- Vonerich WALKWAYS -->
+
+<block name="VonerichWalkWay3X8">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="vonerich3x8"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/>
+	<property name="Model" value="#@modfolder:Resources/VonerichWalkWays.unity3d?VonerichWalkWay3X8"/>
+	<property name="ModelOffset" value="-3.5,1,0.5"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="9,1,3"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/>
+</block>
+
+<block name="VonerichWalkWay1x8">
+	<property name="Class" value="DrawBridge"/>
+	<property name="CustomIcon" value="vonerich1x8"/>
+	<property name="Material" value="MmetalDrawbridge"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Texture" value="241"/> 
+	<property name="Model" value="#@modfolder:Resources/VonerichWalkWays.unity3d?VonerichWalkWay1X8"/>
+	<property name="ModelOffset" value="-4,0.5,0"/>
+	<property name="DisplayType" value="blockMulti"/>
+	<property name="MultiBlockDim" value="9,1,1"/>
+	<property name="OnlySimpleRotations" value="true"/>
+	<property name="ImposterExchange" value="imposterDontBlockHalf" param1="120"/>
+	<property name="OpenSound" value="open_bridge"/>
+	<property name="CloseSound" value="close_bridge"/>
+	<property name="Place" value="DrawBridge"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="100"/>
+		<property name="resourceWood" value="800"/>
+	</property>
+	<drop event="Harvest" name="resourceScrapIron" count="400" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceWood" count="400" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceSpring" count="4,12" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="4,20" tag="salvageHarvest"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="DescriptionKey" value="drawBridgeGroupDesc"/>
+	<property name="ActivationDistance" value="14"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="SortOrder1" value="7060"/>
+	<property name="SortOrder2" value="0600"/>
+</block>
+
+</append>
+
+</configs>
