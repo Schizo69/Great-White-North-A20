@@ -1,0 +1,13 @@
+<config>
+
+
+<append xpath="/recipes">
+	<recipe name="drinkJarBoiledWater" count="10" craft_time="90" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,perkChefBoiledWater,boiledWater">
+		<ingredient name="drinkJarEmpty" count="10"/>
+		<ingredient name="foodIcePack" count="1"/>
+	</recipe>
+</append>
+
+
+
+</config>

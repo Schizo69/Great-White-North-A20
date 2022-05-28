@@ -1,0 +1,18 @@
+<config>
+
+
+<!-- Ice Machine loot - cntIceMachine-->
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupAirDrop01']">
+<lootgroup name="groupice" count="all">
+	<item name="foodIcePack" count="0,10" loot_prob_template="veryLow"/>
+	<item name="resourceSnowBall" count="1,25" loot_prob_template="veryLow"/>
+</lootgroup>
+</insertAfter>
+<append xpath="/lootcontainers">
+<lootcontainer id="888" name="IceMachine" count="1,2" size="6,5" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualPlus1Template">
+	<item group="groupice"/>
+</lootcontainer>
+</append>
+
+
+</config>
