@@ -515,7 +515,7 @@
 	<quest id="challenge_miner2" group_name_key="quest_miner" name="Miner Quest 2/3" subtitle="Mining Challenge 2" description="Keep breaking those rocks" icon="ui_game_symbol_forge" 
 		repeatable="false" category_key="challenge" offer="You did ok breaking those rocks, now lets see how well you can find ore buried in the ground.  That TNT should help you get started." difficulty="medium">
 		<objective type="FetchKeep" id="resourceRockSmall" value="300" />
-		<objective type="FetchKeep" id="resourceIronFragment" value="150" />
+		<objective type="FetchKeep" id="resourceScrapIron" value="150" />
 		<objective type="FetchKeep" id="resourceScrapLead" value="100" />
 		<objective type="FetchKeep" id="resourceCoal" value="100" />
 		<objective type="FetchKeep" id="resourcePotassiumNitratePowder" value="100" />
@@ -740,7 +740,7 @@
 	
 	<quest id="challenge_bruiser3" group_name_key="quest_bruiser" name="Bruiser Quest 3/3" subtitle="Bruiser Challenge 3" description="Bust zombie skulls" icon="ui_game_symbol_club" 
 		repeatable="false" category_key="challenge" offer="Crack some noggins." difficulty="Hard">
-		<requirement type="Holding" id="gunShotgunT0Blunderbuss" />
+		<requirement type="Holding" id="gunRifleT0PipeRifle" />
 		<objective type="ZombieKill" value="100" />
 		<reward type="Quest" id="bruiser_visit_trader3" />
 	</quest>
