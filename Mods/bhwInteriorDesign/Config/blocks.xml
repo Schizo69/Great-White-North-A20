@@ -793,16 +793,7 @@
 		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
 		<property name="TakeDelay" value="2"/>
 	</append>
-	<append xpath="/blocks/block[@name='streetLight01']">
-		<property name="Class" value=""/>
-		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
-		<property name="TakeDelay" value="2"/>
-	</append>
-	<append xpath="/blocks/block[@name='spotlightNailedDownPOI']">
-		<property name="Class" value=""/>
-		<property name="CanPickup" value="true" param1="lightPlayerHelper"/>
-		<property name="TakeDelay" value="2"/>
-	</append>
+		
 	
 	<!-- Add pickup option to flashlights and lanterns that convert to Player Lanterns-->
 	<append xpath="/blocks/block[@name='lanternDecorLight']">

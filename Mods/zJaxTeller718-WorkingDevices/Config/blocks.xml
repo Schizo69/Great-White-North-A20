@@ -185,6 +185,7 @@
 
 
 	<block name="workingWoodBurningStoveJT">
+			<property name="CustomIcon" value="cntWoodBurningStove"/>
 			<property name="Extends" value="decoEntityMetalMaster"/>
 			<property name="Model" value="Entities/Furniture/woodBurningStovePrefab"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
@@ -223,6 +224,7 @@
 		</block>
 	
 		<block name="workingCharcoalGrillClosedJT">
+			<property name="CustomIcon" value="cntCharcoalGrillClosed"/>
 			<property name="Extends" value="cntCharcoalGrillOpen"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Model" value="#Entities/LootContainers?Grill_Simple_ClosedPrefab.prefab"/>
@@ -255,6 +257,7 @@
 		</block>
 
 		<block name="workingGasGrillClosedJT">
+			<property name="CustomIcon" value="cntGasGrillClosed"/>
 			<property name="Extends" value="cntGasGrillOpen"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Model" value="#Entities/LootContainers?GasGrill_FullPrefab.prefab"/>
@@ -558,9 +561,9 @@
 	<append xpath="/blocks">
 
 
-		<block name="workingGraniteSinkJT">
-			<property name="CustomIcon" value="cntGraniteSink"/>
-			<property name="Material" value="Mmetal"/>
+	<block name="workingGraniteSinkJT">
+	<property name="CustomIcon" value="cntGraniteSink"/>
+	<property name="Material" value="Mmetal"/>
 	<property name="Shape" value="New"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="counter_sink"/>
@@ -580,8 +583,8 @@
 		</block>
 
 
-		<block name="workingCabinetOldSinkJT">
-			<property name="CustomIcon" value="cntCabinetOldSink"/>
+	<block name="workingCabinetOldSinkJT">
+	<property name="CustomIcon" value="cntCabinetOldSink"/>
 	<property name="Shape" value="New"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="counter_sink"/>
@@ -614,7 +617,6 @@
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="CustomIcon" value="cntWaterCoolerFull"/>
-
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Destroy" name="workingWaterCoolerFullJT" count="1" prob="1"/>
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -624,6 +626,7 @@
 		</block>
 
 <block name="workingUtilitySinkJT">
+	<property name="CustomIcon" value="UtilitySink"/>
 	<property name="Material" value="Mmetal"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -641,6 +644,7 @@
 
 <!-- NOT_A_SHAPE -->
 <block name="workingPedestalSinkJT">
+	<property name="CustomIcon" value="PedestalSink"/>
 	<property name="Extends" value="stoneNoUpgradeMaster" param1="SortOrder1,SortOrder2"/>
 	<property name="Material" value="MstoneFurniture"/>
 	<property name="StabilitySupport" value="false"/>

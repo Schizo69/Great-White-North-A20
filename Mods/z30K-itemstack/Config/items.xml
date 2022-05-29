@@ -8,4 +8,6 @@
 	<set xpath="/items/item[@name='casinoCoin']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='candle']/property[@name='Stacknumber']/@value">30000</set>
 	<set xpath="/items/item[@name='oldCash']/property[@name='Stacknumber']/@value">30000</set>	
+	<set xpath="/items/item[@name='carBattery']/property[@name='Stacknumber']/@value">30000</set>	
 </configs>
+

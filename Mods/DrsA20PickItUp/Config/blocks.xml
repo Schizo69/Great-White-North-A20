@@ -62,14 +62,7 @@
 		<property name="Weight" value="40"/>
 	</append>
 
-	<!-- 	LIGHTS ~need to add in all my lights into this file, keep them seperate or not?
-	<append xpath="/blocks/block[@name='porchLight01']">
-		<property name="Class" value=""/>
-		<property name="CreativeMode" value="Player"/>
-		<property name="CanPickup" value="true"/>
-		<property name="TakeDelay" value="2"/>
-	</append>-->
-
+	
 	<!-- 	MINES -->
 	<set xpath="/blocks/block[@name='mineCandyTin']/property[@name='CanPickup']/@value">true</set>
 
@@ -128,79 +121,7 @@
 		<property name="Weight" value="20"/> 
 	</append>
 	
-	<!-- 	SCRAP METAL PILE -->	
-	<append xpath="/blocks/block[@name='scrapMetalPile']">
-		<property name="CanPickup" value="true"/>
-		<property name="Weight" value="40"/>
-	</append>
-
-	<!-- 	TRAPS -->
-<!--	Basic player made with no damage
-	<append xpath="/blocks/block[@name='trapSpikesWoodDmg0']">
-		<property name="CanPickup" value="true"/>
-	</append>
-	<append xpath="/blocks/block[@name='trapSpikesIronDmg0']">
-		<property name="CanPickup" value="true"/>
-	</append>
--->
-<!-- 	list of the spike traps
-	trapSpikesWoodMaster
-	trapSpikesScrapIronMaster
-player made
-	trapSpikesWoodDmg2
-	trapSpikesWoodDmg1
-	trapSpikesWoodDmg0
-	trapSpikesIronDmg2
-	trapSpikesIronDmg1
-	trapSpikesIronDmg0
-poi
-	woodSpikesTrap2POI
-	woodSpikesTrap1POI
-	woodSpikesTrapBloodPOI
-	ironSpikesTrap2POI
-	ironSpikesTrap1POI
-	ironSpikesTrapBloodPOI
-other spike
-	trapSpikesNew
-	trapSpikesDamage1
-	trapSpikesDamage2
-	trapSpikesDamage3
-	trapSpikesDamage4
-	trapSpikesDamage5
--->		
-	<append xpath="/blocks/block[contains(@name,'woodSpikes')]">
-		<property name="CanPickup" value="true"/>
-	</append>
-	
-	<append xpath="/blocks/block[contains(@name,'trapSpikes')]">
-		<property name="CanPickup" value="true"/>
-	</append>
-<!-- these ones were not working as I expected
-	<append xpath="/blocks/block[@name='woodSpikesTrap2POI']">
-		<property name="CanPickup" value="true" param1="trapSpikesWoodDmg2"/>
-	</append>
-	<append xpath="/blocks/block[@name='woodSpikesTrap1POI']">
-		<property name="CanPickup" value="true" param1="trapSpikesWoodDmg1"/>
-	</append>
-	<append xpath="/blocks/block[@name='woodSpikesTrapBloodPOI']">
-		<property name="CanPickup" value="true" param1="trapSpikesWoodDmg0"/>
-	</append>
-	<append xpath="/blocks/block[@name='ironSpikesTrap2POI']">
-		<property name="CanPickup" value="true" param1="trapSpikesIronDmg2"/>
-	</append>
-	<append xpath="/blocks/block[@name='ironSpikesTrap1POI']">
-		<property name="CanPickup" value="true" param1="trapSpikesIronDmg1"/>
-	</append>
-	<append xpath="/blocks/block[@name='ironSpikesTrapBloodPOI']">
-		<property name="CanPickup" value="true" param1="trapSpikesIronDmg0"/>
-	</append>
-
-	<append xpath="/blocks/block[@name='trapSpikesNew']" >
-		<property name="CreativeMode" value="Player"/>
-		<property name="CanPickup" value="true"/>
-	</append>
--->
-
+		
 	<!-- 	WAGON WHEEL -->
 	<append xpath="/blocks/block[@name='decoWildWestWagon']">
 		<property name="CanPickup" value="true"/>

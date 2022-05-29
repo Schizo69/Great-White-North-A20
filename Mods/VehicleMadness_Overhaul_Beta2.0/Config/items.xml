@@ -19,7 +19,7 @@
 	<property name="CustomIcon" value="battery"/>
 </append>
 <append xpath="/items/item[@name='vehicleWheels']" >
-	<property name="Stacknumber" value="20"/>
+	<property name="Stacknumber" value="500"/>
 </append>
 
 <append xpath="/items">
@@ -44,7 +44,7 @@
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
-<property name="Stacknumber" value="20"/>
+<property name="Stacknumber" value="500"/>
 <property name="EconomicValue" value="32"/>
 <property name="Group" value="Resources"/>
 <property name="CustomIcon" value="decoCarTireFlat"/>
@@ -55,7 +55,7 @@
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
-<property name="Stacknumber" value="20"/>
+<property name="Stacknumber" value="500"/>
 <property name="EconomicValue" value="32"/>
 <property name="Group" value="Resources"/>
 <property name="CustomIcon" value="decoCarTireFlat"/>
@@ -67,7 +67,7 @@
 <property name="Meshfile" value="Items/Misc/sackPrefab"/>
 <property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 <property name="Material" value="Miron_scrap"/> <property name="Weight" value="5"/>
-<property name="Stacknumber" value="16"/>
+<property name="Stacknumber" value="500"/>
 <property name="EconomicValue" value="32"/>
 <property name="Group" value="Resources"/>
 <property name="CustomIcon" value="altenator"/>

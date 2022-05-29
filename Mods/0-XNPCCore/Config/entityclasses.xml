@@ -3056,7 +3056,7 @@
 		
 		<entity_class name="npcHarleyEmptyHand" extends="npcEmptyHandTemplate"> 
 			<property name="Tags" value="entity,female,npc,melee,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3081,7 +3081,7 @@
 		
 		<entity_class name="npcHarleyBMEmptyHand" extends="npcHarleyEmptyHand"> <!--  example of a bloodmoon version  -->
 			<property name="Tags" value="entity,female,npc,melee,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Class" value="EntityEnemySDX, SCore" />
 			<property name="IsEnemyEntity" value="true"/> 
@@ -3089,7 +3089,7 @@
 
 		<entity_class name="npcHarleyClub" extends="npcClubTemplate"> 
 			<property name="Tags" value="entity,female,npc,melee,voiceharley,bandit"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3115,7 +3115,7 @@
 		
 		<entity_class name="npcHarleyKnife" extends="npcKnifeTemplate"> 
 			<property name="Tags" value="entity,female,npc,melee,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3140,7 +3140,7 @@
 		
 		<entity_class name="npcHarleyBat" extends="npcBatTemplate"> 
 			<property name="Tags" value="entity,female,npc,melee,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3165,7 +3165,7 @@
 	
 		<entity_class name="npcHarleyMachete" extends="npcMacheteTemplate"> 
 			<property name="Tags" value="entity,female,npc,melee,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3195,7 +3195,7 @@
 
 		<entity_class name="npcHarleyAxe" extends="npcAxeTemplate"> 
 			<property name="Tags" value="entity,female,npc,melee,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3220,7 +3220,7 @@
 		
 		<entity_class name="npcHarleySpear" extends="npcSpearTemplate"> 
 			<property name="Tags" value="entity,female,npc,melee,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3245,7 +3245,7 @@
 		
 		<entity_class name="npcHarleyPipePistol" extends="npcPipePistolTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3270,7 +3270,7 @@
 		
 		<entity_class name="npcHarleyPipeRifle" extends="npcPipeRifleTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3295,7 +3295,7 @@
 		
 		<entity_class name="npcHarleyPipeMG" extends="npcPipeMGTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3320,7 +3320,7 @@
 		
 		<entity_class name="npcHarleyPipeShotgun" extends="npcPipeShotgunTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3345,7 +3345,7 @@
 
 		<entity_class name="npcHarleySMG" extends="npcSMGTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3370,7 +3370,7 @@
 		
 		<entity_class name="npcHarleyM60" extends="npcM60Template"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3395,7 +3395,7 @@
 		
 		<entity_class name="npcHarleyPistol" extends="npcPistolTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3420,7 +3420,7 @@
 		
 		<entity_class name="npcHarleyDPistol" extends="npcDPistolTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3445,7 +3445,7 @@
 
 		<entity_class name="npcHarleyAK47" extends="npcAK47Template"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3470,7 +3470,7 @@
 		
 		<entity_class name="npcHarleyTRifle" extends="npcTRifleTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3495,7 +3495,7 @@
 		
 		<entity_class name="npcHarleyHRifle" extends="npcHRifleTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3545,7 +3545,7 @@
 
 		<entity_class name="npcHarleyPShotgun" extends="npcPShotgunTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3570,7 +3570,7 @@
 
 		<entity_class name="npcHarleyAShotgun" extends="npcAShotgunTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3595,7 +3595,7 @@
 		
 		<entity_class name="npcHarleyLBow" extends="npcLBowTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3620,7 +3620,7 @@
 
 		<entity_class name="npcHarleyXBow" extends="npcXBowTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3644,7 +3644,7 @@
 		</entity_class>	
 		<entity_class name="npcHarleyRocketL" extends="npcRocketLTemplate"> 
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
 			<property name="SoundHurt" value="HarleyHurt"/>
@@ -3668,7 +3668,7 @@
 		</entity_class>	
 		<entity_class name="npcHarleyVomitHand" extends="npcMeleeTemplate"> <!-- testing -->
 			<property name="Tags" value="entity,female,npc,ranged,voiceharley,bandit,DRMid"/>
-			<property name="Faction" value="bandits"/>
+			<property name="Faction" value="whiteriver"/>
 			<!--<property name="Class" value="EntityBandit" /> -->
 			<property name="Names" value="Harley, Quinn, HarleyQuinn" />
 			<property name="Mesh" value="#@modfolder:Resources/XythNPCs.unity3d?Quinn_X"/>
