@@ -1,0 +1,17 @@
+<MoreCookedFoods>
+
+<!-- Instead of plantable plants it's this for now -->
+
+	<append xpath="/blocks/block[contains(@name, 'treeGrassMaster')]">
+    <drop event="Harvest" name="foodLettuce" count="1" prob="0.015" tag="allHarvest"/>
+    <drop event="Harvest" name="foodBroccoli" count="1" prob="0.015" tag="allHarvest"/>
+    <drop event="Harvest" name="foodStrawberry" count="1" prob="0.015" tag="allHarvest"/>
+    <drop event="Harvest" name="foodCarrot" count="1" prob="0.015" tag="allHarvest"/>
+    <drop event="Harvest" name="foodTomatos" count="1" prob="0.015" tag="allHarvest"/>
+    <drop event="Harvest" name="foodCabbage" count="1" prob="0.015" tag="allHarvest"/>
+    <drop event="Harvest" name="foodPeas" count="1" prob="0.015" tag="allHarvest"/>
+    <drop event="Harvest" name="foodWatermelon" count="1" prob="0.015" tag="allHarvest"/>
+	</append>
+
+	
+</MoreCookedFoods>

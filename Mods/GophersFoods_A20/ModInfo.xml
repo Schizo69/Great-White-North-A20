@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Gopher's Foods" />
+		<Description value="Adds different kinds of cooked foods. Formerly 'More Cooked Foods', now rebalanced and updated for Alpha 20!" />
+		<Author value="Gopher" />
+		<Version value="1.2" />
+		<Website value="noneya.org" />
+	</ModInfo>
+</xml>

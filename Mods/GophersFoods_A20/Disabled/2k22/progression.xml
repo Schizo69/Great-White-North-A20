@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1']/@tags">foodRotisserieChicken</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='2']/@tags">foodHushPuppies,foodChickenFriedSteak</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='3']/@tags">foodMongolianBeef,foodWontonSoup,foodHotSourSoup,foodChocolateFudgeBrownieCake,foodCheeseWonton,foodSpringRoll</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='4']/@tags">foodSesameChicken,foodBeefBroccoli</append>
+  <append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='5']/@tags">foodMRE,foodMRE02,foodMRE03,foodMRE04,foodMRE05,foodMRE06</append>
+</configs>

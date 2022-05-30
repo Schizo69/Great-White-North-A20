@@ -1,0 +1,181 @@
+<GophersFoods>
+
+  <insertBefore xpath="/lootcontainers/lootgroup[@name='groupScrapCommon']">
+    <lootgroup name="groupCondiments">
+      <item name="foodMooseTard"/>
+      <item name="foodCatchUp"/>
+    </lootgroup>
+
+    <lootgroup name="groupFruits">
+      <item name="foodApple"/>
+      <item name="foodTomatos"/>
+      <item name="foodStrawberry"/>
+      <item name="foodWatermelon"/>
+      <item name="foodBanana"/>
+    </lootgroup>
+
+    <lootgroup name="groupVegetables">
+      <item name="foodLettuce"/>
+      <item name="foodCarrot"/>
+      <item name="foodPeas" />
+      <item name="foodCabbage"/>
+      <item name="foodBroccoli"/>
+    </lootgroup>
+
+    <lootgroup name="groupSimpleFoods">
+      <item name="foodPotatoChips"/>
+      <item name="foodBhamSandwich"/>
+      <item name="foodSalad" />
+      <item name="foodChickenNuggets"/>
+      <item name="foodFrenchFries"/>
+      <item name="foodMashedPotatos"/>
+      <item name="foodTaterTots"/>
+      <item name="foodHushPuppies"/>
+    </lootgroup>
+
+    <lootgroup name="groupIngredients">
+      <item name="foodDough"/>
+      <item name="foodCornFlour"/>
+      <item name="foodChocolateChips" />
+      <item name="foodHeavyWhippingCream"/>
+      <item name="foodButter"/>
+      <item name="foodCheese"/>
+    </lootgroup>
+
+    <lootgroup name="groupDrinks">
+      <item name="foodGlassOfMilk"/>
+      <item name="foodCanOfCola"/>
+      <item name="foodMilk" />
+    </lootgroup>
+
+    <lootgroup name="groupMREs">
+      <item name="foodChocolate"/>
+      <item name="foodMRE"/>
+      <item name="foodMRE02"/>
+      <item name="foodMRE03"/>
+      <item name="foodMRE04"/>
+      <item name="foodMRE05"/>
+      <item name="foodMRE06"/>
+    </lootgroup>
+
+    <lootgroup name="groupAllDrops">
+      <item group="groupCondiments"/>
+      <item group="groupFruits"/>
+      <item group="groupVegetables"/>
+      <item group="groupSimpleFoods"/>
+      <item group="groupIngredients"/>
+      <item group="groupDrinks"/>
+    </lootgroup>
+
+  </insertBefore>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupCupboard']">
+    <item group="groupCondiments" count="1" loot_prob_template="veryLow"/>
+    <item group="groupIngredients" count="1" loot_prob_template="veryLow"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootcontainer[@id='8']">
+    <item group="groupAllDrops" count="1,2" loot_prob_template="veryLow"/>
+    <item group="groupIngredients" count="1,2" loot_prob_template="low"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootcontainer[@id='21']">
+    <item group="groupAllDrops" count="1,2" loot_prob_template="low"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootcontainer[@id='46']">
+    <item group="groupAllDrops" count="1,2" loot_prob_template="low"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootcontainer[@id='48']">
+    <item group="groupAllDrops" count="1,2" loot_prob_template="low"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootcontainer[@id='45']">
+    <item group="groupAllDrops" count="1,3" loot_prob_template="low"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootcontainer[@id='52']">
+    <item group="groupFruits" count="1,2" loot_prob_template="low"/>
+    <item group="groupVegetables" count="1,2" loot_prob_template="low"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootcontainer[@id='47']">
+    <item group="groupSimpleFoods" count="2,3" loot_prob_template="veryLow"/>
+    <item group="groupDrinks" count="1,2" loot_prob_template="low"/>
+    <item group="groupIngredients" count="1,3" loot_prob_template="low"/>
+    <item group="groupAllDrops" count="1,2" loot_prob_template="low"/>
+
+  </append>
+
+  <!-- Shamway Cardboard boxes loot -->
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupShamwayCrate']">
+    <item group="groupFruits" count="2,3" loot_prob_template="low"/>
+    <item group="groupSimpleFoods" count="1,2" loot_prob_template="med"/>
+    <item group="groupIngredients" count="3,4" loot_prob_template="veryLow"/>
+    <item group="groupAllDrops" count="1,2" loot_prob_template="high"/>
+
+  </append>
+
+  <!-- Shamway Cardboard boxes loot -->
+
+
+
+  <!-- Food piles -->
+  <!-- The Cola stuff is still pretty experimental. Not sure if I want it to do buffs or not. -->
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupFoodPileSmall']">
+    <item group="groupSimpleFoods" loot_prob_template="low"/>
+    <item group="groupDrinks" count="1,2" loot_prob_template="low"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupFoodPileMed']">
+    <item group="groupAllDrops" loot_prob_template="low"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupFoodPileLarge']">
+    <item group="groupSimpleFoods" prob=".19"/>
+    <item group="groupCondiments" prob=".21"/>
+    <item name="foodCanOfCola" count="1,2" loot_prob_template="med"/>
+  </append>
+
+  <!-- Food piles -->
+
+  <!-- Zed strong and Treasure maps, Military -->
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupZpackStrong01']">
+    <item group="groupMREs" count="1,3" loot_prob_template="low"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupBuriedLootStashTreasure']">
+    <item group="groupMREs" count="1,2" loot_prob_template="med"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupBuriedLootStashTreasureSub']">
+    <item group="groupMREs" count="2,3" loot_prob_template="low"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupValuablesExtraLarge']">
+    <item group="groupMREs" count="1,3" loot_prob_template="verylow"/>
+
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='groupAmmoMunitions']">
+    <item group="groupMREs" count="6" loot_prob_template="low"/>
+
+  </append>
+
+  <!-- End Zed strong and treasure maps, Military -->
+
+
+</GophersFoods>

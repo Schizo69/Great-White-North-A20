@@ -1,0 +1,363 @@
+  <configs>
+    <append xpath="/recipes">
+
+      <!-- Put recipes where they belong. If you don't, you're fired.... :P -->
+
+      <recipe name="foodGrits" count="2" craft_time="30" craft_area="campfire">
+        <ingredient name="foodCornMeal" count="20"/>
+      </recipe>
+
+      <recipe name="foodBratwurst" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodRawMeat" count="1"/>
+      </recipe>
+
+      <recipe name="foodKillbasa" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodRawMeat" count="1"/>
+      </recipe>
+
+      <recipe name="foodRotisserieChicken" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill">
+        <ingredient name="foodRawChicken" count="1"/>
+      </recipe>
+
+      <recipe name="foodTaterTots" count="10" craft_time="30" craft_area="campfire">
+        <ingredient name="foodCropPotato" count="1"/>
+      </recipe>
+
+      <recipe name="foodMashedPotatos" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodCropPotato" count="5"/>
+      </recipe>
+
+      <recipe name="foodPotatoChips" count="20" craft_time="30" craft_area="campfire">
+        <ingredient name="foodCropPotato" count="4"/>
+      </recipe>
+
+      <recipe name="foodBread" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodDough" count="4"/>
+      </recipe>
+
+      <recipe name="foodSliceOfBread" count="8" craft_time="30" craft_area="campfire">
+        <ingredient name="foodBread" count="1"/>
+      </recipe>
+
+      <recipe name="foodFrenchFries" count="5" craft_time="30" craft_area="campfire">
+        <ingredient name="foodCropPotato" count="1"/>
+      </recipe>
+
+      <recipe name="foodChickenNuggets" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill">
+        <ingredient name="foodRawChickenPieces" count="15"/>
+      </recipe>
+	  
+	  <recipe name="foodChickenNuggets" count="5" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill">
+        <ingredient name="CaughtChick" count="1"/>
+      </recipe>
+
+      <recipe name="foodRawChickenPieces" count="10" craft_time="30" craft_area="campfire">
+        <ingredient name="foodRawChicken" count="1"/>
+      </recipe>
+
+      <recipe name="foodEggSandwich" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingGrill">
+        <ingredient name="foodSliceOfBread" count="2"/>
+        <ingredient name="foodEgg" count="2"/>
+        <ingredient name="foodCheese" count="1"/>
+      </recipe>
+
+      <recipe name="foodSlicesOfBacon" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingPot">
+        <ingredient name="foodRawBacon" count="1"/>
+      </recipe>
+
+      <recipe name="foodCookedRibs" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill">
+        <ingredient name="foodRawRibs" count="1"/>
+      </recipe>
+
+      <recipe name="foodHeavyWhippingCream" count="2" craft_time="30" craft_area="campfire">
+        <ingredient name="foodGlassOfMilk" count="1"/>
+      </recipe>
+
+
+      <recipe name="foodRoast" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingPot">
+        <ingredient name="foodRawMeat" count="20"/>
+      </recipe>
+
+      <recipe name="foodHushPuppies" count="6" craft_time="30" craft_area="campfire">
+        <ingredient name="foodCornMeal" count="8"/>
+      </recipe>
+
+      <recipe name="foodPopcornKernels" count="10" craft_time="30" craft_area="campfire">
+        <ingredient name="foodCropCorn" count="2"/>
+      </recipe>
+
+      <recipe name="foodPopcorn" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodPopcornKernels" count="10"/>
+      </recipe>
+
+      <recipe name="foodFudge" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodChocolate" count="5"/>
+      </recipe>
+
+      <recipe name="foodBrownie" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodDough" count="2"/>
+        <ingredient name="foodChocolate" count="5"/>
+      </recipe>
+
+      <recipe name="foodChocolateFudgeBrownieCake" count="1" craft_time="500" craft_area="campfire">
+        <ingredient name="foodDough" count="5"/>
+        <ingredient name="foodChocolate" count="10"/>
+        <ingredient name="foodFudge" count="10"/>
+        <ingredient name="foodBrownie" count="10"/>
+      </recipe>
+
+      <recipe name="foodBhamSandwich" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodLettuce" count="4"/>
+        <ingredient name="foodMooseTard" count="1"/>
+        <ingredient name="foodCanSham" count="4"/>
+        <ingredient name="foodSliceOfBread" count="2"/>
+      </recipe>
+
+
+      <!-- Meals -->
+
+
+
+      <recipe name="foodSalad" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodLettuce" count="6"/>
+        <ingredient name="foodSlicesOfBacon" count="3"/>
+        <ingredient name="foodBroccoli" count="6"/>
+        <ingredient name="foodEggBoiled" count="4"/>
+      </recipe>
+
+      <recipe name="foodBaconEggsHashbrownsToast" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingPot">
+        <ingredient name="foodSlicesOfBacon" count="5"/>
+        <ingredient name="foodEgg" count="4"/>
+        <ingredient name="foodCropPotato" count="10"/>
+        <ingredient name="foodSliceOfBread" count="3"/>
+      </recipe>
+
+      <recipe name="foodHamburger" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill">
+        <ingredient name="foodRawMeat" count="5"/>
+        <ingredient name="foodLettuce" count="5"/>
+        <ingredient name="foodCheese" count="4"/>
+        <ingredient name="foodSliceOfBread" count="2"/>
+      </recipe>
+
+      <recipe name="foodHamburgerAndFries" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill">
+        <ingredient name="foodHamburger" count="1"/>
+        <ingredient name="foodFrenchFries" count="50"/>
+      </recipe>
+
+      <recipe name="foodChickenFriedSteak" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingPot">
+        <ingredient name="foodRawMeat" count="8"/>
+        <ingredient name="foodMashedPotatos" count="4"/>
+        <ingredient name="foodBroccoli" count="14"/>
+        <ingredient name="foodCropCorn" count="3"/>
+      </recipe>
+
+      <recipe name="foodBhamSandwichMeal" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodPotatoChips" count="15"/>
+        <ingredient name="foodBhamSandwich" count="5"/>
+      </recipe>
+
+      <recipe name="foodOmelette" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingPot">
+        <ingredient name="foodEgg" count="4"/>
+        <ingredient name="foodRawMeat" count="2"/>
+        <ingredient name="foodBroccoli" count="2"/>
+        <ingredient name="foodCheese" count="3"/>
+        <ingredient name="foodTomatos" count="2"/>
+      </recipe>
+
+      <!-- Meals -->
+
+
+
+      <!-- Dairy -->
+
+      <recipe name="foodGlassOfMilk" count="12" craft_time="50">
+        <ingredient name="foodMilk" count="1"/>
+        <ingredient name="drinkJarEmpty" count="12"/>
+      </recipe>
+
+      <recipe name="foodCheese" count="6" craft_time="55" craft_area="campfire">
+        <ingredient name="foodGlassOfMilk" count="2"/>
+      </recipe>
+
+      <recipe name="foodButter" count="6" craft_time="45" craft_area="campfire">
+        <ingredient name="foodGlassOfMilk" count="2"/>
+      </recipe>
+
+      <!-- Dairy -->
+
+
+
+      <!-- Soft-drinks -->
+
+      <recipe name="foodCanOfCola" count="12">
+        <ingredient name="foodCaseOfCola" count="1"/>
+      </recipe>
+
+      <!-- Soft-drinks -->
+
+
+
+      <!-- Chinese foods -->
+
+      <recipe name="foodSesameChicken" count="1" craft_time="125" craft_area="campfire">
+        <ingredient name="foodRawChickenPieces" count="10"/>
+        <ingredient name="foodCheeseWonton" count="2"/>
+        <ingredient name="foodWontonSoup" count="1"/>
+        <ingredient name="foodSpringRoll" count="2"/>
+      </recipe>
+
+      <recipe name="foodMongolianBeef" count="1" craft_time="160" craft_area="campfire">
+        <ingredient name="foodRawMeat" count="8"/>
+        <ingredient name="foodCarrot" count="5"/>
+        <ingredient name="foodCheeseWonton" count="3"/>
+        <ingredient name="foodHotSourSoup" count="1"/>
+        <ingredient name="foodSpringRoll" count="3"/>
+      </recipe>
+
+      <recipe name="foodWontonSoup" count="1" craft_time="75" craft_area="campfire">
+        <ingredient name="drinkJarBoiledWater" count="2"/>
+        <ingredient name="foodDough" count="2"/>
+        <ingredient name="foodRawMeat" count="2"/>
+      </recipe>
+
+      <recipe name="foodCheeseWonton" count="1" craft_time="60" craft_area="campfire">
+        <ingredient name="foodDough" count="2"/>
+        <ingredient name="foodCheese" count="2"/>
+      </recipe>
+
+      <recipe name="foodSpringRoll" count="1" craft_time="60" craft_area="campfire">
+        <ingredient name="foodDough" count="2"/>
+        <ingredient name="foodRawMeat" count="2"/>
+        <ingredient name="foodCabbage" count="2"/>
+        <ingredient name="foodCarrot" count="2"/>
+        <ingredient name="foodPeas" count="4"/>
+
+      </recipe>
+
+      <recipe name="foodHotSourSoup" count="1" craft_time="133" craft_area="campfire">
+        <ingredient name="drinkJarBoiledWater" count="2"/>
+        <ingredient name="foodDough" count="4"/>
+        <ingredient name="foodRawMeat" count="4"/>
+      </recipe>
+
+      <!-- Chinese foods -->
+
+
+      <!--  craft_area="campfire" -->
+
+      <!-- Fun recipes -->
+
+      <!--
+<recipe name="foodTheFlash" count="1" craft_area="campfire">
+	<ingredient name="resourceOil" count="10"/>
+	<ingredient name="resourceCropGoldenrodPlant" count="1"/>
+	<ingredient name="foodCropBlueberries" count="5"/>
+	<ingredient name="foodCropMushrooms" count="50"/>
+</recipe>
+-->
+
+
+      <!--new recipes -->
+
+      <!-- 
+<recipe name="foodCornMeal" count="1">
+	<ingredient name="foodCropCorn" count="1"/>
+</recipe> -->
+
+      <recipe name="foodCornFlour" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodCornMeal" count="2"/>
+      </recipe>
+
+      <recipe name="foodDough" count="1" craft_time="30" craft_area="campfire">
+        <ingredient name="foodCornFlour" count="6"/>
+        <ingredient name="drinkJarBoiledWater" count="2"/>
+      </recipe>
+
+
+      <!-- start recipe play -->
+
+      <!--
+<recipe name="foodCheesyBaconGritsEggsandHashbrowns" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="foodSlicesOfBacon" count="2"/>
+	<ingredient name="foodCropPotato" count="1"/>
+	<ingredient name="foodScrambledEggs" count="2"/>
+	<ingredient name="foodGrits" count="1"/>
+	<ingredient name="foodCheese" count="1"/>
+</recipe> 
+-->
+
+      <!-- end recipe play -->
+
+      <!-- Special - MRE -->
+
+      <recipe name="foodMRE" count="1" craft_time="600" craft_area="campfire">
+        <ingredient name="resourceScrapPolymers" count="5"/>
+        <ingredient name="foodSteakAndPotato" count="1"/>
+        <ingredient name="foodChocolateFudgeBrownieCake" count="2"/>
+        <ingredient name="drinkJarCoffee" count="1"/>
+      </recipe>
+
+      <recipe name="foodMRE02" count="1" craft_time="600" craft_area="campfire">
+        <ingredient name="resourceScrapPolymers" count="5"/>
+        <ingredient name="foodSesameChicken" count="1"/>
+        <ingredient name="foodApple" count="2"/>
+        <ingredient name="drinkJarRedTea" count="1"/>
+      </recipe>
+
+      <recipe name="foodMRE03" count="1" craft_time="600" craft_area="campfire">
+        <ingredient name="resourceScrapPolymers" count="5"/>
+        <ingredient name="foodMongolianBeef" count="1"/>
+        <ingredient name="foodFudge" count="3"/>
+        <ingredient name="drinkJarRedTea" count="1"/>
+      </recipe>
+
+      <recipe name="foodMRE04" count="1" craft_time="600" craft_area="campfire">
+        <ingredient name="resourceScrapPolymers" count="5"/>
+        <ingredient name="foodGumboStew" count="1"/>
+        <ingredient name="foodBrownie" count="4"/>
+        <ingredient name="drinkJarGoldenRodTea" count="1"/>
+      </recipe>
+
+      <recipe name="foodMRE05" count="1" craft_time="600" craft_area="campfire">
+        <ingredient name="resourceScrapPolymers" count="5"/>
+        <ingredient name="foodSpaghetti" count="1"/>
+        <ingredient name="foodBrownie" count="2"/>
+        <ingredient name="drinkCanMegaCrush" count="1"/>
+      </recipe>
+
+      <recipe name="foodMRE06" count="1" craft_time="600" craft_area="campfire">
+        <ingredient name="resourceScrapPolymers" count="5"/>
+        <ingredient name="foodMeatStew" count="1"/>
+        <ingredient name="foodChocolate" count="2"/>
+        <ingredient name="drinkCanMegaCrush" count="1"/>
+      </recipe>
+
+      <!-- Special - MRE -->
+
+      <!-- Plates, Silverware, Etc. -->
+
+      
+      
+      <!-- Plates, Silverware, Etc. -->
+
+
+
+      <!-- Smoothies (MODDED) -->
+
+
+      <recipe name="foodStrawberrySmoothie" count="1" craft_time="75" craft_area="campfire">
+        <ingredient name="foodStrawberry" count="10"/>
+        <ingredient name="resourceSnowBall" count="2"/>
+        <ingredient name="drinkJarEmpty" count="1"/>
+      </recipe>      
+      
+      
+      <!-- Smoothies (MODDED) -->
+
+      <recipe name="foodGrilledCheese" count="1" craft_time="35" craft_area="campfire">
+        <ingredient name="foodSliceOfBread" count="2"/>
+        <ingredient name="foodCheese" count="3"/>
+      </recipe>
+
+    </append>
+  </configs>
