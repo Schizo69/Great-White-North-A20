@@ -323,72 +323,9 @@
 	</insertAfter>
 
 
-
-	
-	
-	<remove xpath="/blocks/block[@name='cntCoffeeMaker']"/>
-	<remove xpath="/blocks/block[@name='cntCoffeeMakerCommercial']"/>
-	<insertAfter xpath="/blocks/block[@name='cntToaster']">
-		<block name="cntCoffeeMaker">
-			<property name="Material" value="Mmetal_weak"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Appliances/coffeeMakerPrefab"/>
-			<property name="StabilitySupport" value="false"/>
-			<!-- build restriction -->
-			<property name="Path" value="solid"/>
-			<property name="Place" value="TowardsPlacerInverted"/>
-			<property name="Class" value="Loot"/>
-			<property name="LootList" value="coffeeMaker"/>
-			<property name="IsTerrainDecoration" value="true"/>
-			<property name="CustomUpgradeSound" value="place_block_metal"/>
-			<property class="RepairItems">
-				<property name="resourceForgedIron" value="2"/>
-				<property name="resourceElectricParts" value="4"/>
-			</property>
-			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-			<drop event="Harvest" name="resourceElectricParts" count="0" tag="salvageHarvest"/>
-			<drop event="Destroy" name="coffeeMakerJT" count="1" prob="0.7"/>
-			<drop event="Destroy" name="resourceScrapIron" count="0"/>
-			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-			<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
-			<property name="EconomicValue" value="297"/>
-			<property name="EconomicBundleSize" value="1"/>
-			<property name="Group" value="Decor/Miscellaneous"/>
-			<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
-		</block>
-		<block name="cntCoffeeMakerCommercial">
-			<property name="Material" value="Mmetal_weak"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="Shape" value="ModelEntity"/>
-			<property name="Model" value="Entities/Appliances/commercialCoffeeMakerPrefab"/>
-			<property name="StabilitySupport" value="false"/>
-			<!-- build restriction -->
-			<property name="Path" value="solid"/>
-			<property name="Place" value="TowardsPlacerInverted"/>
-			<property name="Class" value="Loot"/>
-			<property name="LootList" value="coffeeMaker"/>
-			<property name="IsTerrainDecoration" value="true"/>
-			<property name="CustomUpgradeSound" value="place_block_metal"/>
-			<property class="RepairItems">
-				<property name="resourceForgedIron" value="2"/>
-				<property name="resourceElectricParts" value="4"/>
-			</property>
-			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
-			<drop event="Harvest" name="resourceElectricParts" count="0" tag="salvageHarvest"/>
-			<drop event="Destroy" name="coffeeMakerCommercialJT" count="1" prob="0.7"/>
-			<drop event="Destroy" name="resourceScrapIron" count="0"/>
-			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-			<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
-			<property name="EconomicValue" value="359"/>
-			<property name="EconomicBundleSize" value="1"/>
-			<property name="Group" value="Decor/Miscellaneous"/>
-			<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
-		</block>
-
-	</insertAfter>
 	<append xpath="/blocks">
 		<block name="coffeeMakerJT">
+			<property name="Extends" value="cntCoffeeMaker"/> 
 			<property name="Material" value="Mmetal_weak"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="Workstation"/>
@@ -427,7 +364,13 @@
 			<property name="FilterTags" value="MC_building,SC_loot,SC_electrical"/>
 			<property name="TakeDelay" value="5"/>
 		</block>
+		
+		</append>
+
+		<append xpath="/blocks">
+
 		<block name="coffeeMakerCommercialJT">
+			<property name="Extends" value="cntCoffeeMakerCommercial"/> 
 			<property name="Material" value="Mmetal_weak"/>
 			<property name="CreativeMode" value="Player"/>
 			<property name="Class" value="Workstation"/>
@@ -561,9 +504,9 @@
 	<append xpath="/blocks">
 
 
-	<block name="workingGraniteSinkJT">
-	<property name="CustomIcon" value="cntGraniteSink"/>
-	<property name="Material" value="Mmetal"/>
+		<block name="workingGraniteSinkJT">
+			<property name="CustomIcon" value="cntGraniteSink"/>
+			<property name="Material" value="Mmetal"/>
 	<property name="Shape" value="New"/>
 	<property name="Path" value="solid"/>
 	<property name="Model" value="counter_sink"/>
@@ -617,6 +560,7 @@
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 			<property name="CustomIcon" value="cntWaterCoolerFull"/>
+
 			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
 			<drop event="Destroy" name="workingWaterCoolerFullJT" count="1" prob="1"/>
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>

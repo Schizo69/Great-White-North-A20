@@ -1,10 +1,10 @@
-Key,UsedInMainMenu,Source,Context,Changes,English, French,German,Klingon,Spanish,Polish
+Key,UsedInMainMenu,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
 foodScrambledEggs,,item,Food,newKey,Scrambled Eggs [ff0000](MOD)[-],,,,,
 foodScrambledEggsDesc,,item,Food,newKey,Tasty. Fills you up a tiny bit.,,,,,
 foodBaconEggsHashbrownsToast,,item,Food,newKey,Bacon Eggs Hashbrowns and Toast [ff0000](MOD)[-],,,,,
 foodBaconEggsHashbrownsToastDesc,,item,Food,newKey,Usually eaten for breakfast - this dish fills you up fairly well.,,,,,
-foodChickenNuggets,,item,Food,newKey,Chicken Nuggets [ff0000](MOD)[-],,,,,
-foodChickenNuggetsDesc,,item,Food,newKey,Made with Chickens. Tasty. Fills you up a tiny bit.,,,,,
+foodChickenNuggets,items,item,Food,newKey,Chicken Nuggets [ff0000](MOD)[-],,,,,
+foodChickenNuggetsDesc,items,item,Food,newKey,Made with Chickens. Tasty. Fills you up a tiny bit.,,,,,
 foodSlicesOfBacon,,item,Food,newKey,Cooked Bacon [ff0000](MOD)[-],,,,,
 foodSlicesOfBaconDesc,,item,Food,newKey,Made with Pigs/Boars. Tasty. Fills you up a tiny bit.,,,,,
 foodRoast,,item,Food,newKey,Roast [ff0000](MOD)[-],,,,,

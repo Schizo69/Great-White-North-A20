@@ -6,7 +6,7 @@
         <property name="CustomIcon" value="Class - Hunter" />
 		<property name="DescriptionKey" value="Class - Hunter (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -26,7 +26,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - HunterDesc"/>
-		 <property name="Material" value="Msteel" />
+		 <property name="Material" value="Mcloth" />
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -46,7 +46,7 @@
         <property name="Group" value="Class System" />
 		<property name="DescriptionKey" value="Class - Builder (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -66,7 +66,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - BuilderDesc"/>
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -86,7 +86,7 @@
         <property name="CustomIcon" value="Class - Rifleman" />
 		<property name="DescriptionKey" value="Class - Rifleman (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -106,7 +106,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - RiflemanDesc"/>
-		 <property name="Material" value="Msteel" />
+		 <property name="Material" value="Mcloth" />
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -126,7 +126,7 @@
         <property name="CustomIcon" value="Class - Gunman" />
 		<property name="DescriptionKey" value="Class - Gunman (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -146,7 +146,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - GunmanDesc"/>
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -166,7 +166,7 @@
         <property name="CustomIcon" value="Class - Veteran" />
 		<property name="DescriptionKey" value="Class - Veteran (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -186,7 +186,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - VeteranDesc"/>
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
 		<!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -206,7 +206,7 @@
         <property name="CustomIcon" value="Class - Bruiser" />
 		<property name="DescriptionKey" value="Class - Bruiser (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -226,7 +226,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - BruiserDesc"/>
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
 		 <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -246,7 +246,7 @@
         <property name="Group" value="Class System" />
 		<property name="DescriptionKey" value="Class - Miner (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -266,7 +266,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - MinerDesc"/>
-		 <property name="Material" value="Msteel" />
+		 <property name="Material" value="Mcloth" />
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -286,7 +286,7 @@
         <property name="Group" value="Class System" />
 		<property name="DescriptionKey" value="Class - Survivor (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -306,7 +306,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - SurvivorDesc"/>
-		  <property name="Material" value="Msteel" />
+		  <property name="Material" value="Mcloth" />
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -326,7 +326,7 @@
         <property name="Group" value="Class System" />
 		<property name="DescriptionKey" value="Class - Medic (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -346,7 +346,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - MedicDesc"/>
-		 <property name="Material" value="Msteel" />
+		 <property name="Material" value="Mcloth" />
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -366,7 +366,7 @@
         <property name="CustomIcon" value="Class - Mechanic" />
 		<property name="DescriptionKey" value="Class - Mechanic (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -386,7 +386,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - MechanicDesc"/>
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -406,7 +406,7 @@
         <property name="CustomIcon" value="Class - Engineer" />
 		<property name="DescriptionKey" value="Class - Engineer (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -426,7 +426,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - EngineerDesc"/>
-		 <property name="Material" value="Msteel" />
+		 <property name="Material" value="Mcloth" />
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -446,7 +446,7 @@
         <property name="CustomIcon" value="Class - Farmer" />
 		<property name="DescriptionKey" value="Class - Farmer (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -466,7 +466,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - FarmerDesc"/>
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
 		<!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -486,7 +486,7 @@
         <property name="CustomIcon" value="Class - Terrorist" />
 		<property name="DescriptionKey" value="Class - Terrorist (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -506,7 +506,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - TerroristDesc"/>
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
 		<!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -526,7 +526,7 @@
         <property name="CustomIcon" value="Class - Machine Gunner" />
 		<property name="DescriptionKey" value="Class - Machine Gunner (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -546,7 +546,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - Machine GunnerDesc"/>
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
 		<!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -566,7 +566,7 @@
         <property name="CustomIcon" value="Class - Marine" />
 		<property name="DescriptionKey" value="Class - Marine (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -586,7 +586,7 @@
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
 		<property name="DescriptionKey" value="Class - MarineDesc"/>
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
 		<!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
@@ -606,7 +606,7 @@
         <property name="CustomIcon" value="Class - Assassin" />
 		<property name="DescriptionKey" value="Class - Assassin (Locked)Desc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
-        <property name="Material" value="Msteel" />
+        <property name="Material" value="Mcloth" />
        <property name="Shape" value="ModelEntity"/>
         <property name="Mesh" value="models" />
         <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -625,7 +625,7 @@
     <block name="Class - Assassin">
         <property name="Class" value="Loot" />
         <property name="Group" value="Survival" />
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
 		<property name="DescriptionKey" value="Class - AssassinDesc"/>
         <!--        <property name="CustomIcon" value="suitcase" /> -->
        <property name="Shape" value="ModelEntity"/>
@@ -645,7 +645,7 @@
 		<property name="DescriptionKey" value="classWildcardDesc"/>
 		<property name="CustomIcon" value="Class - Wildcard" />
 		<property name="Group" value="Class System" />
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
 		 <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>
@@ -663,7 +663,7 @@
 	<block name="Class - Wildcard">
 		<property name="Class" value="Loot" />
 		<property name="Group" value="Survival" />
-		<property name="Material" value="Msteel" />
+		<property name="Material" value="Mcloth" />
 		<property name="Shape" value="ModelEntity" />
 		<property name="Mesh" value="models" />
 		 <property name="Model" value="#Entities/LootContainers?luggageMediumClosedPrefab.prefab"/>

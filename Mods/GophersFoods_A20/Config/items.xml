@@ -118,8 +118,8 @@
     <item name="foodChickenNuggets">
       <property name="Tags" value="food"/>
       <property name="HoldType" value="31"/>
-      <property name="DisplayType" value="foodWater"/>
-      <property name="CustomIcon" value="foodChickenNuggets"/>
+      <property name="DisplayType" value="food"/>
+      <!-- <property name="CustomIcon" value="foodChickenNuggets"/> -->
       <property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
       <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
       <property name="Material" value="Morganic"/>

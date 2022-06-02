@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Schizo's Admin Lights" />
+		<Description value="Adds Admin lights that have very high HP and low damage taken." />
+		<Author value="Schizo (Great White North Server" />
+		<Version value=".1a" />
+	</ModInfo>
+</xml>

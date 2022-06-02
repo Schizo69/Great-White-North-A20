@@ -61,11 +61,11 @@
 </append>
 <set xpath="/items/item[@name='gunMGT3M60']/property[@name='UnlockedBy']/@value">M60 Schematic</set>
 
-<set xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo556BulletBall,ammo556HP,ammo556AP</set>
+<!--<set xpath="/items/item[@name='gunMGT0PipeMachineGun']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo556BulletBall,ammo556HP,ammo556AP</set>
 <set xpath="/items/item[@name='gunMGT1AK47']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo556BulletBall,ammo556HP,ammo556AP</set>
 <set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo556BulletBall,ammo556HP,ammo556AP</set>
 <set xpath="/items/item[@name='gunMGT3M60']/property[@class='Action0']/property[@name='Magazine_items']/@value">ammo556BulletBall,ammo556HP,ammo556AP</set>
-
+-->
 
 <remove xpath="/items/item[@name='resourceSnowBall']"/>
 <append xpath="/items">

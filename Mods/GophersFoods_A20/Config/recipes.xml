@@ -43,8 +43,8 @@
         <ingredient name="foodCropPotato" count="1"/>
       </recipe>
 
-      <recipe name="foodChickenNuggets" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill">
-        <ingredient name="foodRawChickenPieces" count="15"/>
+      <recipe name="foodChickenNuggets" count="10" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill">
+        <ingredient name="foodRawChickenPieces" count="10"/>
       </recipe>
 	  
 	  <recipe name="foodChickenNuggets" count="5" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill">
