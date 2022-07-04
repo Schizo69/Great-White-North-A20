@@ -1,6 +1,19 @@
 <Valmar>
 <append xpath="/recipes">
 	<!-- Classes Mod -->
+	
+	<recipe name="classKey" count="1" scrapable="False" >
+	<ingredient name="resourceScrapIron" count="10" />
+    </recipe>
+	<recipe name="classSelection" count="1" scrapable="False" >
+	<ingredient name="survivorNotes" count="50" />
+    </recipe>
+	<recipe name="survivorNotes" count="1" scrapable="False" >
+	<ingredient name="resourcePaper" count="100" />
+	<ingredient name="foodCropBlueberries" count="5" />
+	<ingredient name="resourceFeather" count="1" />
+    </recipe>
+	
     <recipe name="Class - Hunter (Locked)" count="1" scrapable="False" >
 	<ingredient name="classSelection" count="1" />
     </recipe>

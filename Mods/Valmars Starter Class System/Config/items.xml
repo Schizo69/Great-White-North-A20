@@ -474,5 +474,20 @@
 		<property name="QuestGiven" value="challenge_Assassin1" />
 	</property>
 </item>
+
+<item name="survivorNotes">
+	<property name="CustomIcon" value="SurvivorNotes"/>
+	<property name="Meshfile" value="#Other/Items?Misc/bookPrefab.prefab"/>
+	<property name="DescriptionKey" value="schematicGeneralGroupDesc"/>
+	<property name="Material" value="Mpaper"/>
+	<property name="CustomIcon" value="survivorNotes"/>
+	<property name="DescriptionKey" value="perkClassDesc"/>
+	<property name="Stacknumber" value="5000"/>
+</item>
+
+
+
+
+
 		</append>
 </Valmar>

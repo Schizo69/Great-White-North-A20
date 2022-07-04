@@ -1813,15 +1813,15 @@ repeatable="false" category_key="challenge" offer="Attribute to Assassins." diff
 <!-- ASSASSIN -->
 <quest id="perkWildcard" name="Wildcard Skills" subtitle="Wildcard Skills" description="This teaches you the skills of the class." icon="misc_crafting" 
 repeatable="false" category_key="challenge" offer="The Wildcard class can be custom tailored to match your preferences." difficulty="easy">
-	<reward type="SkillPoints" value="5" />
+	<reward type="SkillPoints" value="20" />
 </quest>
 <quest id="perkWildcard1" name="Wildcard1 Skills" subtitle="Wildcard1 Skills" description="This teaches you the skills of the class." icon="misc_crafting" 
 repeatable="false" category_key="challenge" offer="The Wildcard1 class can be custom tailored to match your preferences." difficulty="easy">
-	<reward type="SkillPoints" value="5" />
+	<reward type="SkillPoints" value="30" />
 </quest>
 <quest id="perkWildcard2" name="Wildcard2 Skills" subtitle="Wildcard2 Skills" description="This teaches you the skills of the class." icon="misc_crafting" 
 repeatable="false" category_key="challenge" offer="The Wildcard2 class can be custom tailored to match your preferences." difficulty="easy">
-	<reward type="SkillPoints" value="5" />
+	<reward type="SkillPoints" value="40" />
 </quest>
 <!-- CLASS PERKS -->
   </append>
